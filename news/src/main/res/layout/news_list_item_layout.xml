@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_news_imagetext_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/news_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+	<!-- 一般新闻布局,新闻图片或者内容简介必须有一种存在,都不存在用另外的布局 -->
+    <LinearLayout 
+        android:id="@+id/item_news_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_list_item_height"
+        android:gravity="center_vertical" >
+        <RelativeLayout
+	       android:layout_width="@dimen/news_list_item_image_width"
+	       android:layout_height="@dimen/news_list_item_image_height"
+	       android:layout_marginRight="10dip"
+	       android:id="@+id/item_news_imagetext_image_parent" >
+	
+	       <ImageView
+	           android:id="@+id/item_news_imagetext_image"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:scaleType="centerCrop" />
+	
+	       <com.ant.liao.GifView
+	           android:id="@+id/item_news_imagetext_image_gif"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:enabled="false"
+	           android:scaleType="centerCrop"
+	           android:visibility="gone" />
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:layout_width="0dip"
+	        android:layout_height="@dimen/news_list_item_image_height"
+	        android:layout_weight="1">
+	        <TextView
+		        android:id="@+id/item_news_imagetext_title"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:ellipsize="end"
+		        android:singleLine="true"
+		        android:textColor="@color/text_tab"
+		        android:textSize="@dimen/news_item_text_size"
+		        android:gravity="left|top" />
+		
+		    <TextView
+		        android:id="@+id/item_news_imagetext_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/item_news_imagetext_title"
+		        android:ellipsize="end"
+		        android:maxLines="2"
+		        android:textColor="@color/text_999999"
+		        android:textSize="@dimen/btn_13" />
+		
+		    <TextView
+		        android:id="@+id/item_news_imagetext_date"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+		        android:textColor="@color/text_999999"
+		        android:textSize="@dimen/btn_13"
+		        android:drawableLeft="@drawable/date_icon"
+		        android:drawablePadding="5dip" />
+
+	    </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <!-- 图片新闻布局 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_list_images_item_height"
+        android:id="@+id/item_news_images_parent"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip" >
+        <TextView
+	        android:id="@+id/item_news_imagetext_title2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:ellipsize="end"
+	        android:singleLine="true"
+	        android:textColor="@color/text_tab"
+	        android:textSize="@dimen/news_item_text_size" />
+	
+	    <TextView
+	        android:id="@+id/item_news_imagetext_numpic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:ellipsize="end"
+	        android:singleLine="true"
+	        android:textColor="@color/signr_bg"
+	        android:textSize="@dimen/btn_13" />
+	    <LinearLayout
+            android:id="@+id/image_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/news_list_images_item_image_height"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true" >
+		    <ImageView
+	           android:id="@+id/item_news_image1"
+	           android:layout_width="@dimen/news_list_images_item_image_width"
+	           android:layout_height="match_parent"
+	           android:scaleType="centerCrop" />
+		    <View 
+		        android:layout_width="0dip"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1" />
+		    <ImageView
+	           android:id="@+id/item_news_image2"
+	           android:layout_width="@dimen/news_list_images_item_image_width"
+	           android:layout_height="match_parent"
+	           android:scaleType="centerCrop" />
+		    <View 
+		        android:layout_width="0dip"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1" />
+		    <ImageView
+	           android:id="@+id/item_news_image3"
+	           android:layout_width="@dimen/news_list_images_item_image_width"
+	           android:layout_height="match_parent"
+	           android:scaleType="centerCrop" />
+        </LinearLayout>
+    </RelativeLayout>
+
+	<!-- 没有图片和内容简介的新闻布局 -->
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="65dip"
+		android:id="@+id/item_news_no_image_parent"
+		android:paddingTop="15dip"
+		android:paddingBottom="5dip" >
+		<TextView
+			android:id="@+id/item_news_no_imagetext_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:ellipsize="end"
+			android:singleLine="true"
+			android:textColor="@color/text_tab"
+			android:textSize="@dimen/news_item_text_size"
+			android:gravity="left|top" />
+		<TextView
+			android:id="@+id/item_news_no_imagetext_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:textColor="@color/text_999999"
+			android:textSize="@dimen/btn_13"
+			android:drawableLeft="@drawable/date_icon"
+			android:drawablePadding="5dip" />
+	</RelativeLayout>
+</LinearLayout>

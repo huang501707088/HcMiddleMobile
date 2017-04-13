@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- 这层主要是确定item的高度 -->
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="60dip"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/audio_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="center"
+            android:src="@drawable/netdisc_music_file"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/audio_item_icon">
+
+            <TextView
+                android:id="@+id/audio_item_file_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/netdisc_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/audio_item_file_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/netdisc_text_gray_color"
+                android:textSize="12sp"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <CheckBox
+        android:id="@+id/audio_item_checkbox"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+</LinearLayout>

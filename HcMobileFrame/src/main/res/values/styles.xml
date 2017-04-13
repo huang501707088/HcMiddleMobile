@@ -1,0 +1,211 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme"></style>
+
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="color_lock_pattern_view_regular">@color/lock_pattern_view_regular_light</item>
+        <item name="color_lock_pattern_view_success">@color/lock_pattern_view_success_light</item>
+        <item name="color_lock_pattern_view_error">@color/lock_pattern_view_error_light</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--
+    	<item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        -->
+    </style>
+
+    <style name="AppBaseTheme.Light" parent="@android:style/Theme.Light"></style>
+
+    <style name="AppTheme.Light" parent="@style/AppBaseTheme.Light">
+        <item name="color_lock_pattern_view_regular">@color/lock_pattern_view_regular_dark</item>
+        <item name="color_lock_pattern_view_success">@color/lock_pattern_view_success_dark</item>
+        <item name="color_lock_pattern_view_error">@color/lock_pattern_view_error_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        -->
+    </style>
+
+    <style name="progressBase">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_white</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+
+    <style name="Holo.ProgressBar" parent="progressBase">
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_holo</item>
+    </style>
+
+    <style name="tv_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">7</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+	<!--  
+    <style name="bottom_button_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">@dimen/menu_bar_size</item>
+        <item name="android:textColor">@color/tab_indicator_text</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">3dip</item>
+
+    </style>
+    -->
+        <!--
+       <item name="android:layout_marginLeft">-3dip</item>
+       <item name="android:layout_marginRight">-3dip</item>
+       <item name="android:background">@drawable/buttonbarbackground</item>
+       <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        -->
+    <style name="bottom_button_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">@dimen/menu_bar_size</item>
+        <item name="android:textColor">@color/tab_indicator_text</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">3dip</item>
+        <!--
+       <item name="android:layout_marginLeft">-3dip</item>
+       <item name="android:layout_marginRight">-3dip</item>
+       <item name="android:background">@drawable/buttonbarbackground</item>
+       <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        -->
+    </style>
+
+<!--  <item name="android:textAppearance">?android:attr/textAppearanceLargeInverse</item> -->
+    <style name="news_top_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">@dimen/news_bar_text_size</item>
+        <item name="android:textColor">@color/market_topbar_text</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox</item>
+    </style>
+
+    <style name="corner_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/corner_btn_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 橘黄色按钮 -->
+    <style name="corner_btn.orange" parent="corner_btn">
+        <item name="android:background">@drawable/corner_btn_orange_src</item>
+    </style>
+    <!-- 浅绿色按钮 -->
+    <style name="corner_btn.light_green" parent="corner_btn">
+        <item name="android:background">@drawable/corner_btn_light_green_src</item>
+    </style>
+    <!-- 深绿色按钮 -->
+    <style name="corner_btn.dark_green" parent="corner_btn">
+        <item name="android:background">@drawable/corner_btn_dark_green_src</item>
+    </style>
+    <!-- 蓝色按钮 -->
+    <style name="corner_btn.blue" parent="corner_btn">
+        <item name="android:background">@drawable/corner_btn_blue_src</item>
+    </style>
+    
+    <style name="myDialogTheme" parent="android:Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 除去title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 背景 <item name="android:windowBackground">@android:drawable/dialog_frame</item> -->
+        <item name="android:windowBackground">@drawable/corner_download_dialog_frame_bg</item>
+        <item name="android:padding">1dip</item>
+    </style>
+    <style name="LineHorizontal.Gray_d8">
+        <item name="android:background">@color/gray_d8</item>
+    </style>
+    <style name="LineHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomAlterDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <!-- 日期和时间控件 -->
+    <style name="time_label">
+        <item name="android:textSize">@dimen/time_label_size</item>
+        <item name="android:textColor">@color/numbers_text_color</item>
+    </style>
+
+    <style name="ampm_label">
+        <item name="android:textSize">@dimen/ampm_label_size</item>
+        <item name="android:textColor">@color/ampm_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="day_of_week_label_condensed" />
+    <!-- 日期和时间控件结束 -->
+
+    <!-- AlertDialog -->
+    <style name="HC_AlertDialog" parent="@android:style/Theme.Holo.Light.Dialog.MinWidth">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/HC_DialogWindowTitle</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="HC_DialogWindowTitle" >
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/HC_DialogTextAppearance</item>
+    </style>
+    <style name="HC_DialogTextAppearance" >
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#ff33b5e5</item>
+    </style>
+    <!-- AlertDialog结束 -->
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 年会 -->
+    <color name="annual_program_item_stars">#ff5013</color>
+    <color name="annual_program_item_unstars">#b3b3b3</color>
+    <!--
+    <color name="annual_topbar_bg">#dd4b54</color>
+    -->
+</resources>

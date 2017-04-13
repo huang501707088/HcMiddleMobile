@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/carlendar_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:text="8:32"
+        android:textColor="@color/carlendar_text_color"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/address_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="杭州鸿程计算机系统有限公司"
+            android:textColor="@color/carlendar_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sign_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="外出采购货物。。。"
+            android:textColor="@color/carlendar_sign_text"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/address_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/address_img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/address_img2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/address_img3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/address_img4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

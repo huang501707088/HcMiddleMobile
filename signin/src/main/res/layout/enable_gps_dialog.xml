@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="264dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gps_netdata_bg"
+    android:padding="5dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/net_gps_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:lines="3"
+        android:lineSpacingExtra="5dip"
+        android:text="@string/enable_gps_text"
+        android:textColor="@color/text_tab"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/gps_divider_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_button_height"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/unagree_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="@string/unagree"
+            android:textColor="@color/gps_dialog_btn"
+            android:textSize="19sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            android:background="@color/dialog_black" />
+
+        <Button
+            android:id="@+id/agree_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="@string/agree"
+            android:textColor="@color/gps_dialog_btn"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+</LinearLayout>

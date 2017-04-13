@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg" >
+    <com.android.hcframe.TopBarView
+        android:id="@+id/field_sign_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg"
+        zjhc:topbar_return_visiable="true"
+        zjhc:topbar_right_image_visiable="false" />
+    <!-- 时间,地点 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/edittext_bg"
+        android:orientation="vertical"
+        android:padding="15dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时 间"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/field_sign_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="12dip"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/field_sign_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/field_sign_switch_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="地点微调"
+            android:textColor="#51afe6"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- 图片 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/edittext_bg"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="15dip"
+        android:paddingBottom="0dip">
+
+        <EditText
+            android:id="@+id/field_sign_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@color/edittext_bg"
+            android:gravity="top|left"
+            android:hint="签到说明......"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+        <com.android.hcframe.view.gallery.GalleryView
+            android:id="@+id/sign_submit_add_galleryview"
+            android:layout_height="95dip"
+            android:layout_width="match_parent"
+            android:paddingTop="0dip"
+            android:background="@color/edittext_bg"
+            zjhc:max_count="4"
+            zjhc:btn_position="1"
+            zjhc:show_images="false"/>
+    </LinearLayout>
+    <!-- 提交按钮 -->
+    <TextView
+        android:id="@+id/field_sign_submit_btn"
+        style="@style/corner_btn.blue"
+        android:layout_marginLeft="@dimen/btn_padding_left"
+        android:layout_marginRight="@dimen/btn_padding_right"
+        android:layout_marginTop="34dip"
+        android:text="提交" />
+
+</LinearLayout>

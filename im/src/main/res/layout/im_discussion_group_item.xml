@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical">
+
+
+    <com.android.hcframe.container.ContainerCircleImageView
+        android:id="@+id/discussion_group_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        zjhc:siBorderAlpha="1.0"
+        zjhc:siBorderColor="#ffffff"
+        zjhc:siBorderWidth="1dip" />
+
+    <TextView
+        android:id="@+id/discussion_group_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/im_chatting_circle_bg"
+        android:gravity="center_horizontal"
+        android:text="+"
+        android:textColor="#dddddd"
+        android:textSize="35sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/discussion_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="朱家斌"
+        android:textColor="@color/im_discussion_group_black"
+        android:textSize="12sp" />
+</LinearLayout>

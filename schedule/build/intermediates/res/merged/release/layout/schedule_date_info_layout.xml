@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/group_date"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="24dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/one_status_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/schedule_menu_corner"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </FrameLayout>
+</LinearLayout>

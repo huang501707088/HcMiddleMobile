@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="market_top_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/market_topbar_text</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/market_topbar_text</item>
+    </style>
+</resources>

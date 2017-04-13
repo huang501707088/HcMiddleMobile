@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_signature1" >
+
+	<ListView 
+	    android:id="@+id/listview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:paddingTop="5dp"
+	    android:cacheColorHint="#00000000"
+        android:dividerHeight="3dp"
+        android:fadingEdge="none"
+        android:background="@drawable/kinggrid_bg_toolbar"
+        android:listSelector="@xml/edit_text_bg"
+        android:layout_gravity="center"/>     
+        
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg">
+    <com.android.hcframe.TopBarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:id="@+id/image_choose_top_bar"
+        zjhc:topbar_return_visiable = "true"
+        zjhc:topbar_right_image_visiable = "false"
+        android:background="@color/topbar_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_choose_show_networkerror"
+        android:padding="10dip"
+        android:layout_gravity="center_vertical"
+        android:background="#fff013"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/framework_network_error"
+            android:textColor="#ff5013"
+            android:textSize="12sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/right_jian"
+            android:layout_marginLeft="5dip"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:id="@+id/image_choose_parent">
+    </FrameLayout>
+</LinearLayout>

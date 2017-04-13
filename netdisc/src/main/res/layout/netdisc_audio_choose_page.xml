@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/audio_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipChildren="true"
+            android:listSelector="@android:color/transparent"
+            android:smoothScrollbar="true"
+            android:background="@drawable/item_default_bg"
+            android:dividerHeight="1dip"
+            android:divider="@color/divider_bg"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:orientation="vertical"
+        android:background="@color/edittext_bg">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:paddingLeft="15dip"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:id="@+id/audio_dir_name"/>
+        <TextView
+            style="@style/corner_btn.orange"
+            android:layout_marginLeft="@dimen/btn_padding_left"
+            android:layout_marginRight="@dimen/btn_padding_right"
+            android:id="@+id/audio_commit_btn"
+            android:text="立即上传"/>
+    </LinearLayout>
+</LinearLayout>

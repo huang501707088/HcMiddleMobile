@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HcMiddleMobile.iml" filepath="$PROJECT_DIR$/HcMiddleMobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HcMobileFrame/HcMobileFrame.iml" filepath="$PROJECT_DIR$/HcMobileFrame/HcMobileFrame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/about/about.iml" filepath="$PROJECT_DIR$/about/about.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annual/annual.iml" filepath="$PROJECT_DIR$/annual/annual.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/approve/approve.iml" filepath="$PROJECT_DIR$/approve/approve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contacts/contacts.iml" filepath="$PROJECT_DIR$/contacts/contacts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/doc/doc.iml" filepath="$PROJECT_DIR$/doc/doc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/download/download.iml" filepath="$PROJECT_DIR$/download/download.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ebook/ebook.iml" filepath="$PROJECT_DIR$/ebook/ebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcmail/hcmail.iml" filepath="$PROJECT_DIR$/hcmail/hcmail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hctask/hctask.iml" filepath="$PROJECT_DIR$/hctask/hctask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/im/im.iml" filepath="$PROJECT_DIR$/im/im.iml" />
+      <module fileurl="file://$PROJECT_DIR$/market/market.iml" filepath="$PROJECT_DIR$/market/market.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netdisc/netdisc.iml" filepath="$PROJECT_DIR$/netdisc/netdisc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/news/news.iml" filepath="$PROJECT_DIR$/news/news.iml" />
+      <module fileurl="file://$PROJECT_DIR$/schedule/schedule.iml" filepath="$PROJECT_DIR$/schedule/schedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/signin/signin.iml" filepath="$PROJECT_DIR$/signin/signin.iml" />
+    </modules>
+  </component>
+</project>

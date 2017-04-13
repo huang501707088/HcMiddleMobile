@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kinggrid_bg_menu_sub"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp" >
+
+    <!-- android:background="@drawable/kinggrid_bg_menu_sub" -->
+
+    <RelativeLayout
+        android:id="@+id/annot_relative_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/annot_close"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_close" />
+
+        <Button
+            android:id="@+id/annot_save"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_save" />
+
+        <Button
+            android:id="@+id/annot_delete"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/annot_save"
+            android:background="@drawable/bg_clear" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/annot_relative_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/annot_relative_button"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingTop="10.0dip" >
+
+        <TextView
+            android:id="@+id/lab_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/author"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/annot_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lab_author"
+            android:text=""
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/annot_modify_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/annot_relative_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/annot_relative_textview" >
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="计时："
+            android:textColor="@android:color/black"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/timeH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/t"
+            android:textColor="@android:color/black"
+            android:text="00"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/fh1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/timeH"
+            android:textColor="@android:color/black"
+            android:text=":"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/timeM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/fh1"
+            android:textColor="@android:color/black"
+            android:text="00"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/fh2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/timeM"
+            android:textColor="@android:color/black"
+            android:text=":"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/timeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/fh2"
+            android:textColor="@android:color/black"
+            android:text="00"
+            android:textSize="20px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/annot_sound"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:id="@+id/btnplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnstop"
+            android:background="@drawable/kinggrid_sound_play" />
+
+        <ImageButton
+            android:id="@+id/btnstop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/kinggrid_sound_stop" />
+
+        <ImageButton
+            android:id="@+id/btnrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnplay"
+            android:background="@drawable/kinggrid_sound_record" />
+    </RelativeLayout>
+
+</RelativeLayout>

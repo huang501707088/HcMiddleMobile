@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.hcframe.im">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.android.hcframe.im.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.android.hcframe.internalservice.contacts.SEND_MSG" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.hcframe.im.IMGroupMenuPage"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+        <activity
+            android:name="com.android.hcframe.im.ChoosePersonnelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.android.hcframe.im.IMDiscussionGroupSettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.android.hcframe.im.IMDiscussionGroupAllActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.android.hcframe.im.ImDiscussionGroupRenameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.android.hcframe.im.IMDeletePersonnelActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.android.hcframe.im.IMForwardActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.android.hcframe.im.IMChooseGroupActivity"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name="com.android.hcframe.im.ChatService"
+            android:permission="android.permission.BIND_JOB_SERVICE"></service>
+        <receiver android:name="com.android.hcframe.im.IMBroadcast">
+            <intent-filter>
+                <action android:name="com.android.hcframe.im.app_start" />
+
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.hcframe.im.IMPushReceiver">
+            <intent-filter>
+                <action android:name="com.android.hcframe.im.system_message" />
+                <action android:name="com.android.hcframe.im.chat_message" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.android.hcframe.im.IMService">
+            <intent-filter>
+                <action android:name="com.android.hcframe.im.app_start" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

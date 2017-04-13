@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen_switch_lly"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/myoffice_item_margin_left"
+    android:paddingRight="@dimen/myoffice_item_margin_left"
+    android:background="@color/details_switch_bg"
+    >
+    <TextView
+        android:id="@+id/doc_file_name"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        />
+	<ImageView 
+	    android:id="@+id/switch_icon"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/fullscreen"
+	    android:layout_marginLeft="@dimen/myoffice_item_margin_left"
+	    />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="market_app_icon">70dip</dimen>
+    <dimen name="market_topbar_text">16sp</dimen>
+    <dimen name="news_bar_text_size">16sp</dimen>
+</resources>

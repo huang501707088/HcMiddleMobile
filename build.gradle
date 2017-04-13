@@ -1,0 +1,28 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        // 服务端使用
+//        classpath 'com.android.tools.build:gradle:1.5.0'
+        // 服务器最新使用,gradle-wrapper里需要2.14.1
+        classpath 'com.android.tools.build:gradle:2.2.0'
+        // 本地使用最新,gradle-wrapper里需要2.14.1
+//        classpath 'com.android.tools.build:gradle:2.2.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

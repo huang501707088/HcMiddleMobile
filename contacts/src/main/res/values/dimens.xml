@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 通讯录模块 -->
+    <!-- 通讯录部门和员工列表高度 -->
+    <dimen name="contacts_dep_list_item_height">60dip</dimen>
+    <dimen name="contacts_title_list_item_height">85dip</dimen>
+</resources>

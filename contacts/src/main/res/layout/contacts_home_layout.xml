@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 显示员工 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:background="@color/contacts_search_bg"
+        android:gravity="center_vertical"
+        android:id="@+id/contact_home_emp_parent" >
+        <ImageView 
+            android:layout_width="40dip"
+            android:layout_height="34dip"
+            android:scaleType="center"
+            android:src="@drawable/emp_dep_switch"
+            android:id="@+id/contact_home_switch"  />
+        <RelativeLayout 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/contacts_search_corner_bg"
+            android:id="@+id/contact_home_showsearch_btn"
+            android:layout_marginLeft="5dip" >
+            <TextView 
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/search_show"
+                android:text="@string/search_str"
+                android:textColor="@color/search_str"
+                android:drawablePadding="5dip" />
+        </RelativeLayout>
+    </LinearLayout>
+	<!-- 显示搜索 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:background="@color/contacts_search_bg"
+        android:gravity="center_vertical"
+        android:id="@+id/contact_home_search_parent">
+        <LinearLayout 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/contacts_search_corner_bg"
+            android:paddingLeft="10dip" >
+            <EditText
+                android:id="@+id/contact_home_search_content"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/search_content_hint"
+                android:paddingRight="3dip"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textColorHint="#b3b3b3"/>
+            <ImageView
+                android:id="@+id/conatct_home_search_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/clear_search"
+                android:padding="10dip"
+                android:visibility="invisible"/>
+        </LinearLayout>
+        <TextView 
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/cancel"
+            android:paddingLeft="10dip"
+            android:id="@+id/contact_home_search_cancel" />
+    </LinearLayout>
+    <!-- 显示部门 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:background="@color/contacts_search_bg"
+        android:gravity="center_vertical"
+        android:id="@+id/contact_home_dep_parent">
+        <RelativeLayout 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/contact_home_return_top"
+            android:background="@drawable/contacts_search_corner_bg">
+            <TextView 
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/return_top"
+                android:text="@string/return_top"
+                android:drawablePadding="5dip" />
+        </RelativeLayout>
+        <View 
+            android:layout_width="5dip"
+            android:layout_height="match_parent"/>
+        <RelativeLayout 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/contact_home_return_pre"
+            android:background="@drawable/contacts_search_corner_bg">
+            <TextView 
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/msm_back"
+                android:text="@string/return_last"
+                android:drawablePadding="5dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_height="0dip"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/edittext_bg" >
+        <LinearLayout 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="14dip"
+            android:layout_marginRight="14dip" >
+            <LinearLayout 
+                android:id="@+id/contact_home_dep_name_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/contact_home_dep_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_hint"
+                    android:textSize="10sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/divider_bg" />
+            </LinearLayout>
+            <ListView
+                android:id="@+id/contact_home_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/edittext_bg"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:listSelector="#00000000"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:dividerHeight="1dip"
+                android:divider="@color/divider_bg"/>
+        </LinearLayout>
+        <com.android.hcframe.internalservice.contacts.SideBar
+            android:id="@+id/contact_home_sideBar"
+            android:layout_width="20dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:padding="2dip"
+            android:layout_marginTop="10dip" />
+    </LinearLayout>
+    
+</LinearLayout>

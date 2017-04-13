@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/container_multiple_list_item_height" >
+    <LinearLayout 
+        android:layout_height="0dip"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/container_margin_left"
+    	android:paddingRight="@dimen/container_margin_right"
+    	android:gravity="center_vertical" >
+        <com.android.hcframe.container.ContainerRoundedImageView 
+	       android:layout_width="@dimen/container_image_width_30"
+	       android:layout_height="@dimen/container_image_width_30"
+	       android:scaleType="centerInside"
+	       zjhc:element_id="img01"
+	       android:id="@+id/container_item_list01_img01"
+	       android:padding="5dip"
+	       zjhc:siBorderColor="@color/edittext_bg"
+	       zjhc:siBorderAlpha="1.0" />
+	   <com.android.hcframe.container.ContainerTextView 
+	       android:layout_width="0dip"
+	       android:layout_height="wrap_content"
+	       android:layout_weight="1"
+	       zjhc:element_id="text01"
+	       android:paddingLeft="@dimen/container_margin_left"
+	       android:layout_marginRight="5dip"
+	       android:textSize="@dimen/container_text_size_14"
+	       android:textColor="@color/container_text_title"
+	       android:singleLine="true"
+	       android:id="@+id/container_item_list01_text01" />
+	   <com.android.hcframe.container.ContainerTextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       zjhc:element_id="text02"
+	       android:textSize="@dimen/container_text_size_10"
+	       android:textColor="@color/container_text_subtitle"
+	       android:singleLine="true"
+	       android:id="@+id/container_item_list01_text02" />
+	   <ImageView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:scaleType="center"
+	       android:src="@drawable/right_jian"
+	       android:layout_marginLeft="5dip" />
+    </LinearLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dip"
+	    android:background="@color/divider_bg"
+	    android:id="@+id/container_item_list01_divider_H"
+	    android:layout_marginLeft="@dimen/container_item_list_divider_marginleft" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="#ffffff"
+            android:gravity="center" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/schedule_detail_white_calender"
+            android:gravity="center" />
+    </item>
+
+</layer-list>

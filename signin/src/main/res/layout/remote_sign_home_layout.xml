@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/remote_sign_bg"
+    android:orientation="vertical">
+
+ <!--   <include
+        android:id="@+id/time_bar"
+        layout="@layout/sign_common_layout"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp" />-->
+    <include
+        android:id="@+id/time_bar"
+        layout="@layout/sign_common_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp" />
+    <LinearLayout
+        android:id="@+id/refresh_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/sign_work_img_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/sign_btn"
+            android:text="外出签到" />
+
+        <TextView
+            android:id="@+id/sign_details"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/sign_details"
+            android:textColor="@color/sign_in_bg"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:background="#0a000000"
+        android:layout_weight="1"
+        android:id="@+id/email_popwindow"/>
+    <TextView
+        android:id="@+id/hcmail_receive_box"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/hcmail_receive_box"
+        android:textColor="@color/hcmail_pop_text_blue_color"
+        android:textSize="16dp"
+        android:background="@drawable/item_default_top_bg"/>
+
+
+    <TextView
+        android:id="@+id/hcmail_send_box"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/hcmail_send_box"
+        android:textColor="@color/hcmail_pop_text_blue_color"
+        android:textSize="16dp"
+        android:background="@drawable/item_default_top_bg"/>
+
+    <TextView
+        android:id="@+id/hcmail_draft_box"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/hcmail_draft_box"
+        android:textColor="@color/hcmail_pop_text_blue_color"
+        android:textSize="16dp"
+        android:background="@drawable/item_default_top_bg"/>
+
+    <TextView
+        android:id="@+id/cancel_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/hcmail_popup_str"
+        android:textColor="@color/hcmail_pop_text_color"
+        android:textSize="16dp"
+        android:background="@drawable/item_default_top_bg"/>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:layout_marginTop="64dp"
+    android:layout_marginBottom="64dp"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/rect" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+        android:background="@drawable/ic_manage_albums_bg_white"
+        android:orientation="vertical" >
+        
+	    <TextView
+	        android:id="@+id/tv_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="8dp"
+	        android:layout_marginLeft="4dp"
+	        android:layout_marginBottom="8dp"
+	        android:textSize="16sp"
+	        android:textColor="#000000"
+	        android:text="title" />
+	    
+	    <include layout="@layout/line_normal" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal" >
+            <include layout="@layout/actionbar_indeterminate_progress" />
+            <TextView
+		        android:id="@+id/tv_alert"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="8dp"
+		        android:layout_marginLeft="4dp"
+		        android:layout_marginBottom="8dp"
+		        android:textColor="#000000"
+		        android:singleLine="false"
+		        android:text="alert" />
+	    </LinearLayout >
+	</LinearLayout>
+</LinearLayout>

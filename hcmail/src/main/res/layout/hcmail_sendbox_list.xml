@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.android.hcframe.TopBarView
+            android:id="@+id/hcmail_sendbox_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height"
+            android:background="@color/topbar_bg" />
+
+
+        <LinearLayout
+            android:id="@+id/hcmail_sendbox_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/hcmail_home_bg_color"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/hcmail_sendbox_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/hcmail_sendbox_center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="发件箱(0)"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/hcmail_sendbox_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="全选"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.android.hcframe.pull.PullToRefreshListView
+        android:id="@+id/hcmail_sendbox_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hcmail_message_compose_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/hcmail_sendbox_write_footer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/hcmail_sendbox_write_img"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/hcmail_home_send" />
+
+            <TextView
+                android:id="@+id/sendbox_write_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="写邮件"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hcmail_sendbox_text_footer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/hcmail_home_bg_color"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/hcmail_sendbox_img"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/hcmail_transpate_delete" />
+
+            <TextView
+                android:id="@+id/inbox_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="删除所选"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

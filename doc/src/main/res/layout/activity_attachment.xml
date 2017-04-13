@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/att_header_fix"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="#51AFE6"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/myoffice_item_margin_left"
+            android:paddingRight="@dimen/myoffice_item_margin_left" >
+
+            <ImageView
+                android:id="@+id/att_close_fix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/details_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="附件详情"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/details_pdf_show_attr"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/att_foot_fix"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@color/details_switch_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/myoffice_item_margin_left"
+            android:paddingRight="@dimen/myoffice_item_margin_left" >
+
+            <TextView
+                android:id="@+id/doc_file_name_fix"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/switch_icon_fix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/myoffice_item_margin_left"
+                android:src="@drawable/fullscreen" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- float -->
+
+    <RelativeLayout
+        android:id="@+id/att_header_float"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="#77000000"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/myoffice_item_margin_left"
+        android:paddingRight="@dimen/myoffice_item_margin_left" >
+
+        <ImageView
+            android:id="@+id/att_close_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/details_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="附件详情"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/att_foot_float"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#77000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/myoffice_item_margin_left"
+        android:paddingRight="@dimen/myoffice_item_margin_left" >
+
+        <TextView
+            android:id="@+id/doc_file_name_float"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/switch_icon_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/myoffice_item_margin_left"
+            android:src="@drawable/nofull" />
+    </LinearLayout>
+
+</RelativeLayout>

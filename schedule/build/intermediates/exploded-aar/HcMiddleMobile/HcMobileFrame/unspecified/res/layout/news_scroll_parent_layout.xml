@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- android:layout_height="@dimen/news_scroll_image_height" -->
+    <!--  
+    <com.android.hcframe.ad.LoopViewPager 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_scroll_image_height"
+        android:id="@+id/news_scroll_viewpager" />
+	<com.android.hcframe.DotView
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/container_grid_dot_width"
+	    android:id="@+id/news_scroll_dot_parent"
+	    android:layout_gravity="bottom|center_horizontal"
+	    android:layout_marginBottom="3dip" />
+	-->
+	<com.android.hcframe.ad.LoopViewPager 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_scroll_viewpager" />
+	<com.android.hcframe.DotView
+	    android:layout_width="match_parent"
+	    android:layout_height="28dip"
+	    android:id="@+id/news_scroll_dot_parent"
+	    android:layout_gravity="bottom|right"
+	    android:layout_marginRight="5dip"
+		android:visibility="gone"/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="28dip"
+		android:id="@+id/news_scroll_text"
+		android:layout_gravity="bottom|right"
+		android:layout_marginRight="5dip"
+		android:gravity="center_vertical"
+		android:textColor="#ffffff"
+		android:textSize="14sp"/>
+</merge>

@@ -1,0 +1,125 @@
+// 基于groovy
+//这一行，一看就知道调用了一个方法叫apply 传入一个map类型的参数，key是plugin ，plugin的值是"com.android.application"说明是一个android应用工程
+//在gradle中有介绍把你自己的一组代码，构建做成一个plugin，如果把plugin的值改成"com.android.library"就说明这是一个库工程
+apply plugin: 'com.android.application'
+
+//android这个方法接收一个闭包，在闭包里，调用的compileSdkVersion,  buildToolsVersion等方法并给他们传值，并且还调用了defaultConfig这个方法来做一些配置，这个方法也是接收一个闭包，可以想象，通过闭包回调可以对值进行设置，当调用defaultConfig方法的时候，方法里面会先调用传入的这个闭包来初始化一些值，然后再进行别的其他操作。
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        // 本地测试配置
+        applicationId "com.zjhcsoft.mobile.hcmiddlemobile"
+
+        // 上传到svn配置
+//        applicationId "PACKAGE_NAME"
+
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters 'armeabi'
+        }
+        // 突破65536 Enabling multidex support.
+        multiDexEnabled true
+    }
+
+    /** 减小分包的dex的大小的配置,
+     * --set-max-idx-number= 用于控制每一个dex的最大方法个数，写小一点可以产生好几个dex
+    android.applicationVariants.all {
+        variant ->
+            dex.doFirst{
+                dex->
+                    if (dex.additionalParameters == null) {
+                        dex.additionalParameters = []
+                    }
+                    dex.additionalParameters += '--set-max-idx-number=48000'
+            }
+    }
+     */
+
+    //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉。
+    lintOptions {
+        abortOnError false
+    }
+
+    //签名
+    signingConfigs {
+
+        relealse {
+            /** 上传到svn上的配置 */
+            storeFile file("KEY_PATH")
+            storePassword "KEY_PW"
+            keyAlias "KEY_ALIAS_NAME"
+            keyPassword "KEY_ALIAS_PW"
+
+            /** 本地调式配置
+             storeFile file("/home/jrjin/tools/APK_KEY/axd.keystore")
+             storePassword "aixuedai"
+             keyAlias "axd.keystore"
+             keyPassword "aixuedai"
+             */
+        }
+    }
+
+    buildTypes {
+        release {
+
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+
+            // 移除无用的resource文件
+//            shrinkResources true
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles 'proguard-android.txt', 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.relealse
+
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':HcMobileFrame')
+    compile project(':contacts')
+    compile project(':signin')
+    compile project(':market')
+    compile project(':news')
+    compile project(':doc')
+    compile project(':netdisc')
+    compile project(':hctask')
+    compile project(':im')
+    compile project(':schedule')
+    //    compile project(':approve')
+    compile project(':hcmail')
+    compile project(':signin')
+    compile project(':market')
+    compile project(':news')
+    compile project(':doc')
+    compile project(':netdisc')
+    compile project(':hctask')
+    compile project(':im')
+    compile project(':schedule')
+}

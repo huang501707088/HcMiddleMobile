@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.android.hcframe.TopBarView
+                android:id="@+id/task_change_topview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_bar_height"
+                android:background="@color/topbar_bg"
+                zjhc:topbar_return_visiable="true"
+                zjhc:topbar_right_image_visiable="false" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="任务内容"
+                android:textColor="@color/task_text"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/task_change_content"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/task_edit_bg"
+                android:gravity="left|top"
+                android:hint="请输入任务内容"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:scrollbars="none"
+                android:textColorHint="@color/task_edit_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="截止日期"
+                android:textColor="@color/task_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/task_change_deadtime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/task_edit_bg"
+                android:drawableRight="@drawable/task_time_icon"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="请填写截止日期"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="任务执行人"
+                android:textColor="@color/task_text"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/task_edit_bg"
+                android:orientation="horizontal">
+
+                <com.android.hcframe.container.ContainerCircleImageView
+                    android:id="@+id/task_change_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/task_default_head"
+                    zjhc:siBorderAlpha="1.0"
+                    zjhc:siBorderColor="@color/edittext_bg"
+                    zjhc:siBorderWidth="1dip" />
+
+                <TextView
+                    android:id="@+id/task_change_executor"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/task_edit_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="请填写执行人"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="变更原因"
+                android:textColor="@color/task_text"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/task_change_why"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/task_edit_bg"
+                android:gravity="left|top"
+                android:hint="请输入变更原因"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:scrollbars="none"
+                android:textColorHint="@color/task_edit_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/task_change_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/task_corner_btn_yellow_frame_bg"
+                android:gravity="center"
+                android:text="确认提交"
+                android:textColor="@color/task_edit_bg"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/task_change_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/task_corner_btn_white_frame_bg"
+                android:gravity="center"
+                android:text="删除任务"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

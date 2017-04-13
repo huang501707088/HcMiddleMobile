@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical">
+    <com.android.hcframe.TopBarView
+        android:id="@+id/task_publish_topview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        zjhc:topbar_return_visiable="true"
+        zjhc:topbar_right_image_visiable="false"
+        android:background="@color/topbar_bg" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="任务内容"
+        android:textColor="@color/task_text"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/task_release_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/task_edit_bg"
+        android:gravity="left|top"
+        android:hint="请输入任务内容"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:textColorHint="@color/task_edit_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="截止日期"
+        android:textColor="@color/task_text"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/task_release_deadtime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/task_edit_bg"
+        android:drawableRight="@drawable/task_time_icon"
+        android:text="请填写截止日期"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/task_edit_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="任务执行人"
+        android:textColor="@color/task_text"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/task_release_executor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/task_edit_bg"
+        android:text="请选择执行人"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/task_edit_text_color"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/task_release_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/task_corner_btn_yellow_frame_bg"
+        android:text="确认发布"
+        android:textColor="@color/task_edit_bg"
+        android:textSize="12sp" />
+</LinearLayout>

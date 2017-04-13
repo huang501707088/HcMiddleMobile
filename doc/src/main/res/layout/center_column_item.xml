@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip" >
+
+    <LinearLayout
+        android:id="@+id/center_column_left"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/center_column_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dip"
+            android:clickable="true"
+            android:drawableLeft="@drawable/doc_column_src"
+            android:drawablePadding="5dip"
+            android:textColor="@color/doc_column_text_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center_vertical"
+        android:background="@color/signr_bg" />
+
+    <LinearLayout
+        android:id="@+id/center_column_right"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/center_column_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dip"
+            android:clickable="true"
+            android:drawableLeft="@drawable/doc_column_src"
+            android:drawablePadding="5dip"
+            android:textColor="@color/doc_column_text_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

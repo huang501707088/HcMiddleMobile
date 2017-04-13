@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/login_et_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_user" />
+
+    <TextView
+        android:id="@+id/login_record_user_tv"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/text_tab"
+        android:textSize="14sp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/login_delete_user"
+        android:layout_width="@dimen/login_et_height"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/del_user" />
+    </LinearLayout>
+
+</LinearLayout>

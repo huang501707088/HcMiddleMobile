@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/schedule_add_part_parent"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffffff"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/schedule_add_part_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:text="参与人   "
+        android:textColor="@color/schedule_add_title_text"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/schedule_add_part_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/schedule_add"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/schedule_add_part_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/schedule_add_part_text"
+        android:layout_toLeftOf="@id/schedule_add_part_img"
+        android:text="请选择参与人"
+        android:paddingLeft="15dp"
+        android:textColor="@color/schedule_add_text"
+        android:textSize="14sp"
+        android:gravity="center_vertical"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="22dip"
+        android:id="@+id/schedule_add_part_recylerview"
+        android:layout_toRightOf="@id/schedule_add_part_text"
+        android:paddingLeft="15dip"
+        android:paddingRight="10dip"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_toLeftOf="@id/schedule_add_part_img" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/contacts_title_list_item_height"
+    android:orientation="vertical"
+	xmlns:zjhc="http://schemas.android.com/apk/res-auto">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:id="@+id/emp_a_parent"
+        android:visibility="gone"
+        android:orientation="vertical" >
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:id="@+id/emp_a"
+	        android:textSize="12sp"
+	        android:textColor="#ff999999"
+	        android:gravity="center_vertical" />
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/divider_bg"/>
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/contacts_dep_list_item_height"
+	    android:gravity="center_vertical"
+	    android:id="@+id/emp_parent" >
+		<com.android.hcframe.container.ContainerCircleImageView
+			android:layout_width="42dip"
+			android:layout_height="42dip"
+			android:scaleType="center"
+			zjhc:siBorderColor="@color/edittext_bg"
+			zjhc:siBorderAlpha="1.0"
+			zjhc:siBorderWidth="1dip"
+			android:id="@+id/emp_icon"/>
+	    <TextView 
+	        android:layout_width="42dip"
+	        android:layout_height="42dip"
+	        android:id="@+id/emp_shap_name"
+	        android:textSize="10sp"
+	        android:textColor="#fffafafa"
+	        android:gravity="center"
+	        android:background="@drawable/circle_bg"
+			android:visibility="gone"/>
+		<TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/emp_name"
+	        android:textSize="16sp"
+	        android:textColor="#ff333333"
+	        android:layout_marginLeft="15dip" />
+		
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/approve_id_iv_mine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_approve_item_mine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- title -->
+        <TextView
+            android:id="@+id/approve_id_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="运动会演讲"
+            android:textColor="@color/approve_black_33"
+            android:textSize="16sp" />
+        <!-- content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/approve_id_iv_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/icon_approve_item_file" />
+
+            <TextView
+                android:id="@+id/approve_id_tv_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="201606618_0923"
+                android:textColor="@color/approve_blue_51"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/approve_id_tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:text="待批阅"
+                android:textColor="@color/approve_red_ff"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- bottom -->
+        <TextView
+            android:id="@+id/approve_id_tv_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:lines="1"
+            android:paddingBottom="15dip"
+            android:paddingTop="15dip"
+            android:text="等待您的批阅"
+            android:textColor="@color/approve_gray_99"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/approve_gray_9a"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/approve_id_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="运动会演讲"
+                android:textColor="@color/approve_black_33"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/approve_id_iv_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/icon_approve_item_file" />
+
+            <TextView
+                android:id="@+id/approve_id_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/approve_id_iv_file"
+                android:text="201606618_0923"
+                android:textColor="@color/approve_blue_51"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/approve_id_tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:text="待批阅"
+                android:textColor="@color/approve_red_ff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/approve_id_tv_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="14dp"
+                android:lines="1"
+                android:text="等待您的批阅"
+                android:textColor="@color/approve_gray_99"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    -->
+</RelativeLayout>

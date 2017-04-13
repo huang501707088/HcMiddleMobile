@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/doc_column_search_parent"
+    android:layout_width="match_parent"
+    android:layout_height="44dip"
+    android:background="@color/netdisc_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="5dip"
+    android:visibility="visible">
+
+    <!--  <ImageView
+          android:id="@+id/netdisc_search_img"
+          android:layout_width="30dip"
+          android:layout_height="30dip"
+          android:scaleType="center"
+          android:src="@drawable/netdisc_search_img" />-->
+
+    <LinearLayout
+        android:id="@+id/netdisc_search_show"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="1"
+        android:background="@drawable/netdisc_search_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/search_show"
+            android:drawablePadding="5dip"
+            android:text="@string/netdisc_search_str"
+            android:textColor="@color/netdisc_search_str" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/netdisc_search"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="1"
+        android:background="@drawable/netdisc_search_bg"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/search_content"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:hint="@string/netdisc_search_content_hint"
+            android:lines="1"
+            android:paddingLeft="10dip"
+            android:paddingRight="3dip"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/doc_search_image_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/clear_search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/netdisc_search_str"
+            android:textColor="@color/netdisc_text_gray" />
+
+    </LinearLayout>
+
+</LinearLayout>

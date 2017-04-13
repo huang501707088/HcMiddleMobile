@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/hcmail_sign_name_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="90dp"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:id="@+id/to_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="签名内容"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/hcmail_email_color"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="14dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/hcmail_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:enabled="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:maxLength="225"
+                android:hint=" "
+                android:textColor="@color/hcmail_home_text_color"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal"
+        android:text="该签名只应用通过手机端发送的邮件!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/hcmail_email_color"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/hcmail_sign_name_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/hcmail_corner_btn_yellow_frame_bg"
+        android:gravity="center"
+        android:text="保存签名"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</LinearLayout>

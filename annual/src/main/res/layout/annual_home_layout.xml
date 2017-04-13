@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/annual_home_bg"
+    android:padding="10dip" >
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:id="@+id/annual_home_icon" />
+	<TextView 
+	    android:layout_marginTop="10dip"
+	    android:id="@+id/annual_home_intro_btn"
+	    android:text="@string/annual_intro_title"
+	    style="@style/annual_corner_btn" />
+	<TextView 
+	    android:id="@+id/annual_home_program_btn"
+	    android:text="@string/annual_program_title"
+	    style="@style/annual_corner_btn"
+	    android:layout_marginTop="16dip"
+	    android:layout_marginBottom="16dip" />
+	<TextView 
+	    android:id="@+id/annual_home_shake_btn"
+	    android:text="@string/annual_shake_title"
+	    style="@style/annual_corner_btn" />
+</LinearLayout>

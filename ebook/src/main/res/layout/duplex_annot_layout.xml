@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <HorizontalScrollView 
+        android:id="@+id/handwrite_hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <FrameLayout 
+            android:id="@+id/handwrite_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <com.kinggrid.kinggridsign.KingGridView
+                android:id="@+id/handwrite_magnifer"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent"
+	        	android:background="#60808080"/>
+        </FrameLayout>
+    </HorizontalScrollView>
+    
+    <RelativeLayout 
+        android:id="@+id/handwrite_toolbar"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@id/handwrite_hsv"
+	    android:focusable="true"
+        android:focusableInTouchMode="true"
+	    android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip">
+        
+        <Button 
+	        android:id="@+id/magnifer_move"
+	        android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentLeft="true"
+	    	android:layout_centerVertical="true"
+	    	android:layout_marginLeft="20.0dip"
+	    	android:background="@drawable/bg_move"/>
+        
+        <Button
+	        android:id="@+id/magnifer_close"
+	        android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/bg_close" />
+	    
+	    <Button 
+	        android:id="@+id/magnifer_clear"
+	        android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/magnifer_close"
+            android:background="@drawable/bg_clear"/>
+	    
+	    <Button
+	        android:id="@+id/magnifer_save"
+	        android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/magnifer_clear"
+            android:background="@drawable/bg_save" />
+	    
+	    <Button
+	        android:id="@+id/magnifer_redo"
+	    	android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/magnifer_save"
+            android:background="@drawable/bg_redo"/>
+	    
+	    <Button
+	        android:id="@+id/magnifer_undo"
+	    	android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/magnifer_redo"
+            android:background="@drawable/bg_undo"/>
+	    
+	    <Button
+	        android:id="@+id/magnifer_pen"
+	    	android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/magnifer_undo"
+            android:background="@drawable/bg_pen"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Netdisc</string>
+    <string name="netdisc_my_skydrive_text">我的网盘</string>
+    <string name="netdisc_my_working_group_text">共享空间</string>
+    <string name="netdisc_my_share_text">我的分享</string>
+    <string name="netdisc_transport_list_text">传输列表</string>
+    <string name="netdisc_recycle_bin_text">回收站</string>
+    <string name="netdisc_wifi_text">仅在wifi下上传和下载</string>
+    <string name="netdisc_search_str">搜索</string>
+    <!--<string name="search_clear">取消</string>-->
+    <string name="netdisc_popup_str">取消上传</string>
+    <string name="netdisc_popup_pic">图片</string>
+    <string name="netdisc_popup_mis">音乐</string>
+    <string name="netdisc_popup_vid">视频</string>
+    <string name="netdisc_popup_file">文件</string>
+    <string name="netdisc_upload_position">上传位置:</string>
+    <string name="netdisc_cancel">取消</string>
+    <string name="netdisc_confirm">确定</string>
+    <string name="netdisc_search_none">没有搜索到相关内容</string>
+    <string name="netdisc_search_content_hint">请输入检索关键字</string>
+    <string name="netdisc_down_delete">全部删除</string>
+    <string name="netdisc_my_skydrive_move">选择移动位置</string>
+    <string name="title_activity_trans_list">TransListActivity</string>
+    <string name="netdisc_build_workgroup_explain">助理是作为空间的负责人,在日常工作中帮助管理该工作组的成员添加删除,成员的权限设置,以及空间内的文件整理</string>
+</resources>

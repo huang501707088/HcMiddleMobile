@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:background="@color/edittext_bg">
+
+    <com.android.hcframe.view.scroll.HcScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contact_details_scrollview">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/contacts_detail_content_bg"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/top_bar_height">
+
+                    <!-- 显示部门、头像等 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:paddingTop="10dip"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="30dip"
+                        android:background="#3f000000">
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/contact_details_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#ffffff"
+                                android:textSize="30sp" />
+                            <View
+                                android:layout_width="1dip"
+                                android:layout_height="0dip"
+                                android:layout_weight="1"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/contact_details_depart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/depart"
+                                    android:textColor="#6fcaff"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/contact_details_departname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dip"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:ellipsize="middle"
+                                    android:singleLine="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <com.android.hcframe.container.ContainerCircleImageView
+                            android:layout_width="60dip"
+                            android:layout_height="60dip"
+                            android:scaleType="fitCenter"
+                            zjhc:siBorderColor="@color/edittext_bg"
+                            zjhc:siBorderAlpha="1.0"
+                            zjhc:siBorderWidth="0dip"
+                            android:id="@+id/contacts_detail_icon"/>
+                    </LinearLayout>
+
+                    <!-- 办公电话 -->
+                    <LinearLayout
+                        android:layout_marginTop="20dip"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/plane_tel"
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/plane_tel"
+                            android:textColor="@color/text_999999"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/plane_tel_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dip"
+                            android:textSize="12sp"
+                            android:textColor="#333333"/>
+                        <!--
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="转"
+                            android:textColor="@color/text_999999"
+                            android:textSize="12sp"
+                            android:paddingLeft="10dip"
+                            android:paddingRight="10dip"
+                            android:id="@+id/contacts_detail_phone_divider"/>
+                        <TextView
+                            android:id="@+id/extension_tel_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dip"
+                            android:textSize="12sp"
+                            android:textColor="#333333"
+                            android:singleLine="true"/>
+                        -->
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/divider_bg" />
+
+                    <!-- 分机号 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:id="@+id/extension_tel_parent">
+
+                        <TextView
+                            android:id="@+id/extension_tel"
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/extension_tel"
+                            android:textColor="@color/text_999999"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/extension_tel_value"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dip"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:textSize="12sp"
+                            android:textColor="#333333"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/divider_bg"
+                        android:id="@+id/extension_tel_divider"/>
+
+                    <!-- 移动电话 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/mobile_tel"
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/mobile_tel"
+                            android:textColor="@color/text_999999"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/mobile_tel_value"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dip"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:clickable="true"
+                            android:textSize="12sp"
+                            android:textColor="#333333"/>
+
+                        <ImageView
+                            android:id="@+id/details_send_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:scaleType="center"
+                            android:src="@drawable/details_msm" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/divider_bg" />
+
+                    <!-- 虚拟网 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/virtual_tel"
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/virtual_tel"
+                            android:textColor="@color/text_999999"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/virtual_tel_value"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dip"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:textSize="12sp"
+                            android:textColor="#333333"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/divider_bg" />
+
+                    <!-- 备用电话 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/spare_tel"
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/spare_tel"
+                            android:textColor="@color/text_999999"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/spare_tel_value"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dip"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:clickable="true"
+                            android:textSize="12sp"
+                            android:textColor="#333333"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/divider_bg" />
+
+                    <!-- 电子邮箱 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/email"
+                            android:textColor="@color/text_999999"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/email_value"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dip"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:textSize="12sp"
+                            android:textColor="#333333"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/divider_bg" />
+
+                    <!-- 备用邮箱 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/email_spare"
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/email_spare"
+                            android:textColor="@color/text_999999"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/email_spare_value"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dip"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:textSize="12sp"
+                            android:textColor="#333333"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/divider_bg" />
+                    <!-- 信息结束 -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dip"
+                        android:text="可尝试直接点击电话号码拨打"
+                        android:gravity="center_horizontal"
+                        android:textColor="#b3b3b3"
+                        android:textSize="10sp"
+                        android:layout_marginBottom="10dip"/>
+                    <!-- 发送信息按钮 -->
+                    <TextView
+                        style="@style/corner_btn.orange"
+                        android:id="@+id/contacts_detail_send_msg_btn"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginRight="10dip"
+                        android:text="发送消息"
+                        android:visibility="gone"
+                        android:layout_marginBottom="10dip"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.android.hcframe.view.scroll.HcScrollView>
+
+
+    <!-- topbar -->
+    <com.android.hcframe.TopBarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:id="@+id/contacts_detail_top_bar"
+        zjhc:topbar_return_visiable = "true"
+        zjhc:topbar_right_image_visiable = "true"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/contacts_detail_top_bar"
+        android:id="@+id/contacts_detail_pop_view"
+        android:visibility="gone">
+        <com.android.hcframe.internalservice.contacts.TriangleView
+            android:layout_width="7dip"
+            android:layout_height="4dip"
+            android:id="@+id/contacts_detail_pop_top"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dip"/>
+        <LinearLayout
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/contacts_detail_pop_top"
+            android:background="#b3000000"
+            android:layout_marginRight="5dip"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:text="@string/save_callcard"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/contact_save_lly"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#ffffff"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="10dip"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:text="分享名片"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/contacts_detail_share"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

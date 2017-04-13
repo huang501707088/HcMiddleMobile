@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/market_top_bar_height"
+    android:background="#ffffffff" >
+    <TextView
+        android:id="@+id/market_topbar_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:textColor="@color/text_tab"
+        android:textSize="@dimen/news_bar_text_size" />
+
+    <TextView
+        android:id="@+id/market_topbar_item_selected"
+        android:layout_width="match_parent"
+        android:layout_height="4dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ff2fbbf2"
+        android:textColor="#ff2fbbf2" />
+
+</RelativeLayout>

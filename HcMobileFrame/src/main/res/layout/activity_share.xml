@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/share_vp_back"
+        android:orientation="vertical">
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="240dip"
+            android:id="@+id/share_grid"
+            android:numColumns="3"
+            android:cacheColorHint="#00000000"
+            android:listSelector="@null"
+            android:scrollbars="none"
+            android:smoothScrollbar="true"
+            android:layout_marginBottom="10dip"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/edittext_bg"
+            android:padding="10dip"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/top_bar_title"
+            android:background="@drawable/btn_cancel_back"
+            android:id="@+id/share_canel"
+            android:text="取 消"/>
+    </LinearLayout>
+
+</RelativeLayout>

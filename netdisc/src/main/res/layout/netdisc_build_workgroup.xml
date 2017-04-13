@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_skydrive_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/details_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="共享空间名称"
+        android:textColor="@color/netdisc_99_gray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/netdisc_write">
+
+        <EditText
+            android:id="@+id/netdisc_id_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:textColor="@color/netdisc_33_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="共享空间助理"
+        android:textColor="@color/netdisc_99_gray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/netdisc_id_ll_person"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/netdisc_write"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.android.hcframe.container.ContainerCircleImageView
+            android:id="@+id/netdisc_change_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/netdisc_icon_default_head"
+            zjhc:siBorderAlpha="1.0"
+            zjhc:siBorderColor="@color/edittext_bg"
+            zjhc:siBorderWidth="1dip" />
+
+        <TextView
+            android:id="@+id/netdisc_change_executor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="胡一"
+            android:textColor="@color/netdisc_33_black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/netdisc_build_workgroup_explain"
+        android:textColor="@color/netdisc_99_gray"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/netdisc_id_bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/corner_btn_orange_bg"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="下一步"
+        android:textColor="@color/login_white"
+        android:textSize="16sp" />
+
+</LinearLayout>

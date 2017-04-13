@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+	<FrameLayout 
+	    android:id="@+id/handwrite_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true">
+	    <com.kinggrid.kinggridsign.KingGridView
+	        android:id="@+id/handwrite_kgview"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#60808080"/>
+	</FrameLayout>
+	
+	<EditText 
+	    android:id="@+id/port_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@id/handwrite_container"
+	    android:singleLine="true"
+	    android:textSize="16sp"
+	    android:textColor="@android:color/black"
+	    android:visibility="gone"/>
+	
+	<RelativeLayout
+	    android:id="@+id/btns_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@id/port_edit"
+	    android:focusable="true"
+        android:focusableInTouchMode="true"
+	    android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip">
+	    
+	    <Button 
+	        android:id="@+id/port_move"
+	        android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentLeft="true"
+	    	android:layout_centerVertical="true"
+	    	android:layout_marginLeft="20.0dip"
+	    	android:background="@drawable/bg_move"/>
+	    
+	    <Button
+	        android:id="@+id/port_close"
+	        android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/bg_close" />
+	    
+	    <Button 
+	        android:id="@+id/port_clear"
+	        android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/port_close"
+            android:background="@drawable/bg_clear"/>
+	    
+	    <Button
+	        android:id="@+id/port_save"
+	        android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/port_clear"
+            android:background="@drawable/bg_save" />
+	    
+	    <Button
+	        android:id="@+id/port_redo"
+	    	android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/port_save"
+            android:background="@drawable/bg_redo"/>
+	    
+	    <Button
+	        android:id="@+id/port_undo"
+	    	android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/port_redo"
+            android:background="@drawable/bg_undo"/>
+	    
+	    <Button
+	        android:id="@+id/port_pen"
+	    	android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/port_undo"
+            android:background="@drawable/bg_pen"/>
+	    
+	    <Button
+	        android:id="@+id/port_edit_switch"
+	        android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@id/port_pen"
+            android:background="@drawable/kinggrid_outline_list_collapse"/>
+	</RelativeLayout>
+</RelativeLayout>

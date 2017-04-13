@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg">
+    <com.android.hcframe.TopBarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:id="@+id/choose_personnel_top_bar"
+        zjhc:topbar_return_visiable = "true"
+        zjhc:topbar_right_image_visiable = "false"
+        android:background="@color/topbar_bg" />
+    <TextView
+        android:id="@+id/choose_personnel_dep_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:ellipsize="marquee"
+        android:paddingLeft="14dip"/>
+    <com.android.hcframe.pull.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:id="@+id/choose_personnel_listview"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/divider_bg"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:listSelector="#00000000"
+        android:smoothScrollbar="true" />
+    <com.android.hcframe.view.toast.NoDataView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/choose_personnel_no_data"
+        android:gravity="center"
+        android:orientation="vertical"/>
+    <!-- bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="#333333"
+        android:visibility="gone"
+        android:paddingLeft="14dip"
+        android:id="@+id/choose_personnel_recycler_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/choose_personnel_recycler" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#4d4d4d"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="4dip"/>
+        <TextView
+            android:layout_width="65dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:text="确定"
+            android:id="@+id/choose_personnel_ok_btn"/>
+    </LinearLayout>
+</LinearLayout>

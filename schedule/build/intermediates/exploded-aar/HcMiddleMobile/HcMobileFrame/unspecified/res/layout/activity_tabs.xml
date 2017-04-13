@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.android.hcframe.view.tab.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/market_top_bar_height"
+        android:background="#ffffff"
+         />
+
+    <View
+        android:id="@+id/tabs_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/indicator"
+        android:background="#ffcbcbcb" />
+
+    <!--
+        android:gravity="center_vertical"
+        android:background="#e0e0e0"
+    -->
+
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabs_divider"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/item_default_bg"
+            android:orientation="vertical"
+            android:paddingBottom="1dip"
+            android:paddingTop="3dip" >
+
+            <LinearLayout
+                android:id="@+id/search_lly"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/myoffice_item_height"
+                android:layout_weight="1"
+                android:background="@drawable/myoffice_account_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/searchkey"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:padding="5dip"
+                    android:scaleType="center"
+                    android:src="@drawable/search_flag" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/search_cache_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/edittext_bg"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/divider_bg"
+                android:dividerHeight="1dip"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@null"
+                android:scrollbars="none"
+                android:smoothScrollbar="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/myoffice_item_height"
+                android:background="@drawable/myoffice_account_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dip"
+                android:text="IT服务管理系统"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/myoffice_item_height"
+                android:background="@drawable/myoffice_account_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dip"
+                android:text="企业数据总线"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/myoffice_item_height"
+                android:background="@drawable/myoffice_account_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dip"
+                android:text="数据仓库系统"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/myoffice_item_height"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dip"
+                android:text="经营分析系统"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_container"
+        android:background="#f1f1f1" />
+
+</RelativeLayout>

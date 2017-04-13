@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/schedule_colleague_one_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:text="9:00~10:00" />
+    <TextView
+        android:id="@+id/schedule_colleague_one_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="14dp"
+        android:textSize="14sp"
+        android:text="外宾接待" />
+
+</LinearLayout>

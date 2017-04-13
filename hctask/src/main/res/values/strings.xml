@@ -1,0 +1,11 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <string name="app_name">hctask</string>
+    
+    <string name="task_return_btn">退回整改</string>
+    <string name="task_end_btn">结束任务</string>
+    <string name="task_change_btn">变更任务</string>
+    <string name="task_commit_btn">提交完成</string>
+    <string name="task_remind_receive_btn">提醒接收</string>
+    <string name="task_remind_btn">提醒检查</string>
+    <string name="task_receive_btn">接收任务</string>
+</resources>

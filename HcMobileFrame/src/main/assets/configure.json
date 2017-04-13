@@ -1,0 +1,137 @@
+{
+  "buildConfigure": {
+    "common": {
+      "PlatformVersion": "1.0",
+      "Orientation": "Portrait",
+      "Version": "1.0.0",
+      "Build": "10",
+      "Name": "测试版",
+      "ProdMemo": "浙江鸿程",
+      "clientId": "14"
+    },
+    "iOS": {
+      "TargetDevice": "iPhone",
+      "DeployTarget": "7.0",
+      "bundleId": "com.zjhcsoft.HCPlatfrom"
+    },
+    "Android": {
+      "miniSDK": "15",
+      "maxSDK": "19"
+    },
+    "Publish": {
+      "mapped": "false",
+      "extranetServerURL": "http://10.80.18.251",
+      "intranetServerURL": "http://10.80.18.251",
+      "serverPort": "8002",
+      "UsrName": "anonymous",
+      "Password": "123456"
+    }
+  },
+  "Push": {
+    "isUsed": "true"
+  },
+  "VPN": {
+    "isUsed": "true",
+    "account": "app2",
+    "pw": "sangfor@2015"
+  },
+  "personCenter": {
+    "CanRegister": "true",
+    "updatePwd": "true",
+    "regetPwd": "true",
+    "updateMobile": "true"
+  },
+  "IntroPage": {
+    "IntroImages": [
+      {
+        "imageName": "help_01"
+      },
+      {
+        "imageName": "help_02"
+      },
+      {
+        "imageName": "help_03"
+      }
+    ]
+  },
+  "im": {
+    "serverName": "10.80.7.187",
+    "serverPort": "5222"
+  },
+  "clouddisk": {
+    "serverName": "https://mobile.zjhcsoft.com",
+    "serverPort": "16201"
+  },
+  "email": {
+    "incoming": {
+      "type": "imap",
+      "serverName": "mail.zjhcsoft.com",
+      "serverPort": "143",
+      "security": ""
+    },
+    "outgoing": {
+      "serverName": "mail.zjhcsoft.com",
+      "serverPort": "25",
+      "security": ""
+    }
+  },
+  "appIds": "container;241;242;240;260;270",
+  "MenuPattern": {
+    "level1": {
+      "isShowTitle": "true",
+      "isShowImage": "true",
+      "normalTextColor": "0xff373737",
+      "selectTextColor": "0xff21afe6",
+      "backgroundColor": "0xffefefef",
+      "normalItemColor": "0x00ffff00",
+      "selectItemColor": "0x00ff0000",
+      "menu": [
+        {
+          "id": "240",
+          "title": "新闻频道",
+          "image": "menu_first_normal.png",
+          "selimage": "menu_first_focused.png",
+          "isCloud": "false",
+          "className": "com.android.hcframe.internalservice.news.NewsMenuPage",
+          "url": "http://www.hangzhou.gov.cn/main/zpd/yddlm/szdt/"
+        },
+        {
+          "id": "241",
+          "title": "资料中心",
+          "image": "menu_second_normal.png",
+          "selimage": "menu_second_focused.png",
+          "isCloud": "false",
+          "className": "com.android.hcframe.doc.DocMenuPage",
+          "url": "http://www.hangzhou.gov.cn/main/zpd/yddlm/dcdb/zdxm/"
+        },
+        {
+          "id": "242",
+          "title": "应用超市",
+          "image": "menu_third_normal.png",
+          "selimage": "menu_third_focused.png",
+          "isCloud": "false",
+          "className": "com.android.hcframe.market.MarketMenuPage",
+          "url": "/child01.html"
+        },
+        {
+          "id": "256",
+          "title": "通讯录",
+          "image": "menu_fourth_normal.png",
+          "selimage": "menu_fourth_focused.png",
+          "isCloud": "false",
+          "className": "com.android.hcframe.internalservice.contacts.ContactMenuPage",
+          "url": "/child01.html"
+        },
+        {
+          "id": "260",
+          "title": "我的",
+          "image": "menu_fifth_normal.png",
+          "selimage": "menu_fifth_focused.png",
+          "isCloud": "false",
+          "className": "com.android.hcframe.container.ContainerMenuPage",
+          "url": "http://21.15.185.74"
+        }
+      ]
+    }
+  }
+}

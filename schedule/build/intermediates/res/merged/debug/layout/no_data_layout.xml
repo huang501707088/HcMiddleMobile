@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/no_data_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/framework_empty_data"
+        android:id="@+id/no_data_src"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有相关数据!"
+        android:textColor="#cccccc"
+        android:layout_marginTop="10dip"
+        android:textSize="12sp"
+        android:id="@+id/no_data_text"/>
+</merge>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/id_rl_pop"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/main_dialog_layout"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/share_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="外链分享"
+                android:textColor="@color/netdisc_check_text_color"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="0.5dip"
+                android:layout_gravity="center"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/move_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="移动"
+                android:textColor="@color/netdisc_check_text_color"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="0.5dip"
+                android:layout_gravity="center"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/cope_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="复制"
+                android:textColor="@color/netdisc_check_text_color"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0.5dip"
+                android:layout_gravity="center"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/repeat_name_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="重命名"
+                android:textColor="@color/netdisc_check_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/main_dialog_layout"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/netdisc_icon_pop_buttom" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

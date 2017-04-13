@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/center_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/phtoto" />
+
+        <Button
+            android:id="@+id/id_bt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/corner_btn_orange_bg"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="授权登录"
+            android:textColor="@color/login_white"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/id_tv_cencle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消登录"
+            android:textSize="14sp"
+            android:textColor="@color/gray_d8"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

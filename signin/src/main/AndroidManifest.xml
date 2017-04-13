@@ -1,0 +1,66 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.hcframe.internalservice.signin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name">
+        <!-- 高德地图发布 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="06e2d072dafa8b2687b7ee25fb06079a" />
+
+        <!-- 本地调试
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="3bda739e545090f5deef59db1f85fdbf" />
+        -->
+        <!-- com.zjhcsoft.mobile.linhai: f1659f0a226cae7e282c65c8942a4b7f -->
+        <!-- com.zjhcsoft.mobile.hcmiddlemobile: 3bda739e545090f5deef59db1f85fdbf -->
+        <activity
+            android:name="com.android.hcframe.internalservice.sign.MapTrunActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+
+        <activity
+            android:name="com.android.hcframe.internalservice.sign.SignSubmitActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.android.hcframe.internalservice.sign.WorkDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.android.hcframe.internalservice.sign.MonthCalendarActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.android.hcframe.internalservice.sign.SignListByDayActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.android.hcframe.BigImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.android.hcframe.internalservice.linhai.LHSignDayListActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--
+        <activity
+            android:name="com.android.hcframe.internalservice.sign.calendar.CalendarActivity"
+            android:screenOrientation="portrait" />
+            -->
+        <activity
+            android:name="com.android.hcframe.internalservice.sign.SignSubmitActivity2"
+            android:screenOrientation="portrait"></activity>
+    </application>
+    <!-- 定位需要的服务 使用2.0的定位需要加上这个
+    <service android:name="com.amap.api.location.APSService" >
+    </service>
+    -->
+</manifest>

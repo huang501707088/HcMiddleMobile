@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="264dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hcmail_corner_dialog"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/delete_box_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
+        android:text="删除后将无法找回，\n继续删除吗？"
+        android:textColor="@color/hcmail_home_text_color"
+        android:textSize="14sp" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/hcmail_pop_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_button_height"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/unagree_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="@string/hcmail_cancel"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@color/hcmail_pop_line" />
+
+        <Button
+            android:id="@+id/agree_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="@string/hcmail_confirm"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

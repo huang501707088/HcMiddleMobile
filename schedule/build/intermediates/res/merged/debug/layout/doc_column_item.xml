@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@drawable/item_news_list_bg">
+
+    <View
+        android:id="@+id/column_item_divider"
+        android:layout_width="1dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center_vertical"
+        android:background="@color/divider_bg" />
+
+    <TextView
+        android:id="@+id/column_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dip"
+        android:drawableLeft="@drawable/doc_column_src"
+        android:drawablePadding="10dip"
+        android:textColor="@color/doc_column_text_color"
+        android:textSize="16sp" />
+    <!--
+    <com.android.hcframe.menu.MenuTextView
+        android:id="@+id/point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:paddingRight="5dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/tab_indicator_text"
+        android:textSize="@dimen/menu_bar_size" />
+    -->
+    <com.android.hcframe.view.ColumnTextView
+        android:id="@+id/point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:paddingRight="5dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/tab_indicator_text"
+        android:textSize="@dimen/menu_bar_size" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/task_back_topview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg"
+        zjhc:topbar_return_visiable="true"
+        zjhc:topbar_right_image_visiable="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="退回原因"
+        android:textColor="@color/task_text"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/task_back_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/task_edit_bg"
+        android:gravity="left|top"
+        android:hint="请填写变更原因"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:textColorHint="@color/task_edit_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="截止日期"
+        android:textColor="@color/task_text"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/task_back_deadtime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/task_edit_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:text="2013.5.12"
+        android:textColorHint="#333333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/task_back_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/task_corner_btn_yellow_frame_bg"
+        android:gravity="center"
+        android:text="确认提交"
+        android:textColor="@color/task_edit_bg"
+        android:textSize="12sp" />
+</LinearLayout>

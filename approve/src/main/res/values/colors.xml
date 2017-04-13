@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 界面的默认背景,最底层背景 -->
+    <color name="approve_gray_99">#999999</color>
+    <color name="approve_black_33">#333333</color>
+    <color name="approve_blue_51">#51AFE6</color>
+    <color name="approve_red_ff">#FF5013</color>
+    <color name="approve_write">#FFFFFF</color>
+    <color name="approve_gray_9a">#9ad6ff</color>
+</resources>

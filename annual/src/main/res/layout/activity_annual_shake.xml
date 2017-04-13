@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/annual_topbar_bg" >
+    <com.android.hcframe.TopBarView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:id="@+id/annual_shake_top_bar"
+        zjhc:topbar_return_visiable = "true"
+        zjhc:topbar_right_image_visiable = "false"
+        zjhc:topbar_title="@string/annual_shake_title" />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/annual_shake_parent"
+	    android:background="@drawable/annual_shake_home_bg" >
+	    <View 
+	        android:layout_height="2dip"
+	        android:layout_width="match_parent"
+	        android:background="@color/divider_bg"
+	        android:layout_centerInParent="true"
+	        android:visibility="gone"/>
+	    <!-- 等待摇一摇 -->
+	    <RelativeLayout 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id="@+id/annual_shake_status_waiting_parent"
+	    	android:layout_centerInParent="true"
+	    	android:background="@drawable/annual_countdown_bg">
+	        <LinearLayout 
+	            android:layout_centerInParent="true"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:orientation="vertical">
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/annual_shake_refresh_btn"
+	                android:textSize="16sp"
+	                android:textColor="#9398a4"
+	                android:text="点击刷新"
+	                android:padding="10dip"/>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="30sp"
+	                android:textColor="#ffffff"
+	                android:text="等待开启摇奖"/>
+	        </LinearLayout>
+	    </RelativeLayout>
+	    <!-- 摇一摇 -->
+	    <LinearLayout 
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:id="@+id/annual_shake_status_shake_parent"
+	        android:orientation="vertical">
+	        <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="0dip"
+	            android:layout_weight="1"
+	            android:id="@+id/annual_shake_top"
+	            android:background="@drawable/annual_shake_top"/>
+	        <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="0dip"
+	            android:layout_weight="1"
+	            android:id="@+id/annual_shake_bottom"
+	            android:background="@drawable/annual_shake_bottom"/>
+	    </LinearLayout>
+	    
+	    <!-- 等待开奖 -->
+	     
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="240dip"
+	        android:id="@+id/annual_shake_status_waiting_prize"
+	        android:layout_centerInParent="true">
+	        
+	        <LinearLayout 
+	            android:background="@drawable/annual_shake_waitinng_prize_icon"
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:id="@+id/annual_shake_waitinng_prize_text_parent">
+	            <TextView 
+	                android:textColor="#dd4b54"
+			        android:textSize="30sp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/annual_shake_prize_id"
+			        android:layout_marginTop="70dip"
+			        android:layout_marginLeft="132dip"
+			        android:text=""/>
+	        </LinearLayout>
+	        
+	        <TextView 
+	            android:textColor="#e6e58a"
+		        android:textSize="18sp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="点击查看开奖结果"
+		        android:id="@+id/annual_shake_refresh_prize_btn"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true" />
+	        
+	    </RelativeLayout>
+	    <!--  
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/annual_shake_status_waiting_prize"
+	        android:layout_centerVertical="true"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical">
+	        <TextView 
+	            android:textColor="#e6e58a"
+		        android:textSize="18sp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="点击查看开奖结果"
+		        android:id="@+id/annual_shake_refresh_prize_btn" />
+	        
+	        <LinearLayout 
+	            android:background="@drawable/annual_shake_waitinng_prize_icon"
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content">
+	            <TextView 
+	                android:textColor="#dd4b54"
+			        android:textSize="30sp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/annual_shake_prize_id"
+			        android:layout_marginTop="70dip"
+			        android:layout_marginLeft="132dip"
+			        android:text=""/>
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+	    -->
+	    <!-- 开奖结果 -->
+	    <LinearLayout 
+	        android:background="@drawable/annual_shake_prized_icon"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/annual_shake_prize_parent" >
+	        <TextView 
+                android:textColor="#a58862"
+		        android:textSize="14sp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/annual_shake_prize"
+		        android:layout_marginTop="90dip"
+		        android:layout_marginLeft="100dip"/>
+	    </LinearLayout>
+	    
+	    <com.android.hcframe.PopTextView 
+	        android:textColor="#ffffff"
+	        android:textSize="14sp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/annual_shake_prize_list"
+	        android:background="#e0000000"
+	        android:layout_alignParentBottom="true"
+	        android:paddingTop="10dip"
+	        android:paddingBottom="10dip"
+	        android:visibility="gone"
+	        android:text="正在获取奖券码"
+	        android:gravity="center_horizontal"/>
+	    
+	</RelativeLayout>
+</LinearLayout>

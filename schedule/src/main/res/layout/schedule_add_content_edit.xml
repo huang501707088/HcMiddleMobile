@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingTop="13dip"
+    android:paddingBottom="13dip"
+    android:minHeight="24dip">
+    <TextView
+        android:id="@+id/schedule_add_content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|top"
+        android:paddingLeft="14dp"
+        android:text="内容      "
+        android:textColor="@color/schedule_add_title_text"
+        android:textSize="12sp" />
+    <EditText
+        android:id="@+id/schedule_add_content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/schedule_add_content_text"
+        android:background="#ffffff"
+        android:hint="请输入日程内容"
+        android:textColorHint="@color/schedule_add_text"
+        android:paddingLeft="15dp"
+        android:saveEnabled="true"
+        android:textSize="14sp"
+        android:gravity="left|top"
+        android:minHeight="24dip"/>
+</RelativeLayout>

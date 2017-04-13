@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/task_history_topview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg"
+        zjhc:topbar_return_visiable="true"
+        zjhc:topbar_right_image_visiable="false" />
+    <!--    <TextView
+            android:id="@+id/task_history_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="6月任务"
+            android:paddingLeft="10dp"
+            android:textColor="#999999"
+            android:textSize="12sp" />-->
+
+    <com.android.hcframe.pull.PullToRefreshListView
+        android:id="@+id/task_history_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/edittext_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/divider_bg"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+
+    <LinearLayout
+        android:id="@+id/listview_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/listview_empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="5dip"
+            android:gravity="center"
+            android:text="暂无任务"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/myoffice_account_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/module_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:text=" "
+        android:textColor="@color/text_tab"
+        android:textSize="16sp" />
+
+    <ToggleButton
+        android:id="@+id/state_switch"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="11dip"
+        android:background="@android:color/transparent"
+        android:button="@drawable/ios7_btn"
+        android:checked="true"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+</LinearLayout>

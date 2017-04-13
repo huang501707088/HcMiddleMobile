@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabWidget xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/market_category_bar"
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:tabStripEnabled="false"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/market_category_all"
+        style="@style/market_top_bar"
+        android:text="@string/market_topbar_all" />
+
+    <TextView
+        android:id="@+id/market_category_data"
+        style="@style/market_top_bar"
+        android:text="@string/market_topbar_data" />
+
+    <TextView
+        android:id="@+id/market_category_service"
+        style="@style/market_top_bar"
+        android:text="@string/market_topbar_service" />
+
+    <TextView
+        android:id="@+id/market_category_supervise"
+        style="@style/market_top_bar"
+        android:text="@string/market_topbar_supervise" />
+	<TextView
+        android:id="@+id/market_category_oa"
+        style="@style/market_top_bar"
+        android:text="@string/market_topbar_oa" />
+</TabWidget>

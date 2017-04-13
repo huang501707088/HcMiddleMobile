@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\color\\date_picker_year_selector.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\color\\date_picker_year_selector.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\color\\date_picker_selector.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\color\\date_picker_selector.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\color\\doc_column_text_color.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\color\\doc_column_text_color.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\color\\done_text_color.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\color\\done_text_color.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\color\\tab_indicator_text.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\color\\tab_indicator_text.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\color\\market_topbar_text.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\color\\market_topbar_text.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\color\\corner_btn_text_color.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\color\\corner_btn_text_color.xml"
+    }
+]

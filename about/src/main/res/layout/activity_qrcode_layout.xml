@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9f000000"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto" >
+    <com.android.hcframe.TopBarView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:id="@+id/qrcode_top_bar"
+        zjhc:topbar_return_visiable = "true"
+        zjhc:topbar_right_image_visiable = "true"
+        zjhc:topbar_title="软件二维码"
+        android:background="#ff000000"
+        zjhc:topbar_right_image_src="@drawable/about_icon_share" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/app_url"
+            android:id="@+id/qrcode_image" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qrcode_image"
+            android:layout_centerHorizontal="true"
+            android:text="扫描下载该软件"
+            android:textColor="@color/edittext_bg"
+            android:textSize="14sp"
+            android:layout_marginTop="20dip" />
+    </RelativeLayout>
+	
+</LinearLayout>

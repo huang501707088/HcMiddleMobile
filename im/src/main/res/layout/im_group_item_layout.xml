@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/edittext_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14dip"
+        android:paddingRight="14dip">
+
+        <com.android.hcframe.container.ContainerCircleImageView
+            android:id="@+id/im_group_item_icon"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:scaleType="center"
+            zjhc:siBorderAlpha="1.0"
+            zjhc:siBorderColor="@color/edittext_bg"
+            zjhc:siBorderWidth="1dip"
+            android:src="@drawable/im_chat_group_icon"/>
+
+        <TextView
+            android:id="@+id/im_group_item_title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/im_group_item_num_of_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

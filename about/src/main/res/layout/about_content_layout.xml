@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="160dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/app_logo_icon"
+            android:layout_marginTop="38dip" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_content_appversion"
+            android:layout_marginTop="10dip"
+            android:textSize="12sp"
+            android:textColor="#ffcccccc" />
+    </LinearLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dip"
+	    android:background="@color/divider_bg"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dip"
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip"
+	    android:id="@+id/about_content_version_parent"
+	    android:gravity="center_vertical"
+	    android:background="@drawable/item_default_bottom_bg" >
+	    <TextView 
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="版本更新"
+	        android:textColor="#ff333333"
+	        android:textSize="16sp" />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="发现新版本"
+	        android:textColor="#ff999999"
+	        android:textSize="12sp"
+	        android:layout_marginLeft="10dip"
+	        android:visibility="gone"
+	        android:id="@+id/about_content_version_show" />
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dip"
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip"
+	    android:id="@+id/about_content_appinfo_parent"
+	    android:gravity="center_vertical"
+	    android:background="@drawable/item_default_bottom_bg" >
+	    <TextView 
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="功能介绍"
+	        android:textColor="#ff333333"
+	        android:textSize="16sp" />
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dip"
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip"
+	    android:id="@+id/about_content_welcome_parent"
+	    android:gravity="center_vertical"
+	    android:background="@drawable/item_default_bottom_bg" >
+	    <TextView 
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="欢迎页"
+	        android:textColor="#ff333333"
+	        android:textSize="16sp" />
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dip"
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip"
+	    android:id="@+id/about_content_erweima_parent"
+	    android:gravity="center_vertical"
+	    android:background="@drawable/item_default_bottom_bg" >
+	    <TextView 
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="软件二维码"
+	        android:textColor="#ff333333"
+	        android:textSize="16sp" />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/about_erweima_icon"
+	        android:scaleType="center"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dip"
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip"
+	    android:id="@+id/about_content_feedback_parent"
+	    android:gravity="center_vertical"
+	    android:background="@drawable/item_default_bottom_bg" >
+	    <TextView 
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="意见反馈"
+	        android:textColor="#ff333333"
+	        android:textSize="16sp" />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/about_feedback_icon"
+	        android:scaleType="center"/>
+	</LinearLayout>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:gravity="center_horizontal|bottom"
+	    android:id="@+id/about_content_copyright"
+	    android:layout_marginBottom="20dip"
+	    android:textSize="12sp"
+        android:textColor="#ffcccccc"
+        android:layout_gravity="bottom" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_default_bottom_bg"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip" >
+    <TextView 
+        android:layout_centerInParent="true"
+        android:text="~"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_list_item_divider"
+        android:textColor="@color/text_tab" />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="60dip"
+	    android:layout_toLeftOf="@id/sign_list_item_divider">
+	    <TextView 
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:id="@+id/sign_list_item_date"
+	        android:textSize="10sp"
+	        android:textColor="#999999"
+	        android:gravity="left|center_vertical"/>
+	    <TextView 
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:id="@+id/sign_list_item_signin"
+	        android:textSize="16sp"
+	        android:gravity="left|center_vertical"/>
+	</LinearLayout>
+	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_list_item_signout"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@id/sign_list_item_divider"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dip" />
+</RelativeLayout>

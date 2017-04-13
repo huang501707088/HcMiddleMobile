@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="contacts_search_bg">#ebebeb</color>
+    <color name="contact_num">#8FD6FF</color>
+    <color name="contact_detail_divider">#57BDED</color>
+    <color name="conatct_msm_title_bg">#EFEFF0</color>
+    <color name="contact_msm_send_bg">#F8F8F8</color>
+    <color name="contact_topbar_bg">#51afe6</color>
+</resources>

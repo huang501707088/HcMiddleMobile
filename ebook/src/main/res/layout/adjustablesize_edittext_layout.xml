@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kinggrid.iapppdf.ui.viewer.views.AdjustableSizeEditText
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/adjustablesize_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:background="@xml/edit_text_bg"
+        android:textAlignment="center"/>

@@ -1,0 +1,518 @@
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+# Optimization is turned off by default. Dex does not like code run
+# through the ProGuard optimize and preverify steps (and performs some
+# of these optimizations on its own).
+-dontoptimize
+-dontpreverify
+# 屏蔽警告
+-ignorewarnings
+# Note that if you want to enable optimization, you cannot just
+# include optimization flags in your own project configuration file;
+# instead you will need to point to the
+# "proguard-android-optimize.txt" file instead of this one from your
+# project.properties file.
+# 现在程序里面不引用隐藏包了
+# -libraryjars '/home/jrjin/tools/jar/4.2.2'
+#-libraryjars 'libs/android-support-v4.jar'
+#-libraryjars 'libs/android-support-v7-appcompat.jar'
+#-libraryjars 'libs/android-support-v7-recyclerview.jar'
+#-libraryjars 'libs/baidumapapi_v2_4_1.jar'
+#-libraryjars 'libs/GifView.jar'
+#-libraryjars 'libs/gson-2.1.jar'
+#-libraryjars 'libs/httpcore-4.3.2.jar'
+#-libraryjars 'libs/httpmime-4.3.5.jar'
+#-libraryjars 'libs/imagecache.jar'
+#-libraryjars 'libs/library-2.4.0.jar'
+#-libraryjars 'libs/locSDK_3.1.jar'
+#-libraryjars 'libs/pushservice-4.5.3.48.jar'
+#-libraryjars 'libs/SangforSDK.jar'
+#-libraryjars 'libs/support-annotations-22.2.1.jar'
+
+-keep public class * extends android.app.Application 
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+-keep class * implements android.os.Parcelable
+-keep class com.google.ads.** {*;}
+#不混淆需要反射的类
+-keep class * extends com.android.hcframe.menu.MenuPage
+-keep public class com.android.hcframe.container.SingleAppLayout01
+-keep public class com.android.hcframe.container.DividerLayout01
+-keep public class com.android.hcframe.container.DividerLayout02
+-keep public class com.android.hcframe.container.MultipleAppGridLayout01
+-keep public class com.android.hcframe.container.MultipleAppGridLayout02
+-keep public class com.android.hcframe.container.MultipleAppGridLayout03
+-keep public class com.android.hcframe.container.MultipleAppListLayout01
+-keep public class com.android.hcframe.container.MultipleAppGridLayout04
+-keep public class com.android.hcframe.container.SingleAccountAppLayout
+-keep public class com.android.hcframe.container.MultipleAppGridLayout05
+-keep class * extends com.android.hcframe.transforms.ABaseTransformer
+
+# 模块互相调用
+-keep class * extends com.android.hcframe.command.AbstractCommand
+-keep public class com.android.hcframe.hcmail.EmailCommand
+-keep public class com.android.hcframe.contacts.command.ContactsCommand
+
+#-keep public class com.android.hcframe.menu.WebMenuPage
+#-keep public class com.android.hcframe.market.MarketMenuPage
+#-keep public class com.android.hcframe.servicemarket.OfficeMenuPage
+#-keep public class com.android.hcframe.servicemarket.news.NewsMenuPage
+#-keep public class com.android.hcframe.check.CheckMenuPage
+#-keep public class com.android.hcframe.view.tab.NewsShowMenuPage
+#-keep public class com.android.hcframe.servicemarket.dynomic.NewsShowMenuPage
+#-keep public class com.android.hcframe.doc.DocMenuPage
+#-keep public class com.android.hcframe.doc.DetailsMenuPage
+#-keep public class com.android.hcframe.settings.signin.SignRecordMenuPage
+#-keep public class com.android.hcframe.settings.signin.SignMenuPage
+#-keep public class com.android.hcframe.contacts.ContactMenuPage
+#-keep class com.android.hcframe.sharesdk.** {*;}
+# 防止利用R类反射时找不到R类，R类不进行混淆
+-keep class com.android.hcframe.R$* {*;}
+-keep class com.android.hcframe.BaseWebChromeClient {*;}
+-keep class com.android.hcframe.menu.MenuWebPage {*;}
+-keep class com.android.hcframe.HcWebChromeClient {*;}
+
+# IM不进行混淆
+#-keep class com.kenai.jbosh.** {*;}
+#-keep class com.novell.sasl.client.** {*;}
+#-keep class de.measite.smack.** {*;}
+#-keep class org.apache.harmony.javax.security.** {*;}
+#-keep class org.apache.qpid.management.common.sasl.** {*;}
+#-keep class org.apache.jivesoftware.smack.** {*;}
+#-keep class org.apache.jivesoftware.smackx.** {*;}
+#-keep class org.apache.xbill.DNS.** {*;}
+# IM不混淆的具体类
+-keep class de.measite.smack.AndroidDebugger {*;}
+-keep class org.jivesoftware.smack.debugger.ConsoleDebugger {*;}
+-keep class org.jivesoftware.smack.provider.PrivacyProvider {*;}
+-keep class org.jivesoftware.smackx.PrivateDataManager$PrivateDataIQProvider {*;}
+-keep class org.jivesoftware.smackx.provider.** {*;}
+-keep class org.jivesoftware.smackx.provider.AdHocCommandDataProvider$** {*;}
+-keep class org.jivesoftware.smackx.packet.ChatStateExtension$Provider {*;}
+-keep class org.jivesoftware.smackx.packet.Version {*;}
+-keep class org.jivesoftware.smackx.packet.OfflineMessageRequest$Provider {*;}
+-keep class org.jivesoftware.smackx.packet.OfflineMessageInfo$Provider {*;}
+-keep class org.jivesoftware.smackx.packet.LastActivity$Provider {*;}
+-keep class org.jivesoftware.smackx.packet.SharedGroupsInfo$Provider {*;}
+-keep class org.jivesoftware.smackx.packet.Nick$Provider {*;}
+-keep class org.jivesoftware.smackx.packet.AttentionExtension$Provider {*;}
+-keep class org.jivesoftware.smackx.bytestreams.socks5.provider.BytestreamsProvider {*;}
+-keep class org.jivesoftware.smackx.bytestreams.ibb.provider.** {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.** {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.SessionID$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.UserID$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.AgentStatus$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.QueueDetails$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.QueueOverview$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.RoomInvitation$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.RoomTransfer$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.AgentWorkgroups$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.AgentInfo$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.TranscriptSearch$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.OccupantsInfo$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.MonitorPacket$InternalProvider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.QueueUpdate$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.WorkgroupInformation$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.packet.AgentStatusRequest$Provider {*;}
+
+-keep class org.jivesoftware.smackx.workgroup.settings.OfflineSettings$InternalProvider {*;}
+-keep class org.jivesoftware.smackx.workgroup.settings.SoundSettings$InternalProvider {*;}
+-keep class org.jivesoftware.smackx.workgroup.settings.WorkgroupProperties$InternalProvider {*;}
+-keep class org.jivesoftware.smackx.workgroup.settings.SearchSettings$InternalProvider {*;}
+-keep class org.jivesoftware.smackx.workgroup.settings.ChatSettings$InternalProvider {*;}
+-keep class org.jivesoftware.smackx.workgroup.settings.GenericSettings$InternalProvider {*;}
+
+-keep class org.jivesoftware.smackx.workgroup.site.SiteUser$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.site.SiteInvitation$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.site.SiteUserHistory$Provider {*;}
+
+-keep class org.jivesoftware.smackx.workgroup.ext.notes.ChatNotes$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.ext.history.AgentChatHistory$InternalProvider {*;}
+-keep class org.jivesoftware.smackx.workgroup.ext.history.ChatMetadata$Provider {*;}
+-keep class org.jivesoftware.smackx.workgroup.ext.forms.WorkgroupForm$InternalProvider {*;}
+-keep class org.jivesoftware.smackx.workgroup.ext.macros.Macros$InternalProvider {*;}
+
+-keep class org.jivesoftware.smackx.pubsub.provider.** {*;}
+
+-keep class org.jivesoftware.smackx.GroupChatInvitation$Provider {*;}
+
+-keep class org.jivesoftware.smackx.search.UserSearch$Provider {*;}
+
+#-keep class org.jivesoftware.smackx.workgroup.ext.forms.** {*;}
+#-keep class org.jivesoftware.smackx.workgroup.ext.macros.** {*;}
+#-keep class org.jivesoftware.smackx.workgroup.ext.history.** {*;}
+#-keep class org.jivesoftware.smackx.workgroup.site.** {*;}
+#-keep class org.jivesoftware.smackx.workgroup.settings.** {*;}
+#-keep class org.jivesoftware.smackx.packet.** {*;}
+#-keep class * extends org.jivesoftware.smack.packet.IQ {*;}
+#-keep class * extends org.jivesoftware.smack.packet.Message {*;}
+#-keep class * extends org.jivesoftware.smack.packet.Packet {*;}
+#-keep class * implements org.jivesoftware.smack.provider.PacketExtensionProvider {*;}
+
+
+#-keep class org.jivesoftware.smack.provider.PrivacyProvider
+
+#-keep class org.jivesoftware.smackx.PrivateDataManager$PrivateDataIQProvider {*;}
+
+#-keep class org.jivesoftware.smackx.provider.RosterExchangeProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.MessageEventProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.XHTMLExtensionProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.DiscoverItemsProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.DiscoverInfoProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.DataFormProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.MUCUserProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.MUCAdminProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.MUCOwnerProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.DelayInformationProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.DelayInfoProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.VCardProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.MultipleAddressesProvider {*;}
+#-keep class org.jivesoftware.smackx.provider.StreamInitiationProvider
+#-keep class org.jivesoftware.smackx.provider.AdHocCommandDataProvider
+#-keep class org.jivesoftware.smackx.provider.AdHocCommandDataProvider$BadActionError
+#-keep class org.jivesoftware.smackx.provider.AdHocCommandDataProvider$MalformedActionError
+#-keep class org.jivesoftware.smackx.provider.AdHocCommandDataProvider$BadLocaleError
+#-keep class org.jivesoftware.smackx.provider.AdHocCommandDataProvider$BadPayloadError
+#-keep class org.jivesoftware.smackx.provider.AdHocCommandDataProvider$BadSessionIDError
+#-keep class org.jivesoftware.smackx.provider.AdHocCommandDataProvider$SessionExpiredError
+#-keep class org.jivesoftware.smackx.provider.HeadersProvider
+#-keep class org.jivesoftware.smackx.provider.HeaderProvider
+
+#-keep class org.jivesoftware.smackx.packet.ChatStateExtension$Provider {*;}
+#-keep class org.jivesoftware.smackx.packet.Version {*;}
+#-keep class org.jivesoftware.smackx.packet.OfflineMessageRequest$Provider {*;}
+#-keep class org.jivesoftware.smackx.packet.OfflineMessageInfo$Provider {*;}
+#-keep class org.jivesoftware.smackx.packet.LastActivity$Provider {*;}
+#-keep class org.jivesoftware.smackx.packet.SharedGroupsInfo$Provider {*;}
+#-keep class org.jivesoftware.smackx.packet.Nick$Provider
+#-keep class org.jivesoftware.smackx.packet.AttentionExtension$Provider
+
+#-keep class org.jivesoftware.smackx.bytestreams.socks5.provider.BytestreamsProvider
+#-keep class org.jivesoftware.smackx.bytestreams.ibb.provider.OpenIQProvider
+#-keep class org.jivesoftware.smackx.bytestreams.ibb.provider.DataPacketProvider
+#-keep class org.jivesoftware.smackx.bytestreams.ibb.provider.CloseIQProvider
+#-keep class org.jivesoftware.smackx.bytestreams.ibb.provider.DataPacketProvider
+
+#-keep class org.jivesoftware.smackx.workgroup.packet.OfferRequestProvider
+#-keep class org.jivesoftware.smackx.workgroup.packet.OfferRevokeProvider
+#-keep class org.jivesoftware.smackx.workgroup.packet.AgentStatusRequest$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.TranscriptsProvider
+#-keep class org.jivesoftware.smackx.workgroup.packet.TranscriptProvider
+#-keep class org.jivesoftware.smackx.workgroup.packet.AgentWorkgroups$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.AgentInfo$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.TranscriptSearch$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.OccupantsInfo$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.MonitorPacket$InternalProvider
+#-keep class org.jivesoftware.smackx.workgroup.packet.QueueUpdate$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.WorkgroupInformation$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.MetaDataProvider
+#-keep class org.jivesoftware.smackx.workgroup.packet.SessionID$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.UserID$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.AgentStatus$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.QueueDetails$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.QueueOverview$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.RoomInvitation$Provider
+#-keep class org.jivesoftware.smackx.workgroup.packet.RoomTransfer$Provider
+
+#-keep class org.jivesoftware.smackx.workgroup.settings.OfflineSettings$InternalProvider
+#-keep class org.jivesoftware.smackx.workgroup.settings.SoundSettings$InternalProvider
+#-keep class org.jivesoftware.smackx.workgroup.settings.WorkgroupProperties$InternalProvider
+#-keep class org.jivesoftware.smackx.workgroup.settings.SearchSettings$InternalProvider
+#-keep class org.jivesoftware.smackx.workgroup.settings.ChatSettings$InternalProvider
+#-keep class org.jivesoftware.smackx.workgroup.settings.GenericSettings$InternalProvider
+
+#-keep class org.jivesoftware.smackx.workgroup.site.SiteUser$Provider
+#-keep class org.jivesoftware.smackx.workgroup.site.SiteInvitation$Provider
+#-keep class org.jivesoftware.smackx.workgroup.site.SiteUserHistory$Provider
+
+#-keep class org.jivesoftware.smackx.workgroup.ext.notes.ChatNotes$Provider
+#-keep class org.jivesoftware.smackx.workgroup.ext.history.AgentChatHistory$InternalProvider
+#-keep class org.jivesoftware.smackx.workgroup.ext.history.ChatMetadata$Provider
+#-keep class org.jivesoftware.smackx.workgroup.ext.forms.WorkgroupForm$InternalProvider
+#-keep class org.jivesoftware.smackx.workgroup.ext.macros.Macros$InternalProvider
+
+
+#-keep class org.jivesoftware.smackx.pubsub.provider.PubSubProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.SimpleNodeProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.ItemsProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.ItemProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.SubscriptionsProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.SubscriptionProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.AffiliationsProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.AffiliationProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.FormNodeProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.PubSubProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.FormNodeProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.FormNodeProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.EventProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.ConfigEventProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.SimpleNodeProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.FormNodeProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.ItemsProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.ItemProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.RetractEventProvider
+#-keep class org.jivesoftware.smackx.pubsub.provider.SimpleNodeProvider
+
+#-keep class org.jivesoftware.smackx.GroupChatInvitation$Provider {*;}
+
+#-keep class org.jivesoftware.smackx.search.UserSearch$Provider {*;}
+
+# 不进行二次混淆
+-keep class org.apache.http.entity.mime.** {*;}
+-keep class org.apache.http.entity.mime.content.** {*;}
+-keep class org.apache.http.** {*;}
+-keep class com.sangfor.ssl.** {*;}
+-keep class com.google.gson.** {*;}
+-keep class android.support.v4.** {*;}
+-keep class com.artifex.mupdfdemo.** {*;}
+-keep class com.baidu.** {*;}
+-keep class m.framework.** {*;}
+-keep class cn.sharesdk.** {*;}
+-keep class com.android.hcframe.sharesdk.** {*;}
+-keep class com.ant.liao.** {*;}
+# 高德地图
+-keep class com.amap.api.mapcore.** {*;}
+-keep class com.amap.api.maps.** {*;}
+-keep class com.autonavi.amap.mapcore.** {*;}
+-keep class com.amap.api.fence.** {*;}
+-keep class com.amap.api.location.** {*;}
+-keep class com.autonavi.aps.amapapi.model.** {*;}
+-keep class com.loc.** {*;}
+-keep class com.amap.api.services.** {*;}
+-keep class com.android.volley.** {*;}
+-keep class com.amap.api.maps2d.** {*;}
+-keep class com.amap.api.mapcore2d.** {*;}
+# 二维码扫描
+-keep class com.google.zxing.** {*;}
+# 手写签批
+-keep class u.aly.** {*;}
+-keep class com.kinggrid.commonrequestauthority.** {*;}
+-keep class com.kinggrid.iapppdf.common.bitmaps.** {*;}
+-keep class com.kinggrid.iapppdf.common.cache.** {*;}
+-keep class com.kinggrid.iapppdf.common.settings.** {*;}
+-keep class com.kinggrid.iapppdf.common.settings.base.** {*;}
+-keep class com.kinggrid.iapppdf.common.settings.books.** {*;}
+-keep class com.kinggrid.iapppdf.common.settings.definitions.** {*;}
+-keep class com.kinggrid.iapppdf.common.settings.listeners.** {*;}
+-keep class com.kinggrid.iapppdf.common.settings.types.** {*;}
+-keep class com.kinggrid.iapppdf.common.touch.** {*;}
+-keep class com.kinggrid.iapppdf.company.annotations.** {*;}
+-keep class com.kinggrid.iapppdf.company.common.** {*;}
+-keep class com.kinggrid.iapppdf.company.imagecontrol.** {*;}
+-keep class com.kinggrid.iapppdf.company.signature.** {*;}
+-keep class com.kinggrid.iapppdf.core.codec.** {*;}
+-keep class com.kinggrid.iapppdf.core.crop.** {*;}
+-keep class com.kinggrid.iapppdf.core.curl.** {*;}
+-keep class com.kinggrid.iapppdf.core.events.** {*;}
+-keep class com.kinggrid.iapppdf.core.models.** {*;}
+-keep class com.kinggrid.iapppdf.core.** {*;}
+-keep class com.kinggrid.iapppdf.droids.mupdf.codec.** {*;}
+-keep class com.kinggrid.iapppdf.droids.mupdf.codec.exceptions.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.common.android.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.common.cache.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.common.content.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.common.filesystem.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.common.log.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.common.settings.base.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.ui.actions.params.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.ui.actions.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.ui.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.ui.gl.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.ui.progress.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.ui.tasks.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.ui.uimanager.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.ui.widget.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.utils.collections.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.utils.concurrent.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.utils.enums.** {*;}
+-keep class com.kinggrid.iapppdf.emdev.utils.listeners.** {*;}
+-keep class com.kinggrid.iapppdf.ui.viewer.adapters.** {*;}
+-keep class com.kinggrid.iapppdf.ui.viewer.dialogs.** {*;}
+-keep class com.kinggrid.iapppdf.ui.viewer.stubs.** {*;}
+-keep class com.kinggrid.iapppdf.ui.viewer.viewers.** {*;}
+-keep class com.kinggrid.iapppdf.ui.viewer.views.** {*;}
+-keep class com.kinggrid.iapppdf.ui.viewer.** {*;}
+-keep class com.kinggrid.iapppdf.** {*;}
+-keep class com.kinggrid.kinggridsign.** {*;}
+-keep class com.kinggrid.pdfservice.** {*;}
+-keep class com.kinggrid.signature.** {*;}
+-keep class com.kinggrid.signature.commen.** {*;}
+-keep class com.umeng.analytics.** {*;}
+-keep class com.umeng.analytics.onlineconfig.** {*;}
+-keep class com.umeng.analytics.social.** {*;}
+-keep class org.dom4j.** {*;}
+-keep class org.dom4j.bean.** {*;}
+-keep class org.dom4j.datatype.** {*;}
+-keep class org.dom4j.dom.** {*;}
+-keep class org.dom4j.dtd.** {*;}
+-keep class org.dom4j.io.** {*;}
+-keep class org.dom4j.jaxb.** {*;}
+-keep class org.dom4j.rule.** {*;}
+-keep class org.dom4j.rule.pattern.** {*;}
+-keep class org.dom4j.swing.** {*;}
+-keep class org.dom4j.tree.** {*;}
+-keep class org.dom4j.util.** {*;}
+-keep class org.dom4j.xpath.** {*;}
+-keep class org.dom4j.xpp.** {*;}
+-keep class org.jaxen.** {*;}
+-keep class org.jaxen.dom.** {*;}
+-keep class org.jaxen.dom4j.** {*;}
+-keep class org.jaxen.expr.** {*;}
+-keep class org.jaxen.expr.iter.** {*;}
+-keep class org.jaxen.function.** {*;}
+-keep class org.jaxen.function.ext.** {*;}
+-keep class org.jaxen.function.xslt.** {*;}
+-keep class org.jaxen.javabean.** {*;}
+-keep class org.jaxen.jdom.** {*;}
+-keep class org.jaxen.pattern.** {*;}
+-keep class org.jaxen.saxpath.** {*;}
+-keep class org.jaxen.saxpath.base.** {*;}
+-keep class org.jaxen.saxpath.helpers.** {*;}
+-keep class org.jaxen.util.** {*;}
+-keep class org.jaxen.xom.** {*;}
+-keep class org.w3c.dom.** {*;}
+-keep class com.ebensz.aidls.** {*;}
+-keep class com.ebensz.cache.** {*;}
+-keep class com.ebensz.cache.impl.** {*;}
+-keep class com.ebensz.dom.** {*;}
+-keep class com.ebensz.eink.** {*;}
+-keep class com.ebensz.eink.api.** {*;}
+-keep class com.ebensz.eink.builder.** {*;}
+-keep class com.ebensz.eink.builder.bridge.** {*;}
+-keep class com.ebensz.eink.builder.dom.** {*;}
+-keep class com.ebensz.eink.builder.hand.** {*;}
+-keep class com.ebensz.eink.builder.impl.** {*;}
+-keep class com.ebensz.eink.data.** {*;}
+-keep class com.ebensz.eink.data.clip.** {*;}
+-keep class com.ebensz.eink.data.draft.** {*;}
+-keep class com.ebensz.eink.data.event.** {*;}
+-keep class com.ebensz.eink.data.impl.** {*;}
+-keep class com.ebensz.eink.data.impl.event.** {*;}
+-keep class com.ebensz.eink.recognizer.** {*;}
+-keep class com.ebensz.eink.renderer.** {*;}
+-keep class com.ebensz.eink.renderer.impl.** {*;}
+-keep class com.ebensz.eink.style.** {*;}
+-keep class com.ebensz.eink.undoredo.** {*;}
+-keep class com.ebensz.eink.util.** {*;}
+-keep class com.ebensz.eink.util.binxml.** {*;}
+-keep class com.ebensz.eink.util.binxml.hand.** {*;}
+-keep class com.ebensz.eink.util.undoredo.** {*;}
+-keep class com.ebensz.epen.** {*;}
+-keep class com.ebensz.epen.scrawl.** {*;}
+-keep class com.ebensz.osenv.** {*;}
+-keep class com.ebensz.penpanel.** {*;}
+-keep class com.ebensz.recognizer.latest.** {*;}
+-keep class com.ebensz.recognizer.latest.helper.** {*;}
+-keep class com.ebensz.recognizer.latest.impl.** {*;}
+-keep class com.ebensz.recognizer.latest.impl.remote.** {*;}
+-keep class com.ebensz.recognizer.latest.impl.remote.search.** {*;}
+-keep class com.ebensz.recognizer.latest.search.** {*;}
+-keep class com.ebensz.resource.** {*;}
+-keep class com.ebensz.tool.translator.** {*;}
+-keep class com.ebensz.util.** {*;}
+-keep class com.ebensz.util.zip.** {*;}
+-keep class com.ebensz.util.zip.impl.** {*;}
+-keep class com.ebensz.utils.** {*;}
+-keep class com.ebensz.utils.latest.** {*;}
+-keep class com.ebensz.utils.latest.encryption.** {*;}
+-keep class com.ebensz.widget.** {*;}
+-keep class com.ebensz.widget.ui.** {*;}
+-keep class com.ebensz.widget.ui.painter.** {*;}
+-keep class com.ebensz.widget.ui.shape.** {*;}
+-keep class com.ebensz.widget.ui.shape.resource.** {*;}
+
+-dontwarn com.sun.msv.datatype.**
+-dontwarn org.relaxng.datatype.**
+-dontwarn javax.swing.tree.**
+-dontwarn javax.swing.table.**
+-dontwarn org.gjt.xpp.**
+-dontwarn com.ebensz.eink.R
+-dontwarn com.ebensz.eink.R$*
+-dontwarn android.os.IServiceManager
+-dontwarn android.os.ServiceManager
+-dontwarn android.os.ServiceManagerNative
+-dontwarn com.android.internal.statusbar.IStatusBarService
+-dontwarn com.android.internal.statusbar.IStatusBarService$Stub
+-dontwarn com.longmai.mtoken.k5.sof.**
+-dontwarn org.bouncycastle.jce.**
+-dontwarn org.bouncycastle.jce.**
+-dontwarn com.kinggrid.kgpdfService.**
+-dontwarn java.beans.**
+-dontwarn com.sun.msv.datatype.**
+-dontwarn javax.xml.stream.**
+-dontwarn org.gjt.xpp.**
+-dontwarn javax.xml.bind.**
+-dontwarn org.jdom.**
+-dontwarn nu.xom.**
+-dontwarn org.w3c.dom.UserDataHandler
+# 手写签批结束 ########################################3
+
+# 邮件不混淆 ########################################
+-keep class org.apache.commons.io.** {*;}
+-keep class org.apache.james.mime4j.** {*;}
+-keep class com.beetstra.jutf7.** {*;}
+-keep class com.android.emailcommon.provider.** {*;}
+-keep class com.android.emailcommon.service.** {*;}
+-keep class com.android.email.mail.** {*;}
+-keep class com.android.emailcommon.mail.** {*;}
+# 邮件不混淆结束 ########################################
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+# keep setters in Views so that animations can still work.
+# see http://proguard.sourceforge.net/manual/examples.html#beans
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+# The support library contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version.  We know about them, and they are safe.
+-dontwarn android.support.**
+
+# -dontwarn com.tencent.**
+
+# -dontwarn org.dom4j.**
+
+# -dontwarn org.slf4j.**
+
+# -dontwarn org.http.mutipart.**
+
+-dontwarn org.apache.**
+
+# -dontwarn org.apache.log4j.**
+
+# -dontwarn org.apache.commons.logging.**
+
+# -dontwarn org.apache.commons.codec.binary.**
+
+# -dontwarn weibo4android.**

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/edittext_bg" >
+    <com.android.hcframe.DraggableGridViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_grid03_gridview"
+        zjhc:dividerColor="@color/divider_bg"
+        zjhc:dividerPaddingTop="15dip"
+        zjhc:dividerWidth="1dip" />
+	<com.android.hcframe.DotView
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/container_grid_dot_width"
+	    android:id="@+id/container_grid03_dot_parent" />
+</LinearLayout>

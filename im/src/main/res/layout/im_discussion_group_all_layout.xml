@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/im_discussion_group_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg"
+        zjhc:topbar_return_visiable="true"
+        zjhc:topbar_right_image_visiable="true" />
+
+    <include
+        android:id="@+id/search_top"
+        layout="@layout/im_discussion_group_all_search_include"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <com.android.hcframe.pull.PullToRefreshListView
+        android:id="@+id/im_discussion_group_all_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_framework_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/divider_bg"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+</LinearLayout>

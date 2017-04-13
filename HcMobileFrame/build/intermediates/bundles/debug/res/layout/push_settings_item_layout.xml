@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/push_settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="26dip"
+        android:background="@color/container_divider_bg"
+        android:gravity="center_vertical"
+        android:textColor="@color/system_message_readed"
+        android:textSize="12sp"
+        android:paddingLeft="10dip"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/edittext_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/push_settings_module_parent">
+        <!-- android:background="@drawable/myoffice_account_bg" -->
+        <TextView
+            android:id="@+id/push_settings_module_name"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_tab"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/push_settings_state_switch"
+            android:layout_width="38dip"
+            android:layout_height="21dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="1dip"
+            android:background="@android:color/transparent"
+            android:button="@drawable/ios7_btn"
+            android:checked="true"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_framework_bg" >
+    <com.android.hcframe.TopBarView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:id="@+id/menu_top_bar"
+        zjhc:topbar_return_visiable = "false"
+        zjhc:topbar_right_image_visiable = "false"
+        android:background="@color/topbar_bg" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_show_networkerror"
+        android:padding="10dip"
+        android:layout_gravity="center_vertical"
+        android:background="#fff013">
+        <TextView 
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/framework_network_error"
+            android:textColor="#ff5013"
+            android:textSize="12sp"/>
+        <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleType="center"
+	        android:src="@drawable/right_jian"
+	        android:layout_marginLeft="5dip"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_bg"
+        android:visibility="gone" />
+    <!-- android:layout_marginTop="@dimen/top_bar_margin_top" -->
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/menu_parent">
+
+        </FrameLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/menu_permisstion_parent"
+            android:src="@drawable/no_permisstion"
+            android:scaleType="centerInside"/>
+    </FrameLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:layout_gravity="bottom"
+    	android:id="@+id/menubar_parent" >
+    	<View android:layout_width="match_parent"
+    	    android:layout_height="1dip"
+    	    android:background="@color/divider_bg" />
+        <include layout="@layout/menubar"/>
+    </LinearLayout>
+	
+</LinearLayout>

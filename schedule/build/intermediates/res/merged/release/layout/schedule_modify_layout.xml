@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/schedule_modify_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg" />
+
+    <include
+        android:id="@+id/schedule_modify_include"
+        layout="@layout/schedule_add_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/schedule_add_text" />
+
+    <include
+        android:id="@+id/schedule_modify_content_include"
+        layout="@layout/schedule_add_content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp" />
+
+    <include
+        android:id="@+id/schedule_modify_excutor_include"
+        layout="@layout/schedule_add_excutor_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <include
+        android:id="@+id/schedule_modify_part_include"
+        layout="@layout/schedule_add_part_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <include
+        android:id="@+id/schedule_modify_start_time_include"
+        layout="@layout/schedule_add_start_time_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp" />
+
+    <include
+        android:id="@+id/schedule_modify_end_time_include"
+        layout="@layout/schedule_add_end_time_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <include
+        android:id="@+id/schedule_modify_img_include"
+        layout="@layout/schedule_add_img_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 提交按钮 -->
+    <TextView
+        android:id="@+id/schedule_modify_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/schedule_corner_btn_yellow_frame_bg"
+        android:layout_marginLeft="@dimen/btn_padding_left"
+        android:layout_marginRight="@dimen/btn_padding_right"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:text="保存修改" />
+</LinearLayout>

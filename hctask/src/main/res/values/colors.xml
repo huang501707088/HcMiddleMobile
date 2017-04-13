@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 界面的默认背景,最底层背景 -->
+    <color name="task_text">#999999</color>
+    <color name="task_edit_bg">#ffffff</color>
+    <color name="task_edit_text_color">#ffebebeb</color>
+
+    <color name="transparent_black">#7F000000</color>
+    <color name="task_end_task_txt">#999999</color>
+    <color name="task_end_task_line">#CCCCCC</color>
+    <color name="task_end_text">#51aee6</color>
+</resources>

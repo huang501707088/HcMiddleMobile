@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/myoffice_item_height" >
+    <ImageView 
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="@dimen/myoffice_item_icon_width"
+        android:layout_height="@dimen/myoffice_item_icon_width"
+        android:id="@+id/myoffice_item_icon"
+        android:src="@drawable/oa_setting_icon"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="@dimen/myoffice_item_margin_left" />
+    <TextView 
+        android:layout_toRightOf="@id/myoffice_item_icon"
+        android:layout_centerVertical="true"
+        android:id="@+id/myoffice_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:background="@color/oa_item_bg" />
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_jian"
+        android:scaleType="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/myoffice_item_margin_right" />
+
+</RelativeLayout>

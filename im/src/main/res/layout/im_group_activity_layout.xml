@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_group_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical">
+    <com.android.hcframe.TopBarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:id="@+id/chat_group_top_bar"
+        zjhc:topbar_return_visiable="true"
+        zjhc:topbar_right_image_visiable="true"
+        android:background="@color/topbar_bg"
+        zjhc:topbar_right_image_src="@drawable/im_group_add_btn"/>
+
+    <com.android.hcframe.pull.PullToRefreshListView
+        android:id="@+id/contact_group_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_framework_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/divider_bg"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 考勤签到 -->
+    <color name="sign_list_item_text">#ff333333</color>
+    <color name="sign_month_color">#FF5013</color>
+    <color name="sign_bar_bg">#B6BCB8</color>
+    <color name="sign_bg">#ebebeb</color>
+    <color name="signr_bg">#d9d9d9</color>
+    <color name="top_sign_bgcolor">#52AFE5</color>
+    <color name="top_sign_divider">#4898C6</color>
+    <color name="top_sign_text_color">#97D9FF</color>
+    <color name="gps_divider_color">#E1E4E6</color>
+    <color name="gps_dialog_btn">#55B0E6</color>
+
+    <color name="sign_details_color">#55B0E6</color>
+    <!-- 签到 -->
+    <color name="sign_in_bg">#ffffff</color>
+    <color name="text">#333333</color>
+    <color name="confirm_text">#51AFE6</color>
+    <color name="text_add_color">#55B0E6</color>
+    <color name="pupup_text_color">#55B0E6</color>
+    <color name="album_bg">#000000</color>
+    <color name="sign_in_text">#ffffff</color>
+    <color name="line_gray">#BCBCBC</color>
+    <color name="time">#51AFE6</color>
+    <color name="remote_sign">#ffffff</color>
+    <color name="remote_sign_bg">#BCBCBC</color>
+    <color name="check_lv_bg">#ffffff</color>
+    <color name="title_bg">#55B0E6</color>
+    <color name="map_list_bg">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_gray">#BCBCBC</color>
+    <color name="carlendar_bg">#ffffff</color>
+    <color name="carlendar_text_color">#000000</color>
+    <color name="carlendar_sign_text">#BCBCBC</color>
+    <color name="sign_text_color">#000000</color>
+    <color name="sign_list_by_day_item_line">#BCBCBC</color>
+    <color name="sign_time_text_color">#333333</color>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/doc_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/myoffice_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pass_pwd_center_tv"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="@string/passpwd"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/pass_pwd_center_et"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/myoffice_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/new_pwd_center_tv"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="@string/newpwd"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/new_pwd_center_et"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/myoffice_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/confirm_pwd_center_tv"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="@string/confirmpwd_center"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/confirm_pwd_center_et"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pwd_error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dip"
+        android:text="@string/pwd_two_error"
+        android:textColor="@color/text_red_bg"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/confirm_modify_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_et_height"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="64dip"
+        android:background="@drawable/modify_pwd_btn_bg"
+        android:text="@string/confirm_modify_pwd"
+        android:textColor="@color/btn_focus"
+        android:textSize="16sp" />
+
+</LinearLayout>

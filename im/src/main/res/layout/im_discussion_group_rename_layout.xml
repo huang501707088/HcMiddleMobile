@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/im_discussion_rename_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg" />
+
+    <include
+        android:id="@+id/im_discussion_rename_include"
+        layout="@layout/im_discussion_group_editview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="来修改一个你满意的昵称吧"
+        android:textColor="@color/im_discussion_group_text"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/im_discussion_group_rename_text"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/im_chatting_corner_btn"
+        android:gravity="center"
+        android:text="确认修改"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+</LinearLayout>

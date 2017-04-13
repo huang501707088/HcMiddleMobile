@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 界面的默认背景,最底层背景 -->
+    <color name="netdisc_33_black">#333333</color>
+    <color name="netdisc_write">#ffffff</color>
+    <color name="netdisc_85_green">#85c56b</color>
+    <color name="netdisc_ff_orange">#ff5013</color>
+    <color name="netdisc_99_gray">#999999</color>
+    <color name="netdisc_ff4_red">#ff486a</color>
+    <color name="netdisc_d9_gray">#d9d9d9</color>
+    <color name="netdisc_eb_gray">#ebebeb</color>
+    <color name="netdisc_53_gray">#535759</color>
+    <color name="netdisc_51_blue">#51afe6</color>
+    <color name="netdisc_main_framework_bg">#ffebebeb</color>
+    <color name="netdisc_colorPrimary">#3F51B5</color>
+    <color name="netdisc_colorPrimaryDark">#303F9F</color>
+    <color name="netdisc_colorAccent">#FF4081</color>
+    <color name="netdisc_bg">#ebebeb</color>
+    <color name="netdisc_item_bg">#FFFFFF</color>
+    <color name="netdisc_line">#CCCCCC</color>
+    <color name="netdisc_pop_line">#d9d9d9</color>
+    <color name="netdisc_search_str">#cdcdcd</color>
+    <color name="netdisc_text_white">#FFFFFF</color>
+    <color name="netdisc_text_gray">#999999</color>
+    <color name="netdisc_divider_bg">#FFFFFF</color>
+    <color name="netdisc_text_color">#000000</color>
+    <color name="netdisc_new_file">#999999</color>
+    <color name="netdisc_pop_text_color">#535759</color>
+    <color name="netdisc_text_gray_color">#C0C0C0</color>
+    <color name="netdisc_search_bg">#FFFFFF</color>
+    <color name="netdisc_text_hint">#ffcccccc</color>
+    <color name="netdisc_check_bg_color">#000000</color>
+    <color name="netdisc_check_text_color">#FFFFFF</color>
+    <color name="netdisc_check_not_pressed">#4D4D4D</color>
+    <color name="netdisc_popup_bg">#FFFFFF</color>
+    <color name="netdisc_linear_bg">#FFFFFF</color>
+    <color name="netdisc_my_file_text_bg">#C0C0C0</color>
+    <color name="netdisc_new_folder_dialog_bg">#FFFFFF</color>
+    <color name="netdisc_new_folder_dialog_text">#51aee6</color>
+    <color name="netdisc_trans_list_bg">#FFFFFF</color>
+    <color name="netdisc_trans_list_img">#51aee6</color>
+    <color name="netdisc_impl_frg_bg">#FFFFFF</color>
+    <color name="netdisc_impl_frg_text_bg">#C0C0C0</color>
+    <color name="netdisc_move_terminal_text_bg">#FF6347</color>
+    <color name="netdisc_down_delete_text">#535759</color>
+    <color name="netdisc_down_delete_bg">#C0C0C0</color>
+    <color name="netdisc_down_delete_text_bg">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="im_dot_width">10dip</dimen>
+    <!-- 头像的高度 -->
+    <dimen name="im_header_width">38dip</dimen>
+</resources>

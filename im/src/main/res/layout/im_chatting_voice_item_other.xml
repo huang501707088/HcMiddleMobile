@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18dip"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:id="@+id/chat_voice_item_other_date"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/im_chatting_corner_date_bg"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="14dip"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dip"
+        android:id="@+id/chat_voice_item_other_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="60dip">
+        <com.android.hcframe.container.ContainerCircleImageView
+            android:layout_width="@dimen/im_header_width"
+            android:layout_height="@dimen/im_header_width"
+            android:scaleType="center"
+            zjhc:siBorderColor="@color/main_framework_bg"
+            zjhc:siBorderAlpha="1.0"
+            zjhc:siBorderWidth="0dip"
+            android:id="@+id/chat_voice_item_other_icon" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                android:id="@+id/chat_voice_item_other_name"
+                android:layout_marginLeft="14dip"
+                android:visibility="gone"
+                android:layout_marginBottom="2dip"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/im_header_width"
+                    android:id="@+id/chat_voice_item_other_content_parent"
+                    android:background="@drawable/im_chatting_msg_other_bg_src"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dip"
+                    android:paddingRight="6dip"
+                    android:paddingLeft="12dip">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/im_voice_speek_other_3"
+                        android:scaleType="center"
+                        android:id="@+id/chat_voice_item_other_content"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/im_header_width"
+                    android:textColor="#cccccc"
+                    android:textSize="14sp"
+                    android:id="@+id/chat_voice_item_other_second"
+                    android:paddingRight="6dip"
+                    android:paddingLeft="10dip"
+                    android:gravity="center_vertical" />
+                <TextView
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:id="@+id/chat_voice_item_other_mark"
+                    android:background="@drawable/im_chatting_badge_bg"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dip"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

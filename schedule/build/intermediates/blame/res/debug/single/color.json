@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\res\\merged\\debug\\color\\doc_column_text_color.xml",
+        "source": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\exploded-aar\\HcMiddleMobile\\HcMobileFrame\\unspecified\\res\\color\\doc_column_text_color.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\res\\merged\\debug\\color\\tab_indicator_text.xml",
+        "source": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\exploded-aar\\HcMiddleMobile\\HcMobileFrame\\unspecified\\res\\color\\tab_indicator_text.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\res\\merged\\debug\\color\\date_picker_selector.xml",
+        "source": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\exploded-aar\\HcMiddleMobile\\HcMobileFrame\\unspecified\\res\\color\\date_picker_selector.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\res\\merged\\debug\\color\\date_picker_year_selector.xml",
+        "source": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\exploded-aar\\HcMiddleMobile\\HcMobileFrame\\unspecified\\res\\color\\date_picker_year_selector.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\res\\merged\\debug\\color\\corner_btn_text_color.xml",
+        "source": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\exploded-aar\\HcMiddleMobile\\HcMobileFrame\\unspecified\\res\\color\\corner_btn_text_color.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\res\\merged\\debug\\color\\done_text_color.xml",
+        "source": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\exploded-aar\\HcMiddleMobile\\HcMobileFrame\\unspecified\\res\\color\\done_text_color.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\res\\merged\\debug\\color\\market_topbar_text.xml",
+        "source": "D:\\HcMiddleMobile\\schedule\\build\\intermediates\\exploded-aar\\HcMiddleMobile\\HcMobileFrame\\unspecified\\res\\color\\market_topbar_text.xml"
+    }
+]

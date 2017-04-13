@@ -1,0 +1,111 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zjhcsoft.mobile.hcmiddlemobile">
+
+    <application android:name="com.android.hcframe.HcApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.Light">
+
+        <!-- 测试用的,上传到svn时需要用发布的 -->
+        <provider
+            android:name="com.android.hcframe.sql.HcProvider"
+            android:authorities="com.zjhcsoft.mobile.hcmiddlemobile.HcProvider"
+            android:multiprocess="true"
+            />
+        <service
+            android:name="com.android.hcframe.service.HcService"
+            >
+            <intent-filter>
+                <action android:name="com.zjhcsoft.mobile.hcmiddlemobile.HcService" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.android.hcframe.service.ServiceBroadcast" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.zjhcsoft.mobile.hcmiddlemobile.ServiceBroadcast" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.android.hcframe.internalservice.signin.service.LoctionService"
+            android:process=":sign" >
+            <intent-filter >
+                <action android:name="com.zjhcsoft.mobile.hcmiddlemobile.LoctionService"/>
+            </intent-filter>
+        </service>
+
+        <service android:name="com.android.hcframe.update.DownloadService" >
+            <intent-filter >
+                <action android:name="com.zjhcsoft.mobile.hcmiddlemobile.DownloadService"/>
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.android.email.provider.AttachmentProvider"
+            android:authorities="com.zjhcsoft.mobile.hcmiddlemobile.email.attachmentprovider"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:multiprocess="true"
+            android:readPermission="com.android.hcframe.email.permission.READ_ATTACHMENT" />
+        <provider
+            android:name="com.android.email.provider.EmailProvider"
+            android:authorities="com.zjhcsoft.mobile.hcmiddlemobile.email.provider;com.zjhcsoft.mobile.hcmiddlemobile.email.notifier"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:multiprocess="true"
+            android:permission="com.android.hcframe.email.permission.ACCESS_PROVIDER" />
+
+        <!-- 上传到Svn上的配置,本地调式需要上面的测试配置
+        <provider
+            android:name="com.android.hcframe.sql.HcProvider"
+            android:authorities="PACKAGE_NAME.HcProvider"
+            android:multiprocess="true"
+            />
+        <service
+            android:name="com.android.hcframe.service.HcService"
+            >
+            <intent-filter>
+                <action android:name="PACKAGE_NAME.HcService" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.android.hcframe.service.ServiceBroadcast" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="PACKAGE_NAME.ServiceBroadcast" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.android.hcframe.internalservice.signin.service.LoctionService"
+            android:process=":sign" >
+            <intent-filter >
+                <action android:name="PACKAGE_NAME.LoctionService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.android.hcframe.update.DownloadService" >
+            <intent-filter >
+                <action android:name="PACKAGE_NAME.DownloadService"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="com.android.email.provider.AttachmentProvider"
+            android:authorities="PACKAGE_NAME.email.attachmentprovider"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:multiprocess="true"
+            android:readPermission="com.android.hcframe.email.permission.READ_ATTACHMENT" />
+        <provider
+            android:name="com.android.email.provider.EmailProvider"
+            android:authorities="PACKAGE_NAME.email.provider;PACKAGE_NAME.email.notifier"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:multiprocess="true"
+            android:permission="com.android.hcframe.email.permission.ACCESS_PROVIDER" />
+ -->
+    </application>
+
+
+</manifest>

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\null_anim.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\anim\\null_anim.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\wallpaper_intra_open_enter.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\anim\\wallpaper_intra_open_enter.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\activity_close_enter.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\anim\\activity_close_enter.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\wallpaper_intra_open_exit.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\anim\\wallpaper_intra_open_exit.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\activity_open_enter.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\anim\\activity_open_enter.xml"
+    }
+]

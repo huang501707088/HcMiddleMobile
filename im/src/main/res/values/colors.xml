@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="im_search_bg">#ebebeb</color>
+    <color name="im_edit_hint">#999999</color>
+    <color name="im_discussion_group_settings_bg">#d9d9d9</color>
+    <color name="im_discussion_group_setting_write">#ffffff</color>
+    <color name="im_discussion_group">#ffffff</color>
+    <color name="im_discussion_group_txt">#333333</color>
+    <color name="im_discussion_group_text">#999999</color>
+    <color name="im_discussion_group_d9_gray">#d9d9d9</color>
+    <color name="im_discussion_group_write">#ffffff</color>
+    <color name="im_discussion_group_black">#333333</color>
+    <color name="im_discussion_group_all_white">#cdcdcd</color>
+</resources>

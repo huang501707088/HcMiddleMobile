@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/netdisc_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/netdisc_list_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/netdisc_search_list_img"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="center"
+            android:src="@drawable/netdisc_search_list_img" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/netdosc_id_iv_lock"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/netdisc_icon_lock" />
+
+                <TextView
+                    android:id="@+id/netdisc_search_list_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/netdosc_id_iv_lock"
+                    android:singleLine="true"
+                    android:text="我的文件夹"
+                    android:textColor="@color/netdisc_text_color"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/netdisc_id_tv_con"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="浏览：35    下载：20"
+                    android:textColor="@color/netdisc_text_gray_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/netdisc_id_iv_del_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="center"
+        android:src="@drawable/netdisc_icon_delete_share" />
+</LinearLayout>

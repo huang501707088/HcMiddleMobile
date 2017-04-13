@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical" >
+	<com.android.hcframe.TopBarView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:id="@+id/pwd_top_bar"
+        zjhc:topbar_return_visiable = "false"
+        zjhc:topbar_right_image_visiable = "true"
+        android:background="@color/topbar_bg" />
+
+    <!-- 旧密码 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/item_default_bg"
+        android:paddingLeft="@dimen/btn_padding_left"
+        android:paddingRight="@dimen/btn_padding_right"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dip" >
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="@string/everpwd"
+            android:textSize="12dip"
+            android:textColor="#ff333333" />
+
+        <EditText
+            android:id="@+id/everpwd_et"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:hint="@string/everpwd_hint"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:textSize="12dip"
+            android:textColor="#ff333333" />
+
+        <ImageView
+            android:id="@+id/everpwd_iv"
+            android:layout_width="@dimen/myoffice_item_height"
+            android:layout_height="@dimen/myoffice_item_height"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/clear" />
+    </LinearLayout>
+    
+    <!-- 新密码 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_default_bg"
+        android:orientation="vertical"
+        android:layout_marginTop="20dip">
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="50dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="@dimen/btn_padding_left"
+        	android:paddingRight="@dimen/btn_padding_right">
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:text="@string/nowpwd"
+                android:textSize="12dip"
+            	android:textColor="#ff333333" />
+
+            <EditText
+                android:id="@+id/nowpwd_et"
+                android:layout_width="252dip"
+                android:layout_height="fill_parent"
+                android:hint="@string/nowpwd_hint"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:textSize="12dip"
+            	android:textColor="#ff333333" />
+
+            <ImageView
+                android:id="@+id/nowpwd_iv"
+                android:layout_width="@dimen/myoffice_item_height"
+                android:layout_height="@dimen/myoffice_item_height"
+                android:scaleType="center"
+                android:visibility="gone"
+                android:src="@drawable/clear" />
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/divider_bg"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="50dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="@dimen/btn_padding_left"
+        	android:paddingRight="@dimen/btn_padding_right">
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="fill_parent"
+                android:text="@string/confirmpwd"
+                android:gravity="center_vertical"
+                android:textSize="12dip"
+            	android:textColor="#ff333333" />
+
+            <EditText
+                android:id="@+id/confirmpwd_et"
+                android:layout_width="252dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:hint="@string/confirmpwd_hint"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:textSize="12dip"
+            	android:textColor="#ff333333" />
+
+            <ImageView
+                android:id="@+id/confirmpwd_iv"
+                android:layout_width="@dimen/myoffice_item_height"
+                android:layout_height="@dimen/myoffice_item_height"
+                android:scaleType="center"
+                android:visibility="gone"
+                android:src="@drawable/clear" />
+        </LinearLayout>
+    </LinearLayout>
+        
+	<Button
+        android:id="@+id/modifypwd_btn"
+        style="@style/corner_btn.orange"
+        android:text="@string/finish"
+        android:layout_marginTop="64dip"
+    	android:layout_marginLeft="@dimen/btn_padding_left"
+   	 	android:layout_marginRight="@dimen/btn_padding_right" />
+
+</LinearLayout>

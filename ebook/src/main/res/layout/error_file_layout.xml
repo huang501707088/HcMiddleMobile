@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="@drawable/bg_annot_text_dialog">
+    
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"    	
+	    android:paddingTop="18dp"
+	    android:paddingBottom="18dp"
+		android:paddingLeft="28dp"
+		android:paddingRight="0dp"
+	    android:background="@drawable/eben_border_bottom_color">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:text="@string/tip_title"
+	        android:textSize="22sp"
+	        android:textColor="@android:color/black"/>
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/eben_border_bottom">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/dialog_bad_file"
+	        android:textSize="18sp"
+	        android:textColor="@android:color/black"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center"
+	    android:gravity="center">
+        
+        <Button 
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:layout_weight="1"     		        
+    		android:layout_gravity="center"
+	        android:paddingTop="8dip"
+	        android:paddingBottom="8dip"
+	        android:textSize="22sp"
+	        android:text="@string/ok"
+	        style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/eben_border_null"/>
+    </LinearLayout>    
+</LinearLayout>

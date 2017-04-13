@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Annual</string>
+
+    <string name="annual_intro_title">参会引导手册</string>
+    <string name="annual_program_title">年会节目评分</string>
+    <string name="annual_shake_title">幸运摇一遥</string>
+</resources>

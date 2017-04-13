@@ -1,0 +1,55 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+//    buildToolsVersion "22.0.1"
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+//        applicationId "com.android.hcframe"
+        minSdkVersion 14
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles 'proguard-android.txt', 'proguard-project.txt'
+        }
+    }
+    packagingOptions{
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+//    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:support-v4:21.0.0'
+    compile 'com.google.code.gson:gson:2.1'
+    compile files('libs/GifView.jar')
+//    compile files('libs/SangforSDK.jar')
+    compile files('libs/android-support-v7-recyclerview.jar')
+//    compile files('libs/baidumapapi_v2_4_1.jar')
+    compile files('libs/httpcore-4.3.2.jar')
+    compile files('libs/httpmime-4.3.5.jar')
+    compile files('libs/imagecache.jar')
+    compile files('libs/library-2.4.0.jar')
+//    compile files('libs/locSDK_3.1.jar')
+    compile files('libs/pushservice-5.0.0.66.jar')
+    compile files('libs/zxing.jar')
+
+
+    //    compile 'com.android.support:appcompat-v7:18.0.0'
+    //    compile files('libs/pushservice-4.6.0.68.jar')
+    //    compile files('libs/support-annotations-22.2.1.jar')
+}

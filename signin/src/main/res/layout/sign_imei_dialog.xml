@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="264dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sign_corner_dialog"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/net_gps_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="友情提示"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@null"
+        android:text="请使用自己的手机签到！更换手机请与管理员联系。"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#CCCCCC" />
+
+    <Button
+        android:id="@+id/agree_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_button_height"
+        android:background="@android:color/white"
+        android:text="确定"
+        android:textColor="#51aee6"
+        android:textSize="19sp" />
+
+</LinearLayout>

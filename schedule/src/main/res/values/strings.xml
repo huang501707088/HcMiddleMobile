@@ -1,0 +1,7 @@
+<resources  xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <string name="app_name">schedule</string>
+    <string name="schedule_add_text">例如:"外出会议"不超过8个字</string>
+    <string name="schedule_search_str">搜索</string>
+    <string name="schedule_search_content_hint">请输入检索关键字</string>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.android.hcframe.container.ContainerCircleImageView
+        android:id="@+id/task_details_item_icon"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/task_default_head"
+        zjhc:siBorderAlpha="1.0"
+        zjhc:siBorderColor="@color/edittext_bg"
+        zjhc:siBorderWidth="1dip" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/task_details_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="张全胜"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/task_details_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:text="6月15日 15:15"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/task_details_item_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="14dp"
+            android:text="相关资料你到我的网盘上去下载"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

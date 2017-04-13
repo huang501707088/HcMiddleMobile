@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/netdisc_bg"
+    android:orientation="vertical">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/details_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg" />
+
+    <LinearLayout
+        android:id="@+id/check_top"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/netdisc_check_bg_color"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/check_top_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="取消"
+            android:textColor="@color/netdisc_check_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/check_top_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已选2个"
+            android:textColor="@color/netdisc_check_text_color"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/check_top_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textColor="@color/netdisc_check_text_color"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/netdisc_eb_gray"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="回收站文件占用盘空间，文件保存20天后将被自动清除"
+            android:textColor="@color/netdisc_99_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/netdisc_file_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+        <com.android.hcframe.view.toast.NoDataView
+            android:id="@+id/recycle_pager_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/netdisc_search_text_footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/netdisc_check_bg_color"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/netdisc_search_text_reduction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="还原"
+            android:textColor="@color/netdisc_check_text_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/netdisc_check_text_color"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/netdisc_search_text_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="彻底删除"
+            android:textColor="@color/netdisc_check_text_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

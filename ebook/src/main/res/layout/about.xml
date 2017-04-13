@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/kinggrid_bg_toolbar"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/kinggrid_bg_menu_sub" >
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_title"
+            android:textColor="#ffffff" 
+            />
+
+    </RelativeLayout> 
+
+    <ExpandableListView
+        android:id="@+id/about_parts"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/kinggrid_bg_toolbar" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Market</string>
+
+    <!-- market -->
+    <string name="market_topbar_all">全部应用</string>
+    <string name="market_topbar_data">数据统计</string>
+    <string name="market_topbar_service">公众服务</string>
+    <string name="market_topbar_supervise">稽查督报</string>
+    <string name="market_topbar_oa">移动办公</string>
+    <string name="market_next_page">下一页</string>
+    <string name="market_update_app">软件更新</string>
+
+</resources>

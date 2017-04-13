@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox</item>
+    </style>
+
+    <style name="CheckBoxLv" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_lv_selector</item>
+        <item name="android:paddingLeft">25.0dp</item>
+        <item name="android:maxHeight">30.0dp</item>
+    </style>
+</resources>

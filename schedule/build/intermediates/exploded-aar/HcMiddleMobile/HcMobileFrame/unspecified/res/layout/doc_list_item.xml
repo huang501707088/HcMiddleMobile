@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@drawable/item_news_list_bg"
+    android:paddingBottom="10dip"
+    android:paddingLeft="@dimen/myoffice_item_margin_left"
+    android:paddingRight="@dimen/myoffice_item_margin_right"
+    android:paddingTop="10dip" >
+
+    <TextView
+        android:id="@+id/doc_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="#ff333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/doc_file_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doc_file_name"
+        android:layout_marginTop="8dip"
+        android:textColor="#ff999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/doc_file_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/doc_file_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/doc_file_name"
+        android:layout_marginTop="8dip"
+        android:textColor="#ff999999"
+        android:textSize="10sp" />
+
+</RelativeLayout>

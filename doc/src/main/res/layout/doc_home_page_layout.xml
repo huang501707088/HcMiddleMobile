@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/search_include" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_bg" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/text_white" >
+
+        <!-- 列表 -->
+
+        <LinearLayout
+            android:id="@+id/doc_home_data_list_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="32dip" >
+
+                <TextView
+                    android:id="@+id/data_list_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dip"
+                    android:text="@string/history_record"
+                    android:textColor="@color/text_999999"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/signr_bg" />
+            </RelativeLayout>
+
+            <com.android.hcframe.pull.PullToRefreshListView
+                android:id="@+id/doc_home_data_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@null"
+                android:scrollbars="none"
+                android:smoothScrollbar="true" />
+
+            <LinearLayout
+                android:id="@+id/doc_home_list_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/doc_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/doc_home_empty_list_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="center"
+                    android:src="@drawable/search_cry" />
+
+                <TextView
+                    android:id="@+id/doc_home_list_empty_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:drawablePadding="5dip"
+                    android:gravity="center"
+                    android:text="@string/history_none"
+                    android:textColor="@color/text_hint"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 栏目 -->
+
+        <LinearLayout
+            android:id="@+id/doc_home_columns_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <include layout="@layout/return_center_item" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/divider_bg" />
+
+            <GridView
+                android:id="@+id/doc_home_columns_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_news_list_bg"
+                android:cacheColorHint="#00000000"
+                android:listSelector="@null"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:smoothScrollbar="true" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

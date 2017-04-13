@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Signin</string>
+
+    <string name="signin">签到</string>
+    <string name="auto_signin">自动签到</string>
+    <string name="getsigninfos">获取签到信息中...</string>
+    <string name="sign_month_state">%1$s月考勤状况</string>
+    <string name="sign_month_state_stat">迟到:%1$s 早退:%2$s 缺勤:%3$s</string>
+    <string name="zong_rank">综合名次</string>
+    <string name="sign_card">考勤打卡</string>
+    <string name="nonerecord">无记录</string>
+    <string name="signining">上班打卡中...</string>
+    <string name="signouting">下班打卡中...</string>
+    <string name="distance">距离考勤点</string>
+    <string name="please_net">请联网并开启gps</string>
+    <string name="none_sign_text">--:--</string>
+    <string name="none_signin_text_tip">你今天尚未签到</string>
+    <string name="none_signout_text_tip">你今天尚未签出</string>
+    <string name="signin_text_late">你今天迟到</string>
+    <string name="signout_text_early">你今天早退</string>
+    <string name="ontime_text_tip">今天准时到岗</string>
+    <string name="enable_gps_text">该功能将会在上下班时间自动开启移动数据和gps，进行上下班打卡操作，你同意继续开启么？</string>
+    <string name="agree">同意</string>
+    <string name="unagree">不同意</string>
+    <string name="open_netdata">请打开移动网络。</string>
+    <!--签到-->
+    <string name="sign_details">查看考勤详情 >></string>
+    <string name="time">时间</string>
+    <string name="add">地点</string>
+    <string name="submit">提交</string>
+    <string name="text_add">微调地点</string>
+    <string name="back">返回</string>
+    <string name="camera_cancel">取消</string>
+    <string name="refresh_text">请先连接网络，打开GPS后再继续签到</string>
+    <string name="refresh_button_text">刷新</string>
+    <string name="sign">签到</string>
+
+</resources>

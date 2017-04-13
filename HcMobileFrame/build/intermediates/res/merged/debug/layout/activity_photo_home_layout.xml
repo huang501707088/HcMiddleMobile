@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_framework_bg" >
+    <com.android.hcframe.TopBarView
+        android:id="@+id/photo_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg"
+        zjhc:topbar_right_image_visiable = "false" />
+	<GridView
+        android:id="@+id/photo_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/edittext_bg"
+        android:gravity="center"
+        android:horizontalSpacing="3dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp" />
+</LinearLayout>

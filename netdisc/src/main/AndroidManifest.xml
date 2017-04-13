@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.hcframe.netdisc">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name">
+
+        <!-- android:supportsRtl="true" -->
+        <activity
+            android:name=".MySkydriveActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+            <!--android:name=".PictureChooseActivity"-->
+            <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+            <!--android:name=".FileChooseActivity"-->
+            <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".TransListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MoveTerminalAcitivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ShareSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecycleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WorkGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WorkGroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BuildGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChoosePersonnelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PersonnelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DiscInfoActivity"
+            android:screenOrientation="portrait" />
+        <!--<service android:name="com.android.hcframe.netdisc.service.NetDiscService">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="ACTION_UPLOAD" />-->
+                <!--<action android:name="ACTION_UPLOAD_STOP" />-->
+                <!--<action android:name="ACTION_START" />-->
+                <!--<action android:name="ACTION_STOP" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+        <service android:name="com.android.hcframe.netdisc.service.HcNetDiscService">
+            <intent-filter>
+                <action android:name="com.android.hcframe.netdisc.service.start_download" />
+                <action android:name="com.android.hcframe.netdisc.service.start_upload" />
+            </intent-filter>
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--WIFI权限设置-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+</manifest>

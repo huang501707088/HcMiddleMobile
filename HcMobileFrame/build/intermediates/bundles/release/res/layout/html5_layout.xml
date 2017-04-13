@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff1f1f1" >
+    <com.android.hcframe.TopBarView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:id="@+id/html_top_bar"
+        android:background="@color/topbar_bg" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#ffcbcbcb"
+        android:layout_marginTop="@dimen/top_bar_margin_top"
+        android:visibility="gone"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/html_webview"
+            android:hardwareAccelerated="true" />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:id="@+id/html_progress"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:layout_gravity="top"/>
+    </FrameLayout>
+
+</LinearLayout>

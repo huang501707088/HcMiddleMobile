@@ -1,0 +1,6 @@
+<resources>
+    <!-- DraggrableGridView item -->
+    <integer name="col_count">4</integer>
+    <integer name="row_count">4</integer>
+   	<integer name="config_tab_count">4</integer>
+</resources>

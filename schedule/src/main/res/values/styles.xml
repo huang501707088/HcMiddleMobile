@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--timePickerDialog-->
+    <style name="Schedule_TimePickerDialog" parent="@android:style/Theme.Holo.Light.Dialog.MinWidth">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/Schedule_DialogWindowTitle</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Schedule_DialogWindowTitle" >
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/Schedule_DialogTextAppearance</item>
+    </style>
+    <style name="Schedule_DialogTextAppearance" >
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#ff33b5e5</item>
+    </style>
+</resources>

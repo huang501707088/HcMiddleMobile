@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_skydrive_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/search_top_frame"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/doc_list_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height"
+            android:background="@color/topbar_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/topbar_back_btn"
+                android:layout_width="@dimen/top_bar_height"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:scaleType="center"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/topbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="移+项目组"
+                android:textColor="@color/text_actionbar_title"
+                android:textSize="@dimen/top_bar_title" />
+
+            <ImageView
+                android:id="@+id/topbar_right_btn"
+                android:layout_width="@dimen/top_bar_height"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/netdisc_icon_setting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/check_top"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/netdisc_check_bg_color"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/check_top_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="取消"
+                android:textColor="@color/netdisc_check_text_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/check_top_center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已选2个"
+                android:textColor="@color/netdisc_check_text_color"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/check_top_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="全选"
+                android:textColor="@color/netdisc_check_text_color"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <include
+        android:id="@+id/search_top"
+        layout="@layout/netdisc_search_include"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+
+    <!-- 没有列表的显示界面 -->
+    <LinearLayout
+        android:id="@+id/netdisc_search_list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/netdisc_search_empty_list_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="center"
+            android:src="@drawable/search_cry" />
+
+        <TextView
+            android:id="@+id/netdisc_search_data_list_empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:drawablePadding="5dip"
+            android:gravity="center"
+            android:text="@string/netdisc_search_none"
+            android:textColor="@color/netdisc_text_hint"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 查询结果 -->
+    <LinearLayout
+        android:id="@+id/netdisc_search_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.android.hcframe.pull.PullToRefreshListView
+                android:id="@+id/netdisc_search_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+            <com.android.hcframe.view.toast.NoDataView
+                android:id="@+id/group_pager_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/down_img"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/netdisc_down_icon"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </LinearLayout>
+    <!-- 分隔线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/netdisc_line" />
+    <!-- 底部按钮 -->
+    <FrameLayout
+        android:id="@+id/search_footer_frame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <!-- 新建+上传 -->
+        <LinearLayout
+            android:id="@+id/netdisc_search_list_footer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/netdisc_search_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/netdisc_search_new"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/netdisc_search_new_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/netdisc_search_new_img"
+                    android:drawablePadding="10dip"
+                    android:text="新建文件夹"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/netdisc_line"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/netdisc_search_file"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/netdisc_search_file_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/netdisc_search_file_img"
+                    android:drawablePadding="10dip"
+                    android:text="上传文件"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 分享、下载等 -->
+        <LinearLayout
+            android:id="@+id/netdisc_search_text_footer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/netdisc_check_bg_color"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/netdisc_search_text_download"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="下载"
+                android:textColor="@color/netdisc_check_not_pressed"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/netdisc_check_text_color"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/netdisc_search_text_shared"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="复制"
+                android:textColor="@color/netdisc_check_not_pressed"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/netdisc_check_text_color"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/netdisc_search_text_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/netdisc_check_text_color"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/netdisc_check_text_color"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/netdisc_search_text_more"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="更多"
+                android:textColor="@color/netdisc_check_text_color"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

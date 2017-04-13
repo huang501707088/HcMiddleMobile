@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/market_top_bar_height"
+    android:background="#ffffffff">
+
+    <com.android.hcframe.BadgeTextView
+        android:id="@+id/news_topbar_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:textColor="@color/text_tab"
+        android:textSize="@dimen/news_bar_text_size" />
+
+    <!--
+    <com.android.hcframe.menu.MenuTextView
+        android:id="@+id/point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/tab_indicator_text"
+        android:textSize="@dimen/menu_bar_size" />
+    -->
+    <!--
+    <com.android.hcframe.view.ColumnTextView
+        android:id="@+id/point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/tab_indicator_text"
+        android:textSize="@dimen/menu_bar_size"
+        android:visibility="gone"/>
+    -->
+    <TextView
+        android:id="@+id/news_topbar_item_selected"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ff51afe6"
+        android:textColor="#ff51afe6" />
+
+</RelativeLayout>

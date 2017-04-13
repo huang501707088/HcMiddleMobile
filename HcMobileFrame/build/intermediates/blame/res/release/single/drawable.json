@@ -1,0 +1,350 @@
+[
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_dark_green_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_dark_green_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\above_shadow.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\above_shadow.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\menu_first_btn_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\menu_first_btn_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\frame_success_anim.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\frame_success_anim.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\modify_photo_one_item_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\modify_photo_one_item_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\seekbar_style.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\seekbar_style.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_default_top_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_default_top_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\container_dot_selected.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\container_dot_selected.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_default_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_default_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_order_focus_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_order_focus_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\line_gray_cancel.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\line_gray_cancel.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\modify_code_bg_select.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\modify_code_bg_select.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\gps_netdata_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\gps_netdata_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\bind_submit_bg_select.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\bind_submit_bg_select.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_goodsdetail_text_default.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_goodsdetail_text_default.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_default_bottom_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_default_bottom_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_news_image_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_news_image_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\framework_dialog_edit_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\framework_dialog_edit_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\remark_et_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\remark_et_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\circle_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\circle_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_focus_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_focus_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\topbar_mianqian_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\topbar_mianqian_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_dialog_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_dialog_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\menu_second_btn_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\menu_second_btn_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\sel_alter_no_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\sel_alter_no_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\bind_submit_btn_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\bind_submit_btn_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_download_dialog_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_download_dialog_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\login_loginin_btn.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\login_loginin_btn.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\modify_pwd_btn_bg_unenable.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\modify_pwd_btn_bg_unenable.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\rem_pwd_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\rem_pwd_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_order_default_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_order_default_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_blue_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_blue_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\checkbox.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\checkbox.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\status_progress_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\status_progress_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_disable_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_disable_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\wheel_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\wheel_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\input_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\input_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\menu_fourth_btn_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\menu_fourth_btn_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\busy.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\busy.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\login_btn_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\login_btn_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\checkbox_button_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\checkbox_button_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_orange_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_orange_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\login_btn_default_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\login_btn_default_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\myoffice_account_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\myoffice_account_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_order_unabled_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_order_unabled_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\login_parent_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\login_parent_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_dark_green_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_dark_green_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\wheel_val.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\wheel_val.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_default_divider_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_default_divider_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\page_num.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\page_num.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_light_green_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_light_green_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_default_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_default_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\doc_column_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\doc_column_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\retrieve_identify_code.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\retrieve_identify_code.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_black_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_black_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\topbar_mianqian_text_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\topbar_mianqian_text_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_blue_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_blue_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\seek_progress.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\seek_progress.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\menu_fifth_btn_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\menu_fifth_btn_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\pager_dots.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\pager_dots.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_orange_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_orange_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\gallery_item_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\gallery_item_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_order_btn_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_order_btn_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\container_dot_normal_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\container_dot_normal_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\progress_medium_holo.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\progress_medium_holo.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\progress_medium_white.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\progress_medium_white.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\search_bg_doc.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\search_bg_doc.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\shape_bl_corner.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\shape_bl_corner.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\sel_alter_yes_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\sel_alter_yes_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\below_shadow.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\below_shadow.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\next_page_btn_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\next_page_btn_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\login_btn_foucs_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\login_btn_foucs_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\ios7_btn.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\ios7_btn.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\shape_corner_reg_gray.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\shape_corner_reg_gray.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_light_green_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_light_green_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\modify_pwd_btn_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\modify_pwd_btn_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\menu_third_btn_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\menu_third_btn_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\listview_select_item_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\listview_select_item_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\shape_br_corner.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\shape_br_corner.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\item_news_list_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\item_news_list_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\circle_text_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\circle_text_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\line_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\line_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_download_dialog_frame_bg.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_download_dialog_frame_bg.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\corner_btn_src.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\corner_btn_src.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\release\\drawable\\seek_thumb.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\src\\main\\res\\drawable\\seek_thumb.xml"
+    }
+]

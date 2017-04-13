@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="alarm_set">
+    	<item msgid="5163476010406761625">"已将此闹钟设置为从现在起不到 1 分钟后提醒。"</item>
+    	<item msgid="7110525731259629055">"已将此闹钟设置为从现在起 <ns1:g id="DAYS">%1$s</ns1:g>后再提醒。"</item>
+    	<item msgid="7003982794086186185">"已将此闹钟设置为从现在起 <ns1:g id="HOURS">%2$s</ns1:g>后再提醒。"</item>
+    	<item msgid="7311021123230077742">"已将此闹钟设置为从现在起 <ns1:g id="DAYS">%1$s</ns1:g> <ns1:g id="HOURS">%2$s</ns1:g>后再提醒。"</item>
+    	<item msgid="8431715191823114872">"已将此闹钟设置为从现在起 <ns1:g id="MINUTES">%3$s</ns1:g>后再提醒。"</item>
+    	<item msgid="3244151088673185428">"已将此闹钟设置为从现在起 <ns1:g id="DAYS">%1$s</ns1:g> <ns1:g id="MINUTES">%3$s</ns1:g>后再提醒。"</item>
+    	<item msgid="3663661342600168814">"已将此闹钟设置为从现在起 <ns1:g id="HOURS">%2$s</ns1:g> <ns1:g id="MINUTES">%3$s</ns1:g>后再提醒。"</item>
+    	<item msgid="7779544127785487304">"已将该闹钟设置为从现在起 <ns1:g id="DAYS">%1$s</ns1:g> <ns1:g id="HOURS">%2$s</ns1:g> <ns1:g id="MINUTES">%3$s</ns1:g>后再提醒。"</item>
+  	</string-array>
+    <string-array name="festival">
+        <item>今天是情人节，</item>
+        <item>今天是妇女节，</item>
+        <item>今天是母亲节，</item>
+        <item>今天是儿童节，</item>
+        <item>今天是父亲节，</item>
+        <item>今天是七夕节，</item>
+        <item>今天是教师节，</item>
+        <item>今天是感恩节，</item>
+    </string-array>
+    <string-array name="main_weeks">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="says_settings_title">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>       
+    </string-array>
+    <attr format="reference" name="color_lock_pattern_view_error"/>
+    <attr format="reference" name="color_lock_pattern_view_regular"/>
+    <attr format="reference" name="color_lock_pattern_view_success"/>
+    <bool name="market_use_page">true</bool>
+    <color name="ampm_text_color">#8c8c8c</color>
+    <color name="annual_topbar_bg">#dd4b54</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="blue_03">#037aff</color>
+    <color name="btn_blue">#ff286ab4</color>
+    <color name="btn_default">#ffff7c11</color>
+    <color name="btn_default_color">#ff999999</color>
+    <color name="btn_focus">#ffffffff</color>
+    <color name="busy_indicator">#C0202020</color>
+    <color name="calendar_header">#ff999999</color>
+    <color name="center_confirm_pwd_btn">#FF5013</color>
+    <color name="circle_background">#fff2f2f2</color>
+    <color name="conatct_msm_title_bg">#EFEFF0</color>
+    <color name="contact_detail_divider">#57BDED</color>
+    <color name="contact_msm_send_bg">#F8F8F8</color>
+    <color name="contact_num">#8FD6FF</color>
+    <color name="contact_topbar_bg">#51afe6</color>
+    <color name="contacts_search_bg">#ebebeb</color>
+    <color name="container_divider_bg">#ffebebeb</color>
+    <color name="container_dot_normal">#ffe5e5e5</color>
+    <color name="container_dot_selected">#ff51afe6</color>
+    <color name="container_text_subtitle">#ffb3b3b3</color>
+    <color name="container_text_title">#ff4d4d4d</color>
+    <color name="darker_blue">#ff0099cc</color>
+    <color name="date_picker_text_normal">#ff999999</color>
+    <color name="date_picker_view_animator">#fff2f2f2</color>
+    <color name="details_switch_bg">#12AC7F</color>
+    <color name="dialog_black">#414040</color>
+    <color name="dialog_blue">#2fbbf2</color>
+    <color name="divider_bg">#ffd9d9d9</color>
+    <color name="doc_bg">#ebebeb</color>
+    <color name="done_text_color_disabled">#ffcccccc</color>
+    <color name="done_text_color_normal">#ff333333</color>
+    <color name="drag_item_bg">#fffafafa</color>
+    <color name="edittext_bg">#ffffffff</color>
+    <color name="focus_color">#7f33b5e5</color>
+    <color name="gray_d8">#d8d8d8</color>
+    <color name="gray_e4">#e4e4e4</color>
+    <color name="gray_f8">#f0f2f0</color>
+    <color name="grey">#C1CDCD</color>
+    <color name="line_background">#ffcccccc</color>
+    <color name="listview_item">#00000000</color>
+    <color name="lock_bg">#ff37474f</color>
+    <color name="lock_pattern_view_error_dark">#fff4511e</color>
+    <color name="lock_pattern_view_error_light">#fff4511e</color>
+    <color name="lock_pattern_view_regular_dark">#f0ffffff</color>
+    <color name="lock_pattern_view_regular_light">#ffffffff</color>
+    <color name="lock_pattern_view_success_dark">#ff009688</color>
+    <color name="lock_pattern_view_success_light">#ffffffff</color>
+    <color name="login_allbg">#f1f1f1</color>
+    <color name="login_baseline">#171717</color>
+    <color name="login_bg_color">#21afe6</color>
+    <color name="login_btn_bg">#2fbbf2</color>
+    <color name="login_btn_default">#e0286ab4</color>
+    <color name="login_btn_foucs">#ff286ab4</color>
+    <color name="login_divider">#ff666666</color>
+    <color name="login_jiantou_bg">#ffcccb</color>
+    <color name="login_white">#fafafa</color>
+    <color name="main_framework_bg">#ffebebeb</color>
+    <color name="menu_normal_color">#ff535759</color>
+    <color name="menu_selected_color">#ff51afe6</color>
+    <color name="menu_topbar_text">#ffffffff</color>
+    <color name="menubar_bg">#fff7f7f7</color>
+    <color name="numbers_text_color">#8c8c8c</color>
+    <color name="oa_item_bg">#ffffffff</color>
+    <color name="page_bg">#fff3f3f3</color>
+    <color name="page_indicator">#C0202020</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="schedule_add_content_text">#333333</color>
+    <color name="schedule_add_text">#D9D9D9</color>
+    <color name="schedule_add_title_text">#999999</color>
+    <color name="schedule_search_bg">#ebebeb</color>
+    <color name="schedule_search_str">#cdcdcd</color>
+    <color name="search_str">#cdcdcd</color>
+    <color name="seek_progress">#FFFFFF</color>
+    <color name="seek_thumb">#2572AC</color>
+    <color name="settings_id">#9b9b9b</color>
+    <color name="settings_line">#cbcbcb</color>
+    <color name="sign_bar_bg">#B6BCB8</color>
+    <color name="sign_month_color">#FF5013</color>
+    <color name="signr_bg">#d9d9d9</color>
+    <color name="sliding_menu_background">#ff2c2c2e</color>
+    <color name="sliding_menu_body_background">#fff5f5f5</color>
+    <color name="sliding_menu_item_down">#ff39393b</color>
+    <color name="sliding_menu_item_release">#00000000</color>
+    <color name="system_message_readed">#ff999999</color>
+    <color name="system_message_unread">#ff333333</color>
+    <color name="task_edit_text_color">#ffebebeb</color>
+    <color name="text_990000">#ff990000</color>
+    <color name="text_999999">#ff999999</color>
+    <color name="text_9c7430">#ff9c7430</color>
+    <color name="text_actionbar_title">#ffffffff</color>
+    <color name="text_default">#ff666666</color>
+    <color name="text_hint">#ffcccccc</color>
+    <color name="text_money">#ff9c7430</color>
+    <color name="text_red_bg">#ffff0000</color>
+    <color name="text_status">#ff24abf3</color>
+    <color name="text_tab">#ff333333</color>
+    <color name="text_white">#ffffffff</color>
+    <color name="title_bg">#919191</color>
+    <color name="toolbar">#C0000000</color>
+    <color name="top_bar_bg">#ff286ab4</color>
+    <color name="topbar_bg">#51afe6</color>
+    <color name="touming">#08000000</color>
+    <color name="transparentblue">#445CACEE</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="workintime">#97D7FF</color>
+    <color name="zonghe">#FF5D2B</color>
+    <declare-styleable name="AppView_Element"><attr format="string" name="element_id"/></declare-styleable>
+    <declare-styleable name="DotView"><attr format="reference" name="dot_id"/></declare-styleable>
+    <declare-styleable name="GalleryView"><attr format="integer|reference" name="max_count"/><attr format="boolean|reference" name="show_camera"/><attr format="integer|reference" name="btn_position"/><attr format="boolean|reference" name="show_images"/></declare-styleable>
+    <declare-styleable name="LockPatternViewEx"><attr format="string" name="aspect"/><attr format="color|reference" name="pathColor"/><attr format="color|reference" name="regularColor"/><attr format="color|reference" name="errorColor"/><attr format="color|reference" name="successColor"/></declare-styleable>
+    <declare-styleable name="PointTextView"><attr format="integer|reference" name="flag"/></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode">
+            <flag name="disabled" value="0x0"/>
+            <flag name="pullFromStart" value="0x1"/>
+            <flag name="pullFromEnd" value="0x2"/>
+            <flag name="both" value="0x3"/>
+            <flag name="manualOnly" value="0x4"/>
+
+            
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+        </attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0"/>
+            <flag name="flip" value="0x1"/>
+        </attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <declare-styleable name="ScrollLayout"><attr format="integer|reference" name="default_screen"/></declare-styleable>
+    <declare-styleable name="ShaderImageView"><attr format="boolean" name="siSquare"/><attr format="color" name="siBorderColor"/><attr format="dimension" name="siBorderWidth"/><attr format="float" name="siBorderAlpha"/><attr format="integer|reference" name="siForeground"/><attr format="dimension" name="siRadius"/><attr format="integer|reference" name="siArrowPosition"/><attr format="dimension" name="siTriangleHeight"/><attr format="integer|reference" name="siShape"/></declare-styleable>
+    <declare-styleable name="SlidingUpPanelLayout"><attr format="dimension" name="umanoPanelHeight"/><attr format="dimension" name="umanoShadowHeight"/><attr format="dimension" name="umanoParalaxOffset"/><attr format="color" name="umanoFadeColor"/><attr format="integer" name="umanoFlingVelocity"/><attr format="reference" name="umanoDragView"/><attr format="reference" name="umanoScrollableView"/><attr format="boolean" name="umanoOverlay"/><attr format="boolean" name="umanoClipPanel"/><attr format="float" name="umanoAnchorPoint"/><attr format="enum" name="umanoInitialState">
+            <enum name="expanded" value="0"/>
+            <enum name="collapsed" value="1"/>
+            <enum name="anchored" value="2"/>
+            <enum name="hidden" value="3"/>
+        </attr></declare-styleable>
+    <declare-styleable name="dragGridView"><attr format="color" name="dividerColor"/><attr format="boolean" name="dividerShowed"/><attr format="dimension" name="dividerPaddingTop"/><attr format="dimension" name="dividerPaddingBottom"/><attr format="dimension" name="dividerWidth"/></declare-styleable>
+    <declare-styleable name="topBar"><attr format="reference" name="topbar_layout"/><attr format="boolean" name="topbar_return_visiable"/><attr format="string" name="topbar_title"/><attr format="string" name="topbar_right_text"/><attr format="string" name="topbar_left_text"/><attr format="boolean" name="topbar_right_image_visiable"/><attr format="boolean" name="topbar_right_text_visiable"/><attr format="boolean" name="topbar_left_text_visiable"/><attr format="reference" name="topbar_right_image_src"/><attr format="reference" name="topbar_title_src"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ampm_label_size">16sp</dimen>
+    <dimen name="ampm_left_padding">6dip</dimen>
+    <dimen name="bottom_btn_15">11sp</dimen>
+    <dimen name="btn_13">12sp</dimen>
+    <dimen name="btn_default_height">40dip</dimen>
+    <dimen name="btn_default_size_14">14sp</dimen>
+    <dimen name="btn_padding_bottom">5dip</dimen>
+    <dimen name="btn_padding_left">10dip</dimen>
+    <dimen name="btn_padding_right">10dip</dimen>
+    <dimen name="btn_padding_top">5dip</dimen>
+    <dimen name="contacts_dep_list_item_height">60dip</dimen>
+    <dimen name="contacts_title_list_item_height">85dip</dimen>
+    <dimen name="container_account_icon_height">88dip</dimen>
+    <dimen name="container_account_layout_height">128dip</dimen>
+    <dimen name="container_account_top_height">68dip</dimen>
+    <dimen name="container_border_width">5dip</dimen>
+    <dimen name="container_divider_4">4dip</dimen>
+    <dimen name="container_divider_8">8dip</dimen>
+    <dimen name="container_grid_dot">12dip</dimen>
+    <dimen name="container_grid_dot_width">6dip</dimen>
+    <dimen name="container_image_width_30">40dip</dimen>
+    <dimen name="container_image_width_38">43dip</dimen>
+    <dimen name="container_image_width_40">45dip</dimen>
+    <dimen name="container_item_list_divider_marginleft">70dip</dimen>
+    <dimen name="container_margin_left">15dip</dimen>
+    <dimen name="container_margin_right">15dip</dimen>
+    <dimen name="container_multiple_grid01_height">164dip</dimen>
+    <dimen name="container_multiple_grid01_item_height">82dip</dimen>
+    <dimen name="container_multiple_grid02_item_height">64dip</dimen>
+    <dimen name="container_multiple_grid03_item_height">96dip</dimen>
+    <dimen name="container_multiple_list_item_height">54dip</dimen>
+    <dimen name="container_text_size_10">10sp</dimen>
+    <dimen name="container_text_size_12">12sp</dimen>
+    <dimen name="container_text_size_14">14sp</dimen>
+    <dimen name="date_picker_component_width">270dip</dimen>
+    <dimen name="date_picker_header_height">30dip</dimen>
+    <dimen name="date_picker_header_text_size">14dip</dimen>
+    <dimen name="date_picker_view_animator_height">270dip</dimen>
+    <dimen name="day_number_select_circle_radius">16dip</dimen>
+    <dimen name="day_number_size">16sp</dimen>
+    <dimen name="dialog_button_height">46dp</dimen>
+    <dimen name="dialog_content_height">65dp</dimen>
+    <dimen name="dialog_content_marginleft">10dp</dimen>
+    <dimen name="dialog_font">15sp</dimen>
+    <dimen name="dialog_title">50dp</dimen>
+    <dimen name="dialog_title_marginleft">10dp</dimen>
+    <dimen name="dialog_width">260dp</dimen>
+    <dimen name="divider_height">28dip</dimen>
+    <dimen name="divider_top">14dip</dimen>
+    <dimen name="done_label_size">14sp</dimen>
+    <dimen name="dynamic_column">16sp</dimen>
+    <dimen name="extra_time_label_margin">-30dp</dimen>
+    <dimen name="frame_dialog_height">98dip</dimen>
+    <dimen name="frame_dialog_width">98dip</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="header_height">96dip</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="item_news_imagetext_parent_h1">100dip</dimen>
+    <dimen name="item_news_imagetext_parent_h2">110dip</dimen>
+    <dimen name="lock_pattern_dot_line_width">3dp</dimen>
+    <dimen name="lock_pattern_dot_size">12dp</dimen>
+    <dimen name="lock_pattern_dot_size_activated">28dp</dimen>
+    <dimen name="login_et_height">40dip</dimen>
+    <dimen name="login_et_iv_height">30dip</dimen>
+    <dimen name="login_et_iv_width">30dip</dimen>
+    <dimen name="login_et_marginLeft">10dip</dimen>
+    <dimen name="login_et_marginright">10dip</dimen>
+    <dimen name="logo_icon_height">160dip</dimen>
+    <dimen name="logo_icon_lly">145dip</dimen>
+    <dimen name="logo_icon_width">160dip</dimen>
+    <dimen name="margin_bottom">15dip</dimen>
+    <dimen name="margin_left">15dip</dimen>
+    <dimen name="margin_right">15dip</dimen>
+    <dimen name="margin_top">15dip</dimen>
+    <dimen name="market_app_drawable_margin">10dip</dimen>
+    <dimen name="market_app_icon">60dip</dimen>
+    <dimen name="market_app_name">13sp</dimen>
+    <dimen name="market_app_new_width">40dip</dimen>
+    <dimen name="market_progress_height">4dip</dimen>
+    <dimen name="market_progress_margin_bottom">5dip</dimen>
+    <dimen name="market_progress_width">60dip</dimen>
+    <dimen name="market_top_bar_bg_height">50dip</dimen>
+    <dimen name="market_top_bar_height">46dip</dimen>
+    <dimen name="market_top_bar_margin">8dip</dimen>
+    <dimen name="market_topbar_text">15sp</dimen>
+    <dimen name="market_update_btn_text">20dip</dimen>
+    <dimen name="menu_bar_size">10sp</dimen>
+    <dimen name="menu_height">60dip</dimen>
+    <dimen name="minimum_margin_sides">48dip</dimen>
+    <dimen name="minimum_margin_top_bottom">24dip</dimen>
+    <dimen name="month_day_label_text_size">10sp</dimen>
+    <dimen name="month_label_size">16sp</dimen>
+    <dimen name="month_list_item_header_height">50dip</dimen>
+    <dimen name="month_select_circle_radius">45dip</dimen>
+    <dimen name="myoffice_account_height">60dip</dimen>
+    <dimen name="myoffice_item_height">50dip</dimen>
+    <dimen name="myoffice_item_icon_width">30dip</dimen>
+    <dimen name="myoffice_item_margin_left">20dip</dimen>
+    <dimen name="myoffice_item_margin_right">20dip</dimen>
+    <dimen name="myoffice_item_margin_top">15dip</dimen>
+    <dimen name="news_bar_text_size">16sp</dimen>
+    <dimen name="news_info_paddingBottom">10dip</dimen>
+    <dimen name="news_info_paddingTop">10dip</dimen>
+    <dimen name="news_item_center_text_size">18sp</dimen>
+    <dimen name="news_item_text_size">16sp</dimen>
+    <dimen name="news_list_images_item_height">126dip</dimen>
+    <dimen name="news_list_images_item_image_height">72dip</dimen>
+    <dimen name="news_list_images_item_image_width">108dip</dimen>
+    <dimen name="news_list_item_height">97dip</dimen>
+    <dimen name="news_list_item_image_height">67dip</dimen>
+    <dimen name="news_list_item_image_height2">70dip</dimen>
+    <dimen name="news_list_item_image_width">100dip</dimen>
+    <dimen name="news_list_item_image_width2">105dip</dimen>
+    <dimen name="news_scrollRLL_height">168dip</dimen>
+    <dimen name="news_scroll_image_height">90dip</dimen>
+    <dimen name="news_scroll_image_width">130dip</dimen>
+    <dimen name="news_top_bar_height">40dip</dimen>
+    <dimen name="oa_account_text">20sp</dimen>
+    <dimen name="oa_item_text">15sp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="picker_dimen">270dip</dimen>
+    <dimen name="selected_calendar_layout_height">155dip</dimen>
+    <dimen name="selected_date_day_size">75dip</dimen>
+    <dimen name="selected_date_month_size">30dip</dimen>
+    <dimen name="selected_date_year_size">30dip</dimen>
+    <dimen name="separator_padding">4dip</dimen>
+    <dimen name="setting_btn_height">55dip</dimen>
+    <dimen name="setting_item_height">75dip</dimen>
+    <dimen name="setting_item_marginright">20dip</dimen>
+    <dimen name="settings_right_jiantou">30dip</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_content_default">15sp</dimen>
+    <dimen name="time_label_size">60sp</dimen>
+    <dimen name="top_bar_height">50dip</dimen>
+    <dimen name="top_bar_left">15sp</dimen>
+    <dimen name="top_bar_margin_top">2dip</dimen>
+    <dimen name="top_bar_parent_height">50dip</dimen>
+    <dimen name="top_bar_title">18sp</dimen>
+    <dimen name="topicon_margintop">20dip</dimen>
+    <dimen name="update_content_paddingtop">1dip</dimen>
+    <dimen name="userinfo_icon_height">90dip</dimen>
+    <dimen name="userinfo_icon_width">90dip</dimen>
+    <dimen name="userinfo_lly_height">120dip</dimen>
+    <dimen name="year_label_height">64dip</dimen>
+    <dimen name="year_label_text_size">22dip</dimen>
+    <item name="animator" type="id">false</item>
+    <item name="auto_focus" type="id"/>
+    <item name="date_picker_day" type="id">false</item>
+    <item name="date_picker_header" type="id">false</item>
+    <item name="date_picker_month" type="id">false</item>
+    <item name="date_picker_month_and_day" type="id">false</item>
+    <item name="date_picker_year" type="id">false</item>
+    <item name="day_picker_selected_date_layout" type="id">false</item>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="done" type="id">false</item>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="guide_container" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="month_text_view" type="id">false</item>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="webview" type="id"/>
+    <integer name="col_count">3</integer>
+    <integer name="config_tab_count">4</integer>
+    <integer name="row_count">4</integer>
+    <string name="about">关于软件</string>
+    <string name="action_settings">Settings</string>
+    <item format="float" name="ampm_circle_radius_multiplier" type="string">0.19</item>
+    <string name="app_name">schedule</string>
+    <string name="application_exit">再按一次将退出程序！</string>
+    <string name="at_once_login">立即登录</string>
+    <string name="attach_num">%1$s个附件</string>
+    <string name="attachment">附件: %1$d</string>
+    <string name="attachmenttext">附件</string>
+    <string name="bind_cur_phone">目前绑定手机号</string>
+    <string name="bind_new_phone">请输入棒定的新手机号</string>
+    <string name="bind_phone">绑定手机</string>
+    <string name="bind_tel">该账户所绑定的手机号为%1$s</string>
+    <string name="binding">正在绑定用户...</string>
+    <string name="cancel">取消</string>
+    <string name="cannot_open_buffer">无法打开缓冲器</string>
+    <string name="cannot_open_document">无法打开文档</string>
+    <string name="cannot_open_document_Reason">无法打开文档： %1$s</string>
+    <string name="cannot_open_file_Path">无法打开文件：%1$s</string>
+    <string name="check_update">检测更新</string>
+    <string name="check_update_tip">正在检测更新</string>
+    <string name="choose_value">选择值</string>
+    <item format="float" name="circle_radius_multiplier" type="string">0.82</item>
+    <item format="float" name="circle_radius_multiplier_24HourMode" type="string">0.85</item>
+    <string name="clear_cach_data">已缓存%1$s</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="confirm_modify">确认修改</string>
+    <string name="confirm_modify_pwd">确认修改密码</string>
+    <string name="confirm_submit">确认提交</string>
+    <string name="confirmpwd">确认新密码</string>
+    <string name="confirmpwd_center">确认密码</string>
+    <string name="confirmpwd_hint">请再次输入新密码(6-20位)</string>
+    <string name="contact_num">%1$s人</string>
+    <string name="day_of_week_label_typeface" translatable="false">sans-serif</string>
+    <string name="day_picker_description">Month grid of days</string>
+    <string name="deleted_key"><ns1:g example="4" id="key">%1$s</ns1:g> deleted</string>
+    <string name="depart">部门</string>
+    <string name="dialog_cancel">以后再说</string>
+    <string name="dialog_ok">马上更新</string>
+    <string name="dialog_title_get_data">正在获取数据</string>
+    <string name="dialog_title_load_data">正在加载数据</string>
+    <string name="dialog_title_post_data">正在提交数据</string>
+    <string name="dialog_title_refresh_data">正在刷新数据</string>
+    <string name="discover_new_version">发现新版本</string>
+    <string name="dismiss">解除</string>
+    <string name="doc_source">资料出处</string>
+    <string name="document_has_changes_save_them_">文档已变更，保存变更吗？</string>
+    <string name="done_label">确定</string>
+    <string name="down_fail">下载失败</string>
+    <string name="down_sucess">下载成功</string>
+    <string name="download_tip">正在下载，请稍候...</string>
+    <string name="downloadfailretry">下载升级文件失败，请稍候再试!</string>
+    <string name="downloading">正在下载</string>
+    <string name="email">电子邮箱</string>
+    <string name="email_spare">备用邮箱</string>
+    <string name="enter_password">输入密码</string>
+    <string name="everpwd">旧密码</string>
+    <string name="everpwd_hint">请输入旧密码(6-20位)</string>
+    <string name="exit">退出</string>
+    <string name="extension_tel">分机号</string>
+    <string name="feedback">反馈意见</string>
+    <string name="feedback_hint">请输入内容，至多180字</string>
+    <string name="feedback_submit">提交反馈意见</string>
+    <string name="fill_out_text_field">填充文本字段</string>
+    <string name="finish">确认修改密码</string>
+    <string name="first_code">如需要更改棒定手机号请先获取验证码</string>
+    <string name="forget">忘记密码</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="framework_network_error">无法连接到网络,请检查网络设置</string>
+    <string name="funcintro">功能介绍</string>
+    <string name="gesture_close">已关闭</string>
+    <string name="gesture_open">已打开</string>
+    <string name="gesture_pwd">手势密码</string>
+    <string name="get_icode">获取验证码</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="help">帮助与反馈</string>
+    <string name="hint_pw">密码</string>
+    <string name="hint_user">用户名</string>
+    <string name="history_none">没有历史查看记录</string>
+    <string name="history_record">历史打开记录</string>
+    <string name="hour_picker_description">Hours circular slider</string>
+    <string name="icode">验证码</string>
+    <string name="identify_code">请点击下面按钮获取验证码</string>
+    <string name="info">提示</string>
+    <string name="insert_card">插入卡</string>
+    <string name="insert_sd_card">"请插入 SD 卡"</string>
+    <string name="is_downing">正在下载</string>
+    <string name="item_is_selected">%1$s selected</string>
+    <string name="jobnum">工号</string>
+    <string name="location_retry">没有定位到当前位置,请稍候重试!</string>
+    <string name="lock_manager_account">管理帐号</string>
+    <string name="lock_pw">绘制解锁图案</string>
+    <string name="lock_pw_again">再次绘制解锁图案</string>
+    <string name="lock_pw_error">密码错误</string>
+    <string name="lock_pw_not_same">密码不一致</string>
+    <string name="lock_pw_short">密码太短</string>
+    <string name="lock_reset_pw">管理手势密码</string>
+    <string name="lock_title">设置手势密码</string>
+    <string name="lockscreen_access_pattern_cell_added">Cell added</string>
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <string name="login_btn">登录</string>
+    <string name="login_btn_inter">登  录</string>
+    <string name="login_pwd">请输入密码</string>
+    <string name="login_user">请输入用户名</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_toast">注销中...</string>
+    <string name="main">正文</string>
+    <string name="main_body">正文: %1$d</string>
+    <string name="message">短信</string>
+    <string name="minute_picker_description">Minutes circular slider</string>
+    <string name="mobile_is_null">手机号不能为空</string>
+    <string name="mobile_num">手机号</string>
+    <string name="mobile_tel">手机号码</string>
+    <string name="modify_bind_hint">更改后的手机号将作为新的登录账号使用</string>
+    <string name="modify_bind_one_is_null">验证码或者手机号不能为空</string>
+    <string name="modify_nickname">修改昵称</string>
+    <string name="modify_nickname_hint">修改昵称...</string>
+    <string name="modify_phone">更改绑定手机</string>
+    <string name="modify_photo">修改头像</string>
+    <string name="modify_pw_str">修改密码</string>
+    <string name="modify_pwding">修改密码中...</string>
+    <string name="modify_scanlogin">扫码登录</string>
+    <string name="modify_weblogin">网页授权登录</string>
+    <string name="msg_rec_settings">消息接收管理</string>
+    <string msgid="3127018992717032779" name="multiface_crop_help">"轻点一张脸开始裁剪。"</string>
+    <string name="my">我的</string>
+    <string name="net_not_connect">网络未连接！</string>
+    <string name="netaddr">网络地址</string>
+    <string name="netnocon">网络未连接!</string>
+    <string name="new_register_mgr">新注册用户，请联系管理员!</string>
+    <string name="newpwd">新密码</string>
+    <string name="newver">新版本：%1$s</string>
+    <string name="newvermsg">立即更新，新版本%1$s的精彩功能等你来体验！</string>
+    <string name="newvertitle"/>
+    <string name="next_auto_login">下次自动登录</string>
+    <string name="next_step">下一步</string>
+    <string name="nick_hint">来修改一个你满意的昵称吧</string>
+    <string name="nickname">昵称</string>
+    <string name="nickname_is_null">昵称不能为空</string>
+    <string name="no">否</string>
+    <string msgid="820691042667338625" name="no_storage" product="default">"使用相机前请先插入 SD 卡。"</string>
+    <string name="none_history_record">没有历史查看记录  先去看看栏目吧</string>
+    <string msgid="6655334407957844653" name="not_enough_space" product="default">"SD 卡已满。"</string>
+    <string name="not_supported">不被支持</string>
+    <string name="noupdate">不需要升级</string>
+    <string name="nowpwd">新密码</string>
+    <string name="nowpwd_hint">请输入新密码(6-20位)</string>
+    <item format="float" name="numbers_radius_multiplier_inner" type="string">0.60</item>
+    <item format="float" name="numbers_radius_multiplier_normal" type="string">0.81</item>
+    <item format="float" name="numbers_radius_multiplier_outer" type="string">0.83</item>
+    <string name="oa_dbsx_str">代办事宜</string>
+    <string name="ok">确定</string>
+    <string name="okay">确定</string>
+    <string name="passpwd">旧密码</string>
+    <string name="person_center">个人中心</string>
+    <string name="photo_header">头像</string>
+    <string name="plane_tel">座机电话</string>
+    <string name="pleaselogin">请先登陆...</string>
+    <string msgid="2914969119574812666" name="preparing_sd" product="default">"正在准备 SD 卡..."</string>
+    <string name="provider_authorities">com.android.hcframe.sql.HcProvider</string>
+    <string name="publish_time">发布时间</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉获取更多数据…</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">放开开始获取数据</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在获取数据…</string>
+    <string name="pull_to_refresh_release_label">放开开始刷新…</string>
+    <string name="push">推送</string>
+    <string name="push_settings">消息接收设置</string>
+    <string name="pwd_hint_one">密码由6-20位数字、字母或者半角字符组成</string>
+    <string name="pwd_hint_two">区分大小写。</string>
+    <string name="pwd_not_equal">两次输入密码不相等！</string>
+    <string name="pwd_two_error">两次密码输入不一致</string>
+    <string name="pwdnull">密码不能为空！</string>
+    <string name="qrcode">软件二维码</string>
+    <string name="radial_numbers_typeface" translatable="false">sans-serif</string>
+    <string name="register_new_user">注册新用户</string>
+    <string name="retrieve_one_error">用户名错误、用户名未绑定手机!</string>
+    <string name="retrieve_pwd">找回密码</string>
+    <string name="return_center_home">返回历史记录</string>
+    <string name="return_last">返回上一级</string>
+    <string name="return_top">返回最上级</string>
+    <string name="reverse_feedback">意见反馈</string>
+    <string name="sans_serif" translatable="false">sans-serif</string>
+    <string name="save_callcard">保存名片</string>
+    <string name="save_photo">保存头像</string>
+    <string name="scan_downlaod">扫描下载该软件</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="scanlogin_str">扫码登录Web版</string>
+    <string name="schedule_add_text">例如:"外出会议"不超过8个字</string>
+    <string name="schedule_search_content_hint">请输入检索关键字</string>
+    <string name="schedule_search_str">搜索</string>
+    <string name="search_content_hint">请输入检索关键字</string>
+    <string name="search_none">没有搜索到相关内容</string>
+    <string name="search_record">历史搜索记录</string>
+    <string name="search_str">搜索</string>
+    <string name="select_day">Select month and day</string>
+    <string name="select_hours">Select hours</string>
+    <string name="select_minutes">Select minutes</string>
+    <string name="select_year">Select year</string>
+    <item format="float" name="selection_radius_multiplier" type="string">0.16</item>
+    <string name="settings">设置</string>
+    <string name="settings_id_temp">ID:sfb_zhm</string>
+    <string name="settings_name_temp">张鸿铭</string>
+    <string name="spare_tel">备用电话</string>
+    <string name="storage_is_full">"存储空间已满"</string>
+    <string name="submit">提交</string>
+    <string name="sum_pics">%1$d张</string>
+    <string name="sum_result">共%1$d条结果</string>
+    <string name="syssettings">系统设置</string>
+    <string name="task_end_cancel">取消</string>
+    <string name="task_end_confirm">确定</string>
+    <item format="float" name="text_size_multiplier_inner" type="string">0.14</item>
+    <item format="float" name="text_size_multiplier_normal" type="string">0.17</item>
+    <item format="float" name="text_size_multiplier_outer" type="string">0.11</item>
+    <string name="time_placeholder" translatable="false">--</string>
+    <string name="time_separator" translatable="false">:</string>
+    <string name="timer_code">%1$s秒后重置</string>
+    <string name="toast_accout_not_exist">账号不存在!</string>
+    <string name="toast_connect_time_out">网络不给力,请稍后再试.</string>
+    <string name="toast_data_error">服务器数据返回错误！</string>
+    <string name="toast_data_null">没有更多的数据！</string>
+    <string name="toast_login_accout_not_exist">账号不存在!</string>
+    <string name="toast_login_accout_null">账号不能为空！</string>
+    <string name="toast_login_dialog">登录中...</string>
+    <string name="toast_login_failed">登录失败！</string>
+    <string name="toast_login_pw_error">用户名或密码错误！</string>
+    <string name="toast_login_pw_null">密码不能为空！</string>
+    <string name="toast_login_time_out">用户登录超时，需要重新登录！</string>
+    <string name="toast_network_error">网络不可用！</string>
+    <string name="toast_phone_wrong">手机号码格式错误！</string>
+    <string name="toast_photo_file_not_exist">图片文件夹创建失败！</string>
+    <string name="toast_request_network_error">网络不给力,请稍后再试.</string>
+    <string name="toast_system_error">网络异常,代码</string>
+    <string name="top_bar_return_btn">返回</string>
+    <string name="unbinding">正在解除绑定用户...</string>
+    <string name="update_check_fail">升级检测失败</string>
+    <string name="update_download_dialog_cancel">以后再说</string>
+    <string name="update_download_dialog_ok">马上更新</string>
+    <string name="update_download_dialog_version">新版本：%1$s</string>
+    <string name="update_fail">更新失败</string>
+    <string name="update_install">安装</string>
+    <string name="update_service_action">zjhc.soft.startupdateservice</string>
+    <string name="update_tip">版本有更新，是否安装更新？ 取消/安装</string>
+    <string name="upload_error">上传失败!</string>
+    <string name="upload_success">上传成功</string>
+    <string name="uploading">正在上传...</string>
+    <string name="user_account_not_null">用户名或者昵称不能为空!</string>
+    <string name="user_hint">用户名将作为登录账号使用</string>
+    <string name="user_login">用户登录</string>
+    <string name="user_not_null">用户名不能为空!</string>
+    <string name="user_pwd_error">用户名或者密码错误</string>
+    <string name="version_info">版本信息</string>
+    <string name="version_temp">版本：8.6.0</string>
+    <string name="versioning">版本检测中...</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="virtual_tel">虚拟短号</string>
+    <string name="vpnstr">VPN账户:</string>
+    <string name="welcome_page">欢迎页</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="year_picker_description">Year list</string>
+    <string name="yes">是</string>
+    <string name="yijia_version">移加  %1$s</string>
+    <style name="AppBaseTheme" parent="@android:style/Theme"/>
+    <style name="AppBaseTheme.Light" parent="@android:style/Theme.Light"/>
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="color_lock_pattern_view_regular">@color/lock_pattern_view_regular_light</item>
+        <item name="color_lock_pattern_view_success">@color/lock_pattern_view_success_light</item>
+        <item name="color_lock_pattern_view_error">@color/lock_pattern_view_error_light</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--
+    	<item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        -->
+    </style>
+    <style name="AppTheme.Light" parent="@style/AppBaseTheme.Light">
+        <item name="color_lock_pattern_view_regular">@color/lock_pattern_view_regular_dark</item>
+        <item name="color_lock_pattern_view_success">@color/lock_pattern_view_success_dark</item>
+        <item name="color_lock_pattern_view_error">@color/lock_pattern_view_error_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        -->
+    </style>
+    <style name="CustomAlterDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox</item>
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="HC_AlertDialog" parent="@android:style/Theme.Holo.Light.Dialog.MinWidth">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/HC_DialogWindowTitle</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="HC_DialogTextAppearance">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#ff33b5e5</item>
+    </style>
+    <style name="HC_DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/HC_DialogTextAppearance</item>
+    </style>
+    <style name="Holo.ProgressBar" parent="progressBase">
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_holo</item>
+    </style>
+    <style name="LineHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="LineHorizontal.Gray_d8">
+        <item name="android:background">@color/gray_d8</item>
+    </style>
+    <style name="Schedule_DialogTextAppearance">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#ff33b5e5</item>
+    </style>
+    <style name="Schedule_DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/Schedule_DialogTextAppearance</item>
+    </style>
+    <style name="Schedule_TimePickerDialog" parent="@android:style/Theme.Holo.Light.Dialog.MinWidth">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/Schedule_DialogWindowTitle</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="ampm_label">
+        <item name="android:textSize">@dimen/ampm_label_size</item>
+        <item name="android:textColor">@color/ampm_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="bottom_button_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">@dimen/menu_bar_size</item>
+        <item name="android:textColor">@color/tab_indicator_text</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">3dip</item>
+        <!--
+       <item name="android:layout_marginLeft">-3dip</item>
+       <item name="android:layout_marginRight">-3dip</item>
+       <item name="android:background">@drawable/buttonbarbackground</item>
+       <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        -->
+    </style>
+    <style name="corner_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/corner_btn_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="corner_btn.blue" parent="corner_btn">
+        <item name="android:background">@drawable/corner_btn_blue_src</item>
+    </style>
+    <style name="corner_btn.dark_green" parent="corner_btn">
+        <item name="android:background">@drawable/corner_btn_dark_green_src</item>
+    </style>
+    <style name="corner_btn.light_green" parent="corner_btn">
+        <item name="android:background">@drawable/corner_btn_light_green_src</item>
+    </style>
+    <style name="corner_btn.orange" parent="corner_btn">
+        <item name="android:background">@drawable/corner_btn_orange_src</item>
+    </style>
+    <style name="day_of_week_label_condensed"/>
+    <style name="match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="myDialogTheme" parent="android:Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 除去title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 背景 <item name="android:windowBackground">@android:drawable/dialog_frame</item> -->
+        <item name="android:windowBackground">@drawable/corner_download_dialog_frame_bg</item>
+        <item name="android:padding">1dip</item>
+    </style>
+    <style name="news_top_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">@dimen/news_bar_text_size</item>
+        <item name="android:textColor">@color/market_topbar_text</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="progressBase">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_white</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+    <style name="time_label">
+        <item name="android:textSize">@dimen/time_label_size</item>
+        <item name="android:textColor">@color/numbers_text_color</item>
+    </style>
+    <style name="tv_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">7</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

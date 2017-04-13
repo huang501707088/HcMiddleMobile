@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\done_text_color.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\color\\done_text_color.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\corner_btn_text_color.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\color\\corner_btn_text_color.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\date_picker_selector.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\color\\date_picker_selector.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\market_topbar_text.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\color\\market_topbar_text.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\tab_indicator_text.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\color\\tab_indicator_text.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\date_picker_year_selector.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\color\\date_picker_year_selector.xml"
+    },
+    {
+        "merged": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\doc_column_text_color.xml",
+        "source": "D:\\HcMiddleMobile\\HcMobileFrame\\build\\intermediates\\bundles\\debug\\res\\color\\doc_column_text_color.xml"
+    }
+]

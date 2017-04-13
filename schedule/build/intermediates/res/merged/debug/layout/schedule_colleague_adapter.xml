@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/schedule_col_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/schedule_colleague_txt"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/schedule_colleague_icon"
+            android:drawablePadding="8dp"
+            android:textColor="#51afe6"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/schedule_colleague_tele_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:src="@drawable/schedule_colleague_tele_icon" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/schedule_colleague_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="19dp" />
+
+        <TextView
+            android:id="@+id/schedule_colleague_theme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

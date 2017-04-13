@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabWidget xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menubar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_height"
+    android:layout_gravity="bottom"
+    android:tabStripEnabled="false"
+    android:background="@color/menubar_bg" >
+
+    <com.android.hcframe.menu.MenuTextView
+        android:id="@+id/menu1"
+        style="@style/bottom_button_bar"
+        android:drawableTop="@drawable/menu_first_btn_src" />
+
+    <com.android.hcframe.menu.MenuTextView
+        android:id="@+id/menu2"
+        style="@style/bottom_button_bar"
+        android:drawableTop="@drawable/menu_second_btn_src" />
+
+    <com.android.hcframe.menu.MenuTextView
+        android:id="@+id/menu3"
+        style="@style/bottom_button_bar"
+        android:drawableTop="@drawable/menu_third_btn_src"
+         />
+    <!-- android:textColor="@color/annual_topbar_bg" -->
+
+    <com.android.hcframe.menu.MenuTextView
+        android:id="@+id/menu4"
+        style="@style/bottom_button_bar"
+        android:drawableTop="@drawable/menu_fourth_btn_src" />
+    
+    <com.android.hcframe.menu.MenuTextView
+        android:id="@+id/menu5"
+        style="@style/bottom_button_bar"
+        android:drawableTop="@drawable/menu_fifth_btn_src"
+        android:visibility="visible" />
+
+</TabWidget>
+

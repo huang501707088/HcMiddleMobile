@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="264dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gps_netdata_bg"
+    android:orientation="vertical"
+    android:paddingBottom="16dip"
+    android:paddingLeft="14dip"
+    android:paddingRight="14dip"
+    android:paddingTop="16dip" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main"
+        android:textColor="@color/text_hint"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/file_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/attachmenttext"
+        android:textColor="@color/text_hint"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/attachment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

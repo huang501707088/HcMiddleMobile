@@ -1,0 +1,93 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme"></style>
+
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="color_lock_pattern_view_regular">@color/lock_pattern_view_regular_light</item>
+        <item name="color_lock_pattern_view_success">@color/lock_pattern_view_success_light</item>
+        <item name="color_lock_pattern_view_error">@color/lock_pattern_view_error_light</item>
+    	<item name="android:windowNoTitle">true</item>
+    	<!--  
+    	<item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        -->
+    </style>
+
+    <style name="AppBaseTheme.Light" parent="@android:style/Theme.Light"></style>
+
+    <style name="AppTheme.Light" parent="@style/AppBaseTheme.Light" >
+        <item name="color_lock_pattern_view_regular">@color/lock_pattern_view_regular_dark</item>
+        <item name="color_lock_pattern_view_success">@color/lock_pattern_view_success_dark</item>
+        <item name="color_lock_pattern_view_error">@color/lock_pattern_view_error_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--  
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        -->
+    </style>
+    
+    <style name="progressBase">
+	    <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_white</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+	</style>
+	
+	<style name="Holo.ProgressBar" parent="progressBase">
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_holo</item>
+    </style>
+        <style name="tv_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">7</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    
+    <style name="match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+   	<style name="bottom_button_bar">
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:gravity">center</item>
+       <item name="android:focusable">true</item>
+       <item name="android:textSize">@dimen/menu_bar_size</item>
+       <item name="android:textColor">@color/tab_indicator_text</item>
+       <item name="android:paddingTop">4dip</item>
+       <item name="android:paddingBottom">1dip</item>
+       <item name="android:layout_weight">1</item>
+       <item name="android:drawablePadding">3dip</item>
+
+       <!--
+       <item name="android:layout_marginLeft">-3dip</item>
+       <item name="android:layout_marginRight">-3dip</item>
+       <item name="android:background">@drawable/buttonbarbackground</item>
+       <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+       -->
+   </style>
+   
+   	<style name="market_top_bar">
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:gravity">center</item>
+       <item name="android:focusable">true</item>
+       <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+       <item name="android:textColor">@color/market_topbar_text</item>
+       <item name="android:paddingTop">3dip</item>
+       <item name="android:paddingBottom">2dip</item>
+       <item name="android:layout_weight">1</item>
+       <item name="android:textSize">@dimen/market_topbar_text</item>
+   </style>
+
+</resources>

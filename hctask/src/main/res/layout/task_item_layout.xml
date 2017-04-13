@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/task_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/task_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"
+        android:scaleType="center" />
+    <!-- 内容 -->
+    <RelativeLayout
+        android:id="@+id/task_item_content_parent"
+        android:layout_width="match_parent"
+        android:layout_height="83dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="14dip"
+        android:layout_marginTop="10dip">
+
+        <com.android.hcframe.container.ContainerCircleImageView
+            android:id="@+id/task_item_icon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/task_default_head"
+            zjhc:siBorderAlpha="1.0"
+            zjhc:siBorderColor="@color/edittext_bg"
+            zjhc:siBorderWidth="1dip" />
+
+        <TextView
+            android:id="@+id/task_item_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/task_item_icon"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/task_item_icon"
+            android:singleLine="true"
+            android:text="发布人： "
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/task_item_publisher"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/task_item_icon"
+            android:singleLine="true"
+            android:text="截止日期： "
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/task_item_timeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/task_item_date"
+            android:layout_alignTop="@id/task_item_date"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/task_item_date"
+            android:background="@drawable/task_corner_btn_red_bg"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:singleLine="true"
+            android:text="超时"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/task_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/task_item_icon"
+            android:lines="2"
+            android:text="发布人： "
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/task_item_btn_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_item_content_parent"
+        android:layout_marginRight="14dip">
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="15dip"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/task_item_btn1"
+            android:layout_width="80dip"
+            android:layout_height="28dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/task_corner_btn_blue_frame_bg"
+            android:gravity="center"
+            android:textColor="#51afe6"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/task_item_btn2"
+            android:layout_width="80dip"
+            android:layout_height="28dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/task_corner_btn_blue_frame_bg"
+            android:gravity="center"
+            android:textColor="#51afe6"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dip"
+        android:layout_below="@id/task_item_btn_parent"
+        android:background="@drawable/item_default_top_bg" />
+</RelativeLayout>

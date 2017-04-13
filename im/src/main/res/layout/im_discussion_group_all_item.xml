@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FFFFFF"
+    android:minHeight="60dp"
+    android:orientation="horizontal">
+
+
+    <com.android.hcframe.container.ContainerCircleImageView
+        android:id="@+id/discussion_group_all_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="14dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter"
+        zjhc:siBorderAlpha="1.0"
+        zjhc:siBorderColor="@color/edittext_bg"
+        zjhc:siBorderWidth="1dip" />
+
+
+    <TextView
+        android:id="@+id/discussion_group_all_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="朱家斌"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/im_discussion_group_black"
+        android:textSize="12sp" />
+</LinearLayout>

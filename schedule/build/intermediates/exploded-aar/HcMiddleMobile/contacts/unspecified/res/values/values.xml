@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="conatct_msm_title_bg">#EFEFF0</color>
+    <color name="contact_detail_divider">#57BDED</color>
+    <color name="contact_msm_send_bg">#F8F8F8</color>
+    <color name="contact_num">#8FD6FF</color>
+    <color name="contact_topbar_bg">#51afe6</color>
+    <color name="contacts_search_bg">#ebebeb</color>
+    <dimen name="contacts_dep_list_item_height">60dip</dimen>
+    <dimen name="contacts_title_list_item_height">85dip</dimen>
+    <string name="app_name">Contacts</string>
+    <string name="contact_num">%1$s人</string>
+    <string name="depart">部门</string>
+    <string name="email">电子邮箱</string>
+    <string name="email_spare">备用邮箱</string>
+    <string name="extension_tel">分机号</string>
+    <string name="jobnum">工号</string>
+    <string name="message">短信</string>
+    <string name="mobile_tel">手机号码</string>
+    <string name="plane_tel">座机电话</string>
+    <string name="return_last">返回上一级</string>
+    <string name="return_top">返回最上级</string>
+    <string name="save_callcard">保存名片</string>
+    <string name="spare_tel">备用电话</string>
+    <string name="virtual_tel">虚拟短号</string>
+</resources>

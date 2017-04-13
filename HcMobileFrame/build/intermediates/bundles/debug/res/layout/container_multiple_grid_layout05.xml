@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.hcframe.DraggableGridViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    zjhc:dividerColor="@color/divider_bg"
+    zjhc:dividerWidth="1dip"
+    android:background="@drawable/item_default_bottom_bg"
+    android:paddingTop="1dip"
+    android:paddingBottom="1dip" />

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <!-- 底部按钮 -->
+    <!-- <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"> -->  
+        <Button
+            android:id="@+id/btn_rcd"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@drawable/voice_rcd_btn_nor"
+            android:text="@string/pressOnTalk"           
+            android:textColor="#444444"
+            android:textSize="20sp"/>
+    <!-- </RelativeLayout> -->
+    <!-- 录音显示UI层-->
+    <LinearLayout
+        android:id="@+id/rcChat_popup"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            layout="@layout/voice_rcd_hint_window" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/close"
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:layout_centerInParent="true"
+		android:background="@drawable/voice_rcd_cancel_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+    
+	    <ImageView
+			android:id="@+id/img_close"
+			android:layout_width="60.0dip"
+			android:layout_height="60.0dip"
+			android:src="@drawable/rcd_cancel_icon"/>
+	        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="关闭"
+            android:textColor="#ffffff"
+            android:textSize="13.0sp" />
+	</LinearLayout>
+</RelativeLayout>

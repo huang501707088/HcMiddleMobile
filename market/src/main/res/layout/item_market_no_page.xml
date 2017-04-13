@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myoffice_item_margin_top"
+        android:id="@+id/market_category_divider" />
+    <TextView 
+        android:textSize="@dimen/market_app_name"
+        android:textColor="#ff414040"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:background="@drawable/item_default_bg"
+        android:id="@+id/market_category_name"
+        android:drawableLeft="@drawable/market_category_name_point"
+        android:drawablePadding="10dip" />
+	<com.android.hcframe.HcDraggableGridViewPager
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/market_gridview_no_page" />
+</LinearLayout>

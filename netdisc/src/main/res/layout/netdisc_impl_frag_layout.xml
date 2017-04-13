@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/netdisc_impl_frg_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/main_framework_bg"
+        android:orientation="vertical">
+
+
+        <ListView
+            android:id="@+id/down_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#e6e6e6"
+            android:dividerHeight="1dp" />
+        <com.android.hcframe.view.toast.NoDataView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/impl_pager_no_data"
+            android:gravity="center"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/netdisc_line" />
+
+    <LinearLayout
+        android:id="@+id/netdisc_search_list_footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/netdisc_search_bg"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/impl_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/netdisc_search_new_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/netdisc_impl_edit" />
+
+            <TextView
+                android:id="@+id/netdisc_search_new_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="选择编辑"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/netdisc_line"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/impl_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/netdisc_search_file_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/netdisc_impl_stop" />
+
+            <TextView
+                android:id="@+id/netdisc_search_file_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="全部暂停"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

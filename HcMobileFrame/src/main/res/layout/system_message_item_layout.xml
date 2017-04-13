@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:orientation="vertical"
+    android:padding="10dip" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:id="@+id/sys_message_item_content"
+        android:textColor="@color/system_message_unread"
+        android:textSize="12sp" />
+	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sys_message_item_date"
+        android:textColor="#ffd9d9d9"
+        android:textSize="12sp"
+        android:gravity="right" />
+</LinearLayout>

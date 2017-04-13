@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="264dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sign_corner_dialog"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/net_gps_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="迟到原因"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/signin_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@null"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:hint="迟到原因" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_button_height"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/unagree_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="取消"
+            android:textColor="#51aee6"
+            android:textSize="19sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="#CCCCCC" />
+
+        <Button
+            android:id="@+id/agree_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="确定"
+            android:textColor="#51aee6"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+</LinearLayout>

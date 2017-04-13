@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.hcframe.doc">
+
+    <application android:allowBackup="true" android:label="@string/app_name">
+        <activity
+            android:name="com.android.hcframe.doc.AttachmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.hcframe.doc.DocDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.hcframe.doc.DocColumnActivity"
+            android:screenOrientation="portrait" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <receiver android:name="com.android.hcframe.doc.DocBroadcast">
+            <intent-filter>
+                <action android:name="com.android.hcframe.start_doc"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

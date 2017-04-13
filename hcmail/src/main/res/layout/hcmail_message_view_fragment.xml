@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/edittext_bg">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/hcmail_view_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg"/>
+
+    <com.android.email.view.NonLockingScrollView
+        android:id="@+id/main_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- 发件人 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hcmail_message_compose_other_bg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hcmail_send"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:paddingTop="13dip"
+                    android:paddingBottom="13dip"
+                    android:paddingLeft="10dip"/>
+
+                <TextView
+                    android:id="@+id/send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginRight="10dip"/>
+            </LinearLayout>
+            <!-- 收件人 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/hcmail_message_compose_other_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hcmail_to"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:paddingTop="13dip"
+                    android:paddingBottom="13dip"
+                    android:paddingLeft="10dip"/>
+
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginRight="10dip"
+                    android:paddingTop="13dip"
+                    android:paddingBottom="13dip"/>
+            </LinearLayout>
+
+            <!-- 抄送人 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/hcmail_message_compose_other_bg"
+                android:visibility="gone"
+                android:id="@+id/email_message_view_cc_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="抄送"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:paddingTop="13dip"
+                    android:paddingBottom="13dip"
+                    android:paddingLeft="10dip"/>
+
+                <TextView
+                    android:id="@+id/email_message_view_cc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginRight="10dip"
+                    android:paddingTop="13dip"
+                    android:paddingBottom="13dip"/>
+            </LinearLayout>
+
+            <!-- 秘送人 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/hcmail_message_compose_other_bg"
+                android:visibility="gone"
+                android:id="@+id/email_message_view_bcc_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="秘送"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:paddingTop="13dip"
+                    android:paddingBottom="13dip"
+                    android:paddingLeft="10dip"/>
+
+                <TextView
+                    android:id="@+id/email_message_view_bcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginRight="10dip"
+                    android:paddingTop="13dip"
+                    android:paddingBottom="13dip"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dip"
+                android:paddingRight="14dip"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp">
+                <TextView
+                    android:id="@+id/first_date"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/hcmail_message_view_text"
+                    android:textSize="12sp"/>
+                <ImageView
+                    android:id="@+id/email_message_view_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hcmail_atta_name_img"
+                    android:scaleType="center"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <!-- 主题 -->
+            <TextView
+                android:id="@+id/email_message_view_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:textColor="@color/topbar_bg"
+                android:textSize="16sp"
+                android:layout_marginTop="10dip"/>
+
+            <!--此处要改成list加载-->
+            <com.android.hcframe.hctask.ScrollerListView
+                android:id="@+id/attachment_container_list"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scrollbars="none"
+                android:visibility="gone"/>
+
+            <!--
+               content area - only one of them is visible at a time.
+            -->
+            <ScrollView
+                android:id="@+id/attachments_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:id="@+id/attachments"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dip"
+                    />
+            </ScrollView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="10dp"
+                android:background="@color/divider_bg"
+                />
+            <com.android.email.view.RigidWebView
+                android:id="@+id/message_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:background="@android:color/white"
+                android:visibility="gone"/>
+
+            <!-- end of content area -->
+        </LinearLayout>
+    </com.android.email.view.NonLockingScrollView>
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_bg" />
+    <!-- 底部操作按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/message_delete"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/hcmail_delete"
+            android:scaleType="center"/>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/divider_bg" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/email_message_view_edit_parent">
+            <ImageView
+                android:id="@+id/message_pen"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/hcmail_pen"
+                android:scaleType="center"/>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/divider_bg" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/hcmail_message_view_Forwarding_parent">
+            <TextView
+                android:id="@+id/reply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/hcmail_replay"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/hcmail_message_view_relay"
+                android:textColor="@color/blue"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dip"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:id="@+id/hcmail_message_view_replay_parent">
+            <TextView
+                android:id="@+id/reply_to"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/hcmail_relay_to"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/hcmail_message_view_relay_to"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

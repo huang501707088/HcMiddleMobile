@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/netdisc_bg"
+    android:orientation="vertical">
+
+    <com.android.hcframe.TopBarView
+        android:id="@+id/details_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/topbar_bg" />
+
+    <com.android.hcframe.pull.PullToRefreshListView
+        android:id="@+id/netdisc_file_lv"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="50dip"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/netdisc_linear_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="@string/netdisc_upload_position"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/netdisc_file_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="我的文件夹"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/my_file_text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="立即上传"
+            android:textColor="@color/netdisc_text_white"
+            android:background="@drawable/netdisc_corner_btn"
+            android:gravity="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

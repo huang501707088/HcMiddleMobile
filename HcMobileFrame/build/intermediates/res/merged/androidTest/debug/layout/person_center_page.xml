@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/doc_bg"
+    android:orientation="vertical"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto" >
+
+    <LinearLayout
+        android:id="@+id/center_photo_lly"
+        android:layout_width="fill_parent"
+        android:layout_height="82dip"
+        android:background="@drawable/myoffice_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/center_photo_tv"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:text="@string/photo_header"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+
+        <com.android.hcframe.container.ContainerCircleImageView
+            android:id="@+id/center_photo_iv"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_photo"
+            zjhc:siBorderColor="@color/edittext_bg"
+		    zjhc:siBorderAlpha="1.0"
+		    zjhc:siBorderWidth="1dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center_nickname_lly"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/myoffice_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/center_nickname_tv"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:text="@string/nickname"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/center_nickname_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:text="张三"
+            android:textColor="@color/text_999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center_bindphone_lly"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/myoffice_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/center_bindphone_tv"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:text="@string/bind_phone"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/center_bindphone_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:text="136****5696"
+            android:textColor="@color/text_999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center_modifypwd_lly"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/myoffice_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/center_modifypwd_tv"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:text="@string/modify_pw_str"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/center_modifypwd_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/right_jian" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center_imei_lly"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/myoffice_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/center_imei_tv"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:text="设备识别号"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/center_imei_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:text="1234567890"
+            android:textColor="@color/text_999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center_scanlogin_lly"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:visibility="gone"
+        android:background="@drawable/myoffice_account_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/center_scanlogin_tv"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:text="@string/scanlogin_str"
+            android:textColor="@color/text_tab"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/center_scanlogin_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/right_jian" />
+    </LinearLayout>
+</LinearLayout>

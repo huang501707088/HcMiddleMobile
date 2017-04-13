@@ -1,0 +1,7 @@
+<resources>
+    <!-- DraggrableGridView item -->
+    <integer name="col_count">3</integer>
+    <integer name="row_count">4</integer>
+    <bool name="market_use_page">true</bool>
+    <integer name="config_tab_count">4</integer>
+</resources>

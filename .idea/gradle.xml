@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="D:\software\Android Studio\gradle\gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/HcMobileFrame" />
+            <option value="$PROJECT_DIR$/about" />
+            <option value="$PROJECT_DIR$/annual" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/approve" />
+            <option value="$PROJECT_DIR$/contacts" />
+            <option value="$PROJECT_DIR$/doc" />
+            <option value="$PROJECT_DIR$/download" />
+            <option value="$PROJECT_DIR$/ebook" />
+            <option value="$PROJECT_DIR$/hcmail" />
+            <option value="$PROJECT_DIR$/hctask" />
+            <option value="$PROJECT_DIR$/im" />
+            <option value="$PROJECT_DIR$/market" />
+            <option value="$PROJECT_DIR$/netdisc" />
+            <option value="$PROJECT_DIR$/news" />
+            <option value="$PROJECT_DIR$/schedule" />
+            <option value="$PROJECT_DIR$/signin" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

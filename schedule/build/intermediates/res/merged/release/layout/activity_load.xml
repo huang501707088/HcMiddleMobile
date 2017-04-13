@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loading"
+    >
+    <!-- android:background="@drawable/loading" 
+    android:textColor="#21afe6"-->
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="100sp"
+	    android:gravity="center"
+	    android:visibility="gone"
+	    android:text="移 +"
+	    android:textColor="#ffffff"
+	    android:textStyle="bold"
+	    android:layout_centerInParent="true" />
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="10sp"
+	    android:gravity="center"
+	    android:visibility="gone"
+	    android:text="浙江鸿程计算机系统有限公司-研发中心"
+	    android:layout_marginBottom="15dip"
+	    android:layout_alignParentBottom="true" />
+</RelativeLayout>

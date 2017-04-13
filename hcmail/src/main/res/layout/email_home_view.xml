@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/email_home_setup_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/email_home_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:text="@string/accounts_welcome"
+            android:textAppearance="@style/accountSetupInfoText"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/email_home_account_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btn_padding_left"
+            android:layout_marginRight="@dimen/btn_padding_right"
+            android:contentDescription="@string/account_setup_basics_password_label"
+            android:hint="@string/account_setup_basics_password_label"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/email_home_next" />
+
+        <TextView
+            android:id="@+id/email_home_next"
+            style="@style/corner_btn.orange"
+            android:layout_marginLeft="@dimen/btn_padding_left"
+            android:layout_marginRight="@dimen/btn_padding_right"
+            android:layout_marginTop="20dip"
+            android:text="@string/next_action" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/email_home_email_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <!-- 发送 -->
+        <LinearLayout
+            android:id="@+id/email_home_send_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/edittext_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="19dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_folder_sent_holo_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="发送邮件"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/right_jian" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="60dp"
+            android:background="@color/divider_bg" />
+
+        <!-- 收件箱 -->
+        <LinearLayout
+            android:id="@+id/email_home_inbox_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/edittext_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="19dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_folder_inbox_holo_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="收件箱"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/right_jian" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="60dp"
+            android:background="@color/divider_bg" />
+
+        <!-- 发件箱 -->
+        <LinearLayout
+            android:id="@+id/email_home_outbox_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/edittext_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="19dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_folder_outbox_holo_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="已发送"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/right_jian" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="60dp"
+            android:background="@color/divider_bg" />
+
+        <!-- 草稿箱 -->
+        <LinearLayout
+            android:id="@+id/email_home_drafts_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/edittext_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="19dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_folder_drafts_holo_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="草稿箱"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/right_jian" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="60dp"
+            android:background="@color/divider_bg" />
+
+        <!-- 回收站 -->
+        <LinearLayout
+            android:id="@+id/email_home_trash_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/edittext_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="19dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_menu_trash_holo_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="回收站"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/right_jian" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="60dp"
+            android:background="@color/divider_bg" />
+        <!-- 发件箱 -->
+        <LinearLayout
+            android:id="@+id/email_home_out_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/edittext_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="19dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_folder_outbox_holo_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="发件箱"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/right_jian" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

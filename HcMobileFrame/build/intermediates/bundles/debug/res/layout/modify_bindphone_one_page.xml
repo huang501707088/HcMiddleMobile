@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/doc_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bind_cur_phone_lly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingLeft="85dip"
+        android:paddingTop="30dip" >
+
+        <TextView
+            android:id="@+id/user_hint_register_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bind_cur_phone"
+            android:textColor="@color/text_999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bind_cur_phone_value_lly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="85dip" >
+
+        <TextView
+            android:id="@+id/bind_cur_phone_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="135****5886"
+            android:textColor="@color/topbar_bg"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/first_code_value_lly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="85dip" >
+
+        <TextView
+            android:id="@+id/first_code_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_code"
+            android:textColor="@color/text_999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/myoffice_account_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/modifyphone_one_tv"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="@string/icode"
+                android:textColor="@color/text_tab"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/modifyphone_one_et"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="110dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColor="@color/text_tab"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/modifyphone_one_icode_btn"
+            android:layout_width="90dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/modify_code_bg_select"
+            android:text="@string/get_icode"
+            android:textColor="@color/btn_focus"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pwd_error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dip"
+        android:text="@string/pwd_two_error"
+        android:textColor="@color/text_red_bg"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/modifyphone_next_btn"
+        style="@style/corner_btn.blue"
+        android:layout_marginTop="64dip"
+        android:text="@string/next_step"
+        android:layout_marginLeft="@dimen/btn_padding_left"
+        android:layout_marginRight="@dimen/btn_padding_right" />
+
+</LinearLayout>

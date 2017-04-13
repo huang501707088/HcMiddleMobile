@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.hcframe.hctask">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.android.hcframe.hctask.HistoryTaskActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.android.hcframe.hctask.PublicTaskActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.android.hcframe.hctask.TaskBackActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.android.hcframe.hctask.TaskChangeActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.android.hcframe.hctask.TaskDetailsActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ChoosePersonnelActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

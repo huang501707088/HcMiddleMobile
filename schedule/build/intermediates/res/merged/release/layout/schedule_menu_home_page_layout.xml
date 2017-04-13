@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@color/main_framework_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/schedule_top_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/schedule_colleague_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/schedule_corner_btn_white_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/schedule_coll"
+                android:drawablePadding="8dip"
+                android:text="同事日程"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="4dip"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/schedule_add_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/schedule_corner_btn_white_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/schedule_add"
+                android:drawablePadding="8dip"
+                android:text="新增日程"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="52dp"
+            android:background="@color/grey" />
+
+        <com.android.hcframe.pull.PullToRefreshExpandableListView
+            android:id="@+id/expandlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000"
+            android:childDivider="@drawable/schedule_menu_line"
+            android:listSelector="#00000000"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:scrollbars="none" />
+    </RelativeLayout>
+</LinearLayout>

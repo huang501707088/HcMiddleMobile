@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zjhc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/container_multiple_list_item_height"
+    android:gravity="center_vertical"
+    android:background="@drawable/item_default_bottom_bg"
+    android:paddingLeft="@dimen/container_margin_left"
+    android:paddingRight="@dimen/container_margin_right" >
+    <com.android.hcframe.container.ContainerRoundedImageView
+        android:layout_width="@dimen/container_image_width_30"
+        android:layout_height="@dimen/container_image_width_30"
+        android:scaleType="centerInside"
+        zjhc:element_id="img01"
+        android:id="@+id/container_single01_img01"
+        android:padding="5dip"
+        zjhc:siBorderColor="@color/edittext_bg"
+	    zjhc:siBorderAlpha="1.0" />
+    <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        <com.android.hcframe.container.ContainerTextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        zjhc:element_id="text01"
+	        android:paddingLeft="@dimen/container_margin_left"
+	        android:layout_marginRight="5dip"
+	        android:textSize="@dimen/container_text_size_14"
+	        android:textColor="@color/container_text_title"
+	        android:singleLine="true"
+	        android:id="@+id/container_single01_text01"
+	        android:paddingRight="@dimen/container_margin_right"
+	        android:gravity="center_vertical" />
+    </LinearLayout>
+    
+    <com.android.hcframe.container.ContainerTextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        zjhc:element_id="text02"
+        android:textSize="@dimen/container_text_size_10"
+        android:textColor="@color/container_text_subtitle"
+        android:singleLine="true"
+        android:id="@+id/container_single01_text02" />
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/right_jian"
+        android:layout_marginLeft="5dip" />
+	
+</LinearLayout>
